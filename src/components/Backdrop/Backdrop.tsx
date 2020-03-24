@@ -6,21 +6,13 @@ import {
   Easing,
   SafeAreaView,
   StyleSheet,
-  View,
-  Text,
 } from 'react-native';
-import {
-  withTheme,
-  Icon,
-  Ripple,
-  SheetSide,
-  List,
-  ListItem,
-} from 'material-bread';
+import {withTheme, Icon, Ripple, SheetSide} from 'material-bread';
 import HeaderButton from './HeaderButton';
 import FrontLayer from './FrontLayer';
 import BackLayer from './BackLayer';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import Analytics from 'appcenter-analytics';
 
 interface Props {
   backLayerStyle?: any;
@@ -94,8 +86,14 @@ class Backdrop extends PureComponent<Props> {
     const {backConcealed} = this.state;
 
     if (backConcealed) {
+      Analytics.trackEvent('Open Favorite panel on MainMenu', {
+        Category: 'Navigation',
+      });
       this.setState({backRevealed: true, iconName: 'close'});
     } else {
+      Analytics.trackEvent('Close Favorite panel on MainMenu', {
+        Category: 'Navigation',
+      });
       this.setState({backConcealed: true, iconName: 'favorite'});
     }
 
@@ -189,7 +187,9 @@ class Backdrop extends PureComponent<Props> {
         <HeaderButton
           backConcealed={backConcealed}
           headerButtonStyle={headerButtonStyle}
-          toggleLayout={() => this.toggleLayout()}
+          toggleLayout={() => {
+            this.toggleLayout();
+          }}
           iconName={iconName}
           right={60}
         />

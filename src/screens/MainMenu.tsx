@@ -4,8 +4,11 @@ import {NavigationStackProp} from 'react-navigation-stack';
 
 import {SafeAreaView} from 'react-native-safe-area-context';
 import * as Colors from '../utility/Colors';
-import {Avatar, IconButton} from 'material-bread';
+import {Avatar, IconButton, Icon} from 'material-bread';
 import Backdrop from '../components/Backdrop/Backdrop';
+
+import App from '../../App';
+import {ZeroFavorites} from '../components/ZeroFavorites';
 
 type Props = {
   navigation?: NavigationStackProp;
@@ -36,25 +39,11 @@ export class ScreenMainMenu extends Component {
     const backLayerRevealed = (
       <View style={{width: '100%', flex: 1, backgroundColor: Colors.PRIMARY}}>
         <View style={styles.backdropHeader as ViewStyle}>
-          <Text style={styles.backdropHeaderTitle as ViewStyle}>Ulubione</Text>
+          <Text style={styles.backdropHeaderTitle as ViewStyle}>
+            {App.translate('favorite')}
+          </Text>
         </View>
-        <Text>Test</Text>
-        <Text>Test</Text>
-        <Text>Test</Text>
-        <Text>Test</Text>
-        <Text>Test</Text>
-        <Text>Test</Text>
-        <Text>Test</Text>
-        <Text>Test</Text>
-        <Text>Test</Text>
-        <Text>Test</Text>
-        <Text>Test</Text>
-        <Text>Test</Text>
-
-        <Text>Test</Text>
-        <Text>Test</Text>
-        <Text>Test</Text>
-        <Animated.View></Animated.View>
+        <ZeroFavorites />
       </View>
     );
 
