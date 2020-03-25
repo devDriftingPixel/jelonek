@@ -1,20 +1,29 @@
 import React, {Component} from 'react';
-import {Text, StyleSheet, View, Animated, ViewStyle} from 'react-native';
+import {Text, View, ViewStyle, ScaledSize} from 'react-native';
 import {NavigationStackProp} from 'react-navigation-stack';
 
 import {SafeAreaView} from 'react-native-safe-area-context';
 import * as Colors from '../utility/Colors';
-import {Avatar, IconButton, Icon} from 'material-bread';
+import {Avatar, IconButton} from 'material-bread';
 import Backdrop from '../components/Backdrop/Backdrop';
 
 import App from '../../App';
 import {ZeroFavorites} from '../components/ZeroFavorites';
+import {Dimensions} from 'react-native';
+import {MenuComponent} from '../components/MenuComponent';
 
 type Props = {
   navigation?: NavigationStackProp;
 };
 
-export class ScreenMainMenu extends Component {
+export class ScreenMainMenu extends Component<Props> {
+  private windowDimesions: ScaledSize;
+
+  constructor(props: Props) {
+    super(props);
+    this.windowDimesions = Dimensions.get('window');
+  }
+
   render() {
     const styles = {
       container: {
@@ -63,7 +72,7 @@ export class ScreenMainMenu extends Component {
         <View
           style={{marginBottom: 80, flex: 1, backgroundColor: Colors.PRIMARY}}>
           <Backdrop
-            subheader={'Music'}
+            subheader={''}
             backLayerConcealed={
               <View style={styles.backdropHeader as ViewStyle}>
                 <Text style={styles.backdropHeaderTitle as ViewStyle}>App</Text>
@@ -72,10 +81,12 @@ export class ScreenMainMenu extends Component {
             backLayerStyle={{backgroundColor: Colors.PRIMARY}}
             // frontLayerStyle={{backgroundColor: Colors.ACCENT}}
             // headerButtonStyle={{backgroundColor: Colors.DISACTIVE}}
-            backLayerRevealed={backLayerRevealed}>
-            <View style={styles.container}>
-              <Text style={{color: 'red'}}>Test</Text>
-            </View>
+            backLayerRevealed={backLayerRevealed}
+            offset={this.windowDimesions.height / 2}>
+            <MenuComponent
+              dimension={this.windowDimesions}
+              navigation={this.props.navigation}
+            />
           </Backdrop>
         </View>
       </SafeAreaView>

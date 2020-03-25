@@ -13,6 +13,7 @@ import FrontLayer from './FrontLayer';
 import BackLayer from './BackLayer';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Analytics from 'appcenter-analytics';
+import * as AnalyticsConstants from '../../utility/AnalyticsConstants';
 
 interface Props {
   backLayerStyle?: any;
@@ -74,6 +75,7 @@ class Backdrop extends PureComponent<Props> {
       backConcealed: true,
       backRevealed: false,
       iconName: 'favorite',
+      sheetSideVisible: false,
     };
   }
 
@@ -87,18 +89,18 @@ class Backdrop extends PureComponent<Props> {
 
     if (backConcealed) {
       Analytics.trackEvent('Open Favorite panel on MainMenu', {
-        Category: 'Navigation',
+        Category: AnalyticsConstants.categories.NAVIGATION,
       });
       this.setState({backRevealed: true, iconName: 'close'});
     } else {
       Analytics.trackEvent('Close Favorite panel on MainMenu', {
-        Category: 'Navigation',
+        Category: AnalyticsConstants.categories.NAVIGATION,
       });
       this.setState({backConcealed: true, iconName: 'favorite'});
     }
 
     this.isInternalAnimate = false;
-
+    ``;
     Animated.timing(this.animate, {
       toValue: backConcealed ? 1 : 0,
       duration: 196,

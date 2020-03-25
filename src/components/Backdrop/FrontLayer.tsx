@@ -104,7 +104,7 @@ class FrontLayer extends PureComponent<Props> {
           frontLayerStyle,
           {transform: [{translateY}]},
         ]}>
-        <Subtitle text={subheader} style={this.styles.subheader} />
+        {/* <Subtitle text={subheader} style={this.styles.subheader} /> */}
         {children}
         <FrontLayerScrim
           toggleLayout={() => toggleLayout()}

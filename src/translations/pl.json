@@ -1,4 +1,12 @@
 {
   "favorite": "Ulubione",
-  "zeroFavorite": "Jeszcze nie dodałeś zadnego obiektu do ulubionych. Zrób to przez uzycie ikony serca na karcie danego obiektu. Będziesz mieć do niego szybszy dostęp."
+  "zeroFavorite": "Jeszcze nie dodałeś zadnego obiektu do ulubionych. Zrób to przez uzycie ikony serca na karcie danego obiektu. Będziesz mieć do niego szybszy dostęp.",
+  "menu_offices": "Urzedy",
+  "menu_messages": "Komunikaty",
+  "menu_shops": "Sklepy",
+  "menu_restaurants": "Restauracje",
+  "menu_chemists": "Apteki",
+  "menu_hospitals": "Przychodnie\nSzpitale",
+  "menu_telephones": "Telefony\nSłuzb",
+  "menu_informations": "Wazne\nInformacje"
 }
