@@ -78,7 +78,7 @@ export class MenuComponent extends Component<Props> {
       name: App.translate('menu_telephones'),
       iconName: 'phone',
       onPress: () =>
-        this.props.navigation!.navigate('telephones', {
+        this.props.navigation!.navigate('Telephones', {
           name: App.translate('menu_telephones'),
           iconName: 'phone',
         }),
@@ -134,7 +134,12 @@ export class MenuComponent extends Component<Props> {
         }}
         imageStyle={{borderRadius: 18}}>
         <FlatList
-          style={{marginLeft: 8, marginRight: 8, height: '90%'}}
+          style={{
+            marginLeft: 8,
+            marginRight: 8,
+            height: '90%',
+            paddingBottom: 40,
+          }}
           data={this.menuItems}
           numColumns={2}
           keyExtractor={item => item.name}

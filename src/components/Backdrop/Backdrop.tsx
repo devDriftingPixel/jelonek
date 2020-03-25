@@ -13,7 +13,7 @@ import FrontLayer from './FrontLayer';
 import BackLayer from './BackLayer';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Analytics from 'appcenter-analytics';
-import * as AnalyticsConstants from '../../utility/AnalyticsConstants';
+import * as Enums from '../../model/Enums';
 
 interface Props {
   backLayerStyle?: any;
@@ -89,12 +89,12 @@ class Backdrop extends PureComponent<Props> {
 
     if (backConcealed) {
       Analytics.trackEvent('Open Favorite panel on MainMenu', {
-        Category: AnalyticsConstants.categories.NAVIGATION,
+        Category: Enums.AnaliticsCategories.NAVIGATION,
       });
       this.setState({backRevealed: true, iconName: 'close'});
     } else {
       Analytics.trackEvent('Close Favorite panel on MainMenu', {
-        Category: AnalyticsConstants.categories.NAVIGATION,
+        Category: Enums.AnaliticsCategories.NAVIGATION,
       });
       this.setState({backConcealed: true, iconName: 'favorite'});
     }

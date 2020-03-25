@@ -5,7 +5,7 @@ import App from '../../App';
 import {Icon, Ripple} from 'material-bread';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Analytics from 'appcenter-analytics';
-import * as AnalyticsConstants from '../utility/AnalyticsConstants';
+import * as Enums from '../model/Enums';
 
 interface Props {}
 
@@ -61,7 +61,7 @@ export class ZeroFavorites extends React.Component<Props> {
   handleIconFavoriteZeroClick(): void {
     if (!this.state.messageStay)
       Analytics.trackEvent('On empty favorite list - Icon clicked!', {
-        Category: AnalyticsConstants.categories.FUN,
+        Category: Enums.AnaliticsCategories.FUN,
       });
 
     this.setState({

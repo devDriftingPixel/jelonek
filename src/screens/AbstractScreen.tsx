@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
-import {Text} from 'react-native';
+import {Text, View} from 'react-native';
 import {NavigationStackProp} from 'react-navigation-stack';
 
 import {SafeAreaView} from 'react-native-safe-area-context';
 import App from '../../App';
 import {Badge, Appbar, IconButton} from 'material-bread';
 import Analytics from 'appcenter-analytics';
-import * as AnaliticsConstants from '../utility/AnalyticsConstants';
-import * as Colors from '../utility/Colors.ts';
+import * as Enums from '../model/Enums';
+import * as Colors from '../utility/Colors';
 
 type Props = {
   navigation?: NavigationStackProp;
@@ -25,9 +25,17 @@ export class AbstractScreen extends Component<Props> {
     this.iconName = params!.iconName;
   }
 
+  protected pageContent() {
+    return (
+      <View style={{flex: 1, flexDirection: 'row'}}>
+        <Text> Abstract!!! </Text>
+      </View>
+    );
+  }
+
   componentDidMount() {
     Analytics.trackEvent(`Open page: ${this.pageName}`, {
-      Category: AnaliticsConstants.categories.NAVIGATION,
+      Category: Enums.AnaliticsCategories.NAVIGATION,
     });
   }
 
@@ -44,8 +52,7 @@ export class AbstractScreen extends Component<Props> {
             {name: 'favorite', onPress: () => console.log('onSearch')},
           ]}
         />
-        <Text>{this.pageName}</Text>
-        <Text>{this.iconName}</Text>
+        <this.pageContent />
       </SafeAreaView>
     );
   }
