@@ -1,4 +1,4 @@
-package com.jelonek;
+package games.driftingpixel.jelonek;
 
 import com.facebook.react.ReactActivity;
 

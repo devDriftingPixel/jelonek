@@ -83,7 +83,7 @@ class HeaderButton extends Component<Props> {
           style={this.styles.ripple}>
           <Icon
             name={iconName}
-            size={24}
+            size={32}
             color="white"
             style={[UtilityStyles.styles.flipY, this.styles.icon]}
           />

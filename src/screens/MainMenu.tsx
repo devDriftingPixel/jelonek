@@ -11,6 +11,8 @@ import App from '../../App';
 import {ZeroFavorites} from '../components/ZeroFavorites';
 import {Dimensions} from 'react-native';
 import {MenuComponent} from '../components/MenuComponent';
+import {ExternalDataService} from '../services/ExternalDataService';
+import {FavoritesList} from '../components/FavoritesList';
 
 type Props = {
   navigation?: NavigationStackProp;
@@ -19,9 +21,21 @@ type Props = {
 export class ScreenMainMenu extends Component<Props> {
   private windowDimesions: ScaledSize;
 
+  state = {
+    favorites: [],
+  };
+
   constructor(props: Props) {
     super(props);
     this.windowDimesions = Dimensions.get('window');
+  }
+
+  private willFocus() {
+    this.setState({favorites: ExternalDataService.getFavorites()});
+  }
+
+  componentDidMount() {
+    this.props.navigation!.addListener('willFocus', this.willFocus.bind(this));
   }
 
   render() {
@@ -52,7 +66,12 @@ export class ScreenMainMenu extends Component<Props> {
             {App.translate('favorite')}
           </Text>
         </View>
-        <ZeroFavorites />
+
+        {this.state.favorites.length == 0 ? (
+          <ZeroFavorites />
+        ) : (
+          <FavoritesList data={this.state.favorites} />
+        )}
       </View>
     );
 
@@ -79,8 +98,6 @@ export class ScreenMainMenu extends Component<Props> {
               </View>
             }
             backLayerStyle={{backgroundColor: Colors.PRIMARY}}
-            // frontLayerStyle={{backgroundColor: Colors.ACCENT}}
-            // headerButtonStyle={{backgroundColor: Colors.DISACTIVE}}
             backLayerRevealed={backLayerRevealed}
             offset={this.windowDimesions.height / 2}>
             <MenuComponent

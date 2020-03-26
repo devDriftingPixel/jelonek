@@ -8,5 +8,7 @@
   "menu_chemists": "Apteki",
   "menu_hospitals": "Przychodnie\nSzpitale",
   "menu_telephones": "Telefony\nSłuzb",
-  "menu_informations": "Wazne\nInformacje"
+  "menu_informations": "Wazne\nInformacje",
+  "zeroItems": "Niestety, zadne z obiektów nie spełniają twoich kryteriów.",
+  "goodJob": "Właśnie tak!"
 }

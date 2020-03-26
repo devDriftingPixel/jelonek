@@ -138,7 +138,7 @@ export class MenuComponent extends Component<Props> {
             marginLeft: 8,
             marginRight: 8,
             height: '90%',
-            paddingBottom: 40,
+            marginBottom: 80,
           }}
           data={this.menuItems}
           numColumns={2}

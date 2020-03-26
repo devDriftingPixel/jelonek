@@ -1,0 +1,117 @@
+{
+  "objects": [{
+      "name": "Zielony Stragan",
+      "fullName": "Zielony Stragan – delikatesy warzywno-owocowe",
+      "hours": [
+        ["8", "17"], null, null, null, null,
+        ["8", "14"],
+        []
+      ],
+      "additionalInfo": "Dowóz do wszystkich klientów bez dodatkowych opłat oraz minimum logistycznego.",
+      "contectName": "Jacek",
+      "telephone": ["660 522 763"],
+      "address": "Targowisko Zabobrze,\nPawilon 27 D/E",
+      "type": "SHOPS",
+      "subType": "VEGETABLES",
+      "isFavorite": false,
+      "amenities": ["TRANSPORT", "IN_PLACE"],
+      "district": "Zabobrze"
+    },
+    {
+      "name": "TianDe Karkonosze",
+      "fullName": "TianDe Karkonosze – drogeria",
+      "additionalInfo": "Tu dostaniesz bogaty asortyment produktów pierwszej potrzeby: higieny intymnej, higieny jamy ustnej, pielęgnacji twarzy, włosów oraz ciała, produkty ekologiczne do prania i mycia naczyń oraz wiele wiele innych.",
+      "telephone": ["577 158 008"],
+      "address": "Jelenia Góra,\nul. Krótka 12",
+      "type": "SHOPS",
+      "subType": "DRGUGSTORE",
+      "isFavorite": false,
+      "amenities": ["IN_PLACE"],
+      "district": "Centrum"
+    },
+    {
+      "name": "Valdi – zakupy na telefon",
+      "additionalInfo": "Dowozimy: wędliny i drób od kilku dostawców, między innymi z Siedlęcina, nabiał, jaja z fermy w Starej Kamienicy, owoce i warzywa, artykuły spożywcze, pieczywo z piekarni Pasiecznik i Chalczyńscy, wyroby tytoniowe i alkohol, (wyłącznie dla osób pełnoletnich), napoje, soki, prasę, artykuły papiernicze, papier do drukarek, artykuły biurowe, chemię gospodarczą, doładowania telefonów, pierogi ruskie, z mięsem, galaretka z drobiu i wieprzowa oraz sałatki, ziemniaki z gospodarstwa rolnego z Pielgrzymki również na worki.",
+      "telephone": ["+(48) 603 055 948", "75 76 48 107"],
+      "type": "SHOPS",
+      "subType": "FOOD",
+      "isFavorite": false,
+      "amenities": ["TRANSPORT"],
+      "email": ["zakupynatelefon@onet.pl"],
+      "district": "Jelenia Góra"
+
+    },
+    {
+      "name": "Castorama Polska",
+      "fullName": "Castorama Polska sp z o.o.",
+      "additionalInfo": "Darmowy dowóz dla wszystkich klientów firmowych w promieniu 30km od Jeleniej Góry.",
+      "telephone": ["75 75 551 60"],
+      "www": "www.castorama.pl",
+      "address": "Jelenia Góra, \nul. Jana Pawła II 11",
+      "type": "SHOPS",
+      "subType": "BUILDING",
+      "isFavorite": false,
+      "amenities": ["TRANSPORT", "IN_PLACE", "PICKUP"],
+      "district": "Centrum"
+    },
+    {
+      "name": "SEREK - dla firm",
+      "fullName": "SEREK – Hurtownia warzyw i owoców",
+      "hours": [
+        ["5", "12"], null, null, null, null,
+        ["5", "11"],
+        []
+      ],
+      "additionalInfo": "Tu kupisz: warzywa i owoce dla firmy. \nDarmowy dowóz dla wszystkich klientów firmowych w promieniu 30km od Jeleniej Góry.",
+      "telephone": ["75 755 28 49"],
+      "address": "Jelenia Góra,\nul. Wolności 167",
+      "type": "SHOPS",
+      "subType": "VEGETABLES",
+      "isFavorite": false,
+      "amenities": ["TRANSPORT", "IN_PLACE"],
+      "district": "Cieplice"
+    },
+    {
+      "name": "FH Jan Dec",
+      "fullName": "Firma Handlowa Jan Dec",
+      "additionalInfo": "Oferowany asortyment: świeże warzywa i owoce. Darmowy dowóz do klienta na terenie Jeleniem Góry",
+      "telephone": ["722 262 850"],
+      "address": "Targowisko Zabobrze",
+      "type": "SHOPS",
+      "subType": "VEGETABLES",
+      "isFavorite": false,
+      "amenities": ["TRANSPORT", "IN_PLACE"],
+      "district": "Zabobrze"
+    },
+    {
+      "name": "Cz-pl-service",
+      "additionalInfo": "W ofercie mamy czeskie słodycze, herbaty, keczupy i inne produkty (również dietetyczne i bez cukru). Przygotowujemy też paczki- niespodzianki. Koszt dostawy zależy od wartości zamówienia i jest ustalany indywidualnie.",
+      "www": "https://www.cz-pl-service.com/pl/produktow-w-magazynie/",
+      "address": "Zachełmie 22, 58-562 Podgórzyn",
+      "type": "SHOPS",
+      "subType": "VEGETABLES",
+      "isFavorite": false,
+      "district": "ZACHELMIE",
+      "amenities": ["TRANSPORT"]
+    },
+    {
+      "name": "kupjablko.pl",
+      "fullName": "kupjablko.pl -punkt sprzedaży Apple | GoPro | DJI",
+      "hours": [
+        ["9:30", "17:30"], null, null, null, null,
+        [],
+        []
+      ],
+      "additionalInfo": "Dostawy bez dodatkowych opłat realizujemy przez firmę kurierską DHL.",
+      "telephone": ["75 643 60 44"],
+      "www": "kupjablko.pl",
+      "address": "Jelenia Góra, ul. Druciana 2",
+      "type": "SHOPS",
+      "subType": "ELECTRONICS",
+      "isFavorite": false,
+      "amenities": ["TRANSPORT", "IN_PLACE"],
+      "district": "Centrum"
+    }
+  ]
+
+}

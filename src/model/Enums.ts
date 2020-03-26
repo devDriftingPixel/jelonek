@@ -6,9 +6,11 @@ export enum Amenities {
 }
 
 export enum Districts {
-  ZABOBRZE = 'ZABOBRZE',
-  CIEPLICE = 'CIEPLICE',
-  CENTRUM = 'CENTRUM',
+  ZABOBRZE = 'Zabobrze',
+  CIEPLICE = 'Cieplice',
+  CENTRUM = 'Centrum',
+  ZACHELMIE = 'Zachełmie',
+  JELENIA_GORA = 'Jelenia Góra',
 }
 
 export enum DataItemTypes {
@@ -21,6 +23,8 @@ export enum DataItemSubtypes {
   FOOD = 'FOOD',
   BUILDING = 'BUILDING',
   VEGETABLES = 'VEGETABLES',
+  DRGUGSTORE = 'DRGUGSTORE',
+  ELECTRONICS = 'ELECTRONICS',
 }
 
 export enum AnaliticsCategories {

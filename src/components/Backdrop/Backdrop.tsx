@@ -12,8 +12,10 @@ import HeaderButton from './HeaderButton';
 import FrontLayer from './FrontLayer';
 import BackLayer from './BackLayer';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Analytics from 'appcenter-analytics';
 import * as Enums from '../../model/Enums';
+import * as UtilityStylus from '../../utility/UstilityStyles';
 
 interface Props {
   backLayerStyle?: any;
@@ -179,11 +181,11 @@ class Backdrop extends PureComponent<Props> {
           }}
           rippleContainerBorderRadius={28}>
           <Icon
-            name={'info'}
-            size={24}
+            name={'bullhorn'}
+            size={34}
             color="white"
-            style={{}}
-            iconComponent={FontAwesome}
+            style={[UtilityStylus.styles.flipX, {marginTop: -2}]}
+            iconComponent={MaterialCommunityIcons}
           />
         </Ripple>
         <HeaderButton

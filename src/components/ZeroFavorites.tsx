@@ -51,7 +51,7 @@ export class ZeroFavorites extends React.Component<Props> {
           </Ripple>
           {this.state.iconName == 'heart' || this.state.messageStay ? (
             <Text style={{color: Colors.TEXT_FAVORITES_PANEL, fontSize: 18}}>
-              Właśnie tak!
+              {App.translate('goodJob')};
             </Text>
           ) : null}
         </View>

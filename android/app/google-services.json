@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "201251022864",
+    "firebase_url": "https://jelonek-stage.firebaseio.com",
+    "project_id": "jelonek-stage",
+    "storage_bucket": "jelonek-stage.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:201251022864:android:4fb4fc58d0c78f95284295",
+        "android_client_info": {
+          "package_name": "games.driftingpixel.jelonek"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "201251022864-m68sfkubi9rchrsa5l9ubk9msvi1nou2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "games.driftingpixel.jelonek",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "201251022864-quoh135tf01sa60797aqnugftkh97uip.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcW1euCtNaSp-IjKicvTce2xParvKZE38"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "201251022864-quoh135tf01sa60797aqnugftkh97uip.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

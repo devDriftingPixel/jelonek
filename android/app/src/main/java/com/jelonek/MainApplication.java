@@ -1,4 +1,4 @@
-package com.jelonek;
+package games.driftingpixel.jelonek;
 
 import android.app.Application;
 import android.content.Context;
