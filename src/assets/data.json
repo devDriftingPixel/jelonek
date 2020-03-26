@@ -1,12 +1,9 @@
 {
-  "objects": [{
+  "objects": [
+    {
       "name": "Zielony Stragan",
       "fullName": "Zielony Stragan – delikatesy warzywno-owocowe",
-      "hours": [
-        ["8", "17"], null, null, null, null,
-        ["8", "14"],
-        []
-      ],
+      "hours": [["8", "17"], null, null, null, null, ["8", "14"], []],
       "additionalInfo": "Dowóz do wszystkich klientów bez dodatkowych opłat oraz minimum logistycznego.",
       "contectName": "Jacek",
       "telephone": ["660 522 763"],
@@ -24,7 +21,7 @@
       "telephone": ["577 158 008"],
       "address": "Jelenia Góra,\nul. Krótka 12",
       "type": "SHOPS",
-      "subType": "DRGUGSTORE",
+      "subType": "DRUGSTORE",
       "isFavorite": false,
       "amenities": ["IN_PLACE"],
       "district": "Centrum"
@@ -39,7 +36,6 @@
       "amenities": ["TRANSPORT"],
       "email": ["zakupynatelefon@onet.pl"],
       "district": "Jelenia Góra"
-
     },
     {
       "name": "Castorama Polska",
@@ -57,11 +53,7 @@
     {
       "name": "SEREK - dla firm",
       "fullName": "SEREK – Hurtownia warzyw i owoców",
-      "hours": [
-        ["5", "12"], null, null, null, null,
-        ["5", "11"],
-        []
-      ],
+      "hours": [["5", "12"], null, null, null, null, ["5", "11"], []],
       "additionalInfo": "Tu kupisz: warzywa i owoce dla firmy. \nDarmowy dowóz dla wszystkich klientów firmowych w promieniu 30km od Jeleniej Góry.",
       "telephone": ["75 755 28 49"],
       "address": "Jelenia Góra,\nul. Wolności 167",
@@ -97,11 +89,7 @@
     {
       "name": "kupjablko.pl",
       "fullName": "kupjablko.pl -punkt sprzedaży Apple | GoPro | DJI",
-      "hours": [
-        ["9:30", "17:30"], null, null, null, null,
-        [],
-        []
-      ],
+      "hours": [["9:30", "17:30"], null, null, null, null, [], []],
       "additionalInfo": "Dostawy bez dodatkowych opłat realizujemy przez firmę kurierską DHL.",
       "telephone": ["75 643 60 44"],
       "www": "kupjablko.pl",
@@ -111,7 +99,85 @@
       "isFavorite": false,
       "amenities": ["TRANSPORT", "IN_PLACE"],
       "district": "Centrum"
+    },
+    {
+      "name": "Ekonomiczna Pomarańcza",
+      "fullName": "Ekonomiczna Pomarańcza Agnieszka Szumilak",
+      "hours": [["9", "12"], null, null, null, null, [], []],
+      "additionalInfo": "Prowadzimy obiady na wywóz od poniedziałku do piątku czekamy na zamówienie od 09.00-12.00 cena 16 zł za osobę",
+      "telephone": ["604 820 698"],
+      "facebook": "https://www.facebook.com/Ekonomiczna-Pomarańcza-226462724476863/",
+      "address": "Jelenia Góra, ul. Nowowiejska 3",
+      "type": "RESTAURANTS",
+      "isFavorite": false,
+      "amenities": ["TRANSPORT"],
+      "district": "Centrum"
+    },
+    {
+      "name": "Perła Zachodu",
+      "fullName": "Perła Zachodu Gościniec PTTK",
+      "additionalInfo": "W naszej restauracji każdy znajdzie coś smakowitego dla siebie, serdecznie zapraszamy na desery, pierogi, bigosy, mięsa, pieczenie.",
+      "telephone": ["509 841 000"],
+      "facebook": "https://www.facebook.com/PerlaZachodu/",
+      "type": "RESTAURANTS",
+      "isFavorite": false,
+      "amenities": ["TRANSPORT"]
+    },
+    {
+      "name": "Grande Roma",
+      "www": "www.granderoma.com.pl",
+      "facebook": "https://www.facebook.com/pizzeria.cieplice/",
+      "additionalInfo": "Dowóz dań oraz odbiór na miejscu. W naszej ofercie znajduje się: pizza, dania obiadowe, makarony, sałatki oraz napoje.",
+      "telephone": ["665 163 087"],
+      "address": "Cieplice, ul. Gimnazjalna 2",
+      "type": "RESTAURANTS",
+      "isFavorite": false,
+      "amenities": ["TRANSPORT", "PICKUP"],
+      "district": "Cieplice"
+    },
+    {
+      "name": "Pierogarnia z Gitarą i Piórem",
+      "hours": [["10", "17"], null, null, null, null, ["10", "15"], []],
+      "additionalInfo": "Prowadzimy sprzedaż naszych pierogów ciepłych gotowych do zjedzenia lub zimnych do przechowywania w lodówce lub zamrożenia. Wszelkie informacje codziennie na naszym Facebooku.",
+      "telephone": ["789 093 292"],
+      "facebook": "https://www.facebook.com/PierogarniaGitaraiPiorem/",
+      "type": "RESTAURANTS",
+      "isFavorite": false,
+      "amenities": ["TRANSPORT"],
+      "district": "Centrum"
+    },
+    {
+      "name": " Gawełczyk Bary Restauracyjne",
+      "hours": [["9", "14"], null, null, null, null, null, []],
+      "www": " www.obiady.jgora.pl",
+      "additionalInfo": "Prowadzimy działalność gastronomiczną na terenie Jeleniej Góry oraz okolic. Kuchnia Polska (Mięsa, Pierogi, Dania wegetariańskie, naleśniki itp). W menu mogą znaleźć Państwo kuchnie Polską, ale również wegetariańską, codziennie do wyboru 2-3 zupy oraz 5 drugich dań z różnymi dodatkami. Można zamawiać w opakowaniach ekologicznych. Cena zestawu zupa + drugie danie 17 zł. Sklep internetowy znajduje się na naszej stronie www.obiady.jgora.pl",
+      "telephone": ["792 030 733"],
+      "facebook": "https://www.facebook.com/obiadydomowejg/",
+      "type": "RESTAURANTS",
+      "isFavorite": false,
+      "amenities": ["TRANSPORT"],
+      "district": "Jelenia Góra"
+    },
+    {
+      "name": "Lord Lounge",
+      "fillName": "Restauracja Lord Lounge",
+      "hours": [["11", "22"]],
+      "www": "www.restauracjalord.pl",
+      "additionalInfo": "Nasze menu można znaleźć na www.restauracjalord.pl, oraz na portalach pyszne.pl, pizza portal oraz Glovo. Dowozimy zarówno na terenie Jeleniej Góry jak i w dalszych lokalizacjach.",
+      "telephone": ["570 581 896", "573 000 504"],
+      "type": "RESTAURANTS",
+      "isFavorite": false,
+      "amenities": ["TRANSPORT", "PICKUP", "NO_CONTACT_DELIVER"],
+      "district": "Centrum"
+    },
+    {
+      "name": "Piwiarnia Warka",
+      "additionalInfo": " Serwowane dania to pizze, makarony, sałatki, dania obiadowe.",
+      "telephone": ["756 453 000"],
+      "type": "RESTAURANTS",
+      "isFavorite": false,
+      "amenities": ["TRANSPORT"],
+      "district": "Centrum"
     }
   ]
-
 }

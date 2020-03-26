@@ -18,4 +18,5 @@ export interface ListItem {
   additionalInfo: string;
   hours: [][];
   www: string;
+  facebook: string;
 }

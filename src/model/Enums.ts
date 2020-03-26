@@ -3,6 +3,7 @@ export enum Amenities {
   PICKUP = 'PICKUP',
   IN_PLACE = 'IN_PLACE',
   FULL24 = 'FULL24',
+  NO_CONTACT_DELIVERY = 'NO_CONTACT_DELIVER',
 }
 
 export enum Districts {
@@ -23,11 +24,12 @@ export enum DataItemSubtypes {
   FOOD = 'FOOD',
   BUILDING = 'BUILDING',
   VEGETABLES = 'VEGETABLES',
-  DRGUGSTORE = 'DRGUGSTORE',
+  DRUGSTORE = 'DRUGSTORE',
   ELECTRONICS = 'ELECTRONICS',
 }
 
 export enum AnaliticsCategories {
+  USER_EXPERIENCE = 'User Experience',
   NAVIGATION = 'Navigation',
   FUN = 'Fun',
 }

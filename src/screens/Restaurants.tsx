@@ -1,26 +1,31 @@
 import {NavigationStackProp} from 'react-navigation-stack';
 import {ScreenShops} from './Shops';
 import {ExternalDataService} from '../services/ExternalDataService';
-import {ListItem} from 'material-bread';
+
 import App from '../../App';
+import {ListItem} from '../model/ListItem';
 type Props = {
   navigation?: NavigationStackProp;
 };
 
 export class ScreenRestaurants extends ScreenShops {
+  protected allItems: ListItem[];
+
   constructor(props: Props) {
     super(props);
+    this.allItems = [];
   }
 
-  componentDidMount() {
+  getItems() {
     ExternalDataService.getRestaurants()
-      .then(restaurants =>
+      .then((restaurants: ListItem[]) => {
+        this.allItems = restaurants;
         this.setState({
-          items: restaurants,
-          errorMessage:
-            restaurants.length == 0 ? App.translate('zeroItems') : '',
-        }),
-      )
+          items: this.allItems.sort((a: ListItem, b: ListItem) =>
+            a.isFavorite ? (this.state.items.length > 0 ? 0 : -1) : 0,
+          ),
+        });
+      })
       .catch((error: any) => console.error(error));
   }
 

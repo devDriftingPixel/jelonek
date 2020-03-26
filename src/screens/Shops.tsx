@@ -1,23 +1,26 @@
 import React, {Component} from 'react';
 import {NavigationStackProp} from 'react-navigation-stack';
 import {AbstractScreen} from './AbstractScreen';
-import {View, Text} from 'react-native';
-
 import {FlatList} from 'react-native-gesture-handler';
-
-import * as Colors from '../utility/Colors';
-import {Utility} from '../utility/Utility';
 import {ListItem} from '../model/ListItem';
 import {ExternalDataService} from '../services/ExternalDataService';
 import {ListItemComponent} from '../components/ListItemComponent';
+import {BottomNavigation} from '../components/BottonNavigation';
+import * as Constants from '../utility/Constants';
+import App from '../../App';
+import {Amenities, AnaliticsCategories} from '../model/Enums';
+import Analytics from 'appcenter-analytics';
 
 type Props = {
   navigation?: NavigationStackProp;
 };
 
 export class ScreenShops extends AbstractScreen {
+  protected allItems: ListItem[];
+
   constructor(props: Props) {
     super(props);
+    this.allItems = [];
   }
 
   componentDidMount() {
@@ -26,13 +29,14 @@ export class ScreenShops extends AbstractScreen {
 
   getItems() {
     ExternalDataService.getShops()
-      .then((shops: ListItem[]) =>
+      .then((shops: ListItem[]) => {
+        this.allItems = shops;
         this.setState({
-          items: shops.sort((a: ListItem, b: ListItem) =>
+          items: this.allItems.sort((a: ListItem, b: ListItem) =>
             a.isFavorite ? (this.state.items.length > 0 ? 0 : -1) : 0,
           ),
-        }),
-      )
+        });
+      })
       .catch((error: any) => console.error(error));
   }
 
@@ -48,9 +52,59 @@ export class ScreenShops extends AbstractScreen {
             }
           />
         )}
-        keyExtractor={(item, index) => index.toString()}></FlatList>
+        keyExtractor={(item, index) => index.toString()}
+      />
     );
   };
+
+  protected handleChange(value: number) {
+    this.setState({value});
+  }
+
+  protected footerContent = () => {
+    return (
+      <BottomNavigation
+        actions={[
+          {
+            iconName: Constants.icons.amenitiesTransport,
+            name: App.translate('transportIconTooltip'),
+            returnData: Amenities.TRANSPORT,
+            onPress: () => {},
+          },
+          {
+            iconName: Constants.icons.amenitiesPickup,
+            name: App.translate('pickupIconTooltip'),
+            returnData: Amenities.PICKUP,
+            onPress: () => {},
+          },
+          {
+            iconName: Constants.icons.amenitiesInPlace,
+            name: App.translate('inPlaceIconTooltip'),
+            returnData: Amenities.IN_PLACE,
+            onPress: () => {},
+          },
+        ]}
+        onSelectionChange={(selectedAmenities: Amenities) =>
+          this.onSelectionChange(selectedAmenities)
+        }
+      />
+    );
+  };
+
+  onSelectionChange(selectedAmenities: Amenities) {
+    Analytics.trackEvent(`Filter items by amenities: ${selectedAmenities}`, {
+      Category: AnaliticsCategories.USER_EXPERIENCE,
+    });
+
+    this.setState({
+      items:
+        selectedAmenities == undefined
+          ? this.allItems
+          : this.allItems.filter(
+              item => item.amenities.indexOf(selectedAmenities) != -1,
+            ),
+    });
+  }
 
   render() {
     return super.render();

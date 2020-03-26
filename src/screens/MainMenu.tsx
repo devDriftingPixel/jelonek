@@ -99,7 +99,9 @@ export class ScreenMainMenu extends Component<Props> {
             }
             backLayerStyle={{backgroundColor: Colors.PRIMARY}}
             backLayerRevealed={backLayerRevealed}
-            offset={this.windowDimesions.height / 2}>
+            offset={this.getOffsetForFavoriteItemNumber(
+              this.state.favorites.length,
+            )}>
             <MenuComponent
               dimension={this.windowDimesions}
               navigation={this.props.navigation}
@@ -108,5 +110,19 @@ export class ScreenMainMenu extends Component<Props> {
         </View>
       </SafeAreaView>
     );
+  }
+  getOffsetForFavoriteItemNumber(numberOfFavorites: number): number {
+    switch (numberOfFavorites) {
+      case 0:
+        return this.windowDimesions.height / 2;
+      case 1:
+        return 180;
+      case 2:
+        return 300;
+      case 3:
+        return 430;
+      default:
+        return 500;
+    }
   }
 }

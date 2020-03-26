@@ -6,6 +6,7 @@ import {
   Easing,
   SafeAreaView,
   StyleSheet,
+  Text,
 } from 'react-native';
 import {withTheme, Icon, Ripple, SheetSide} from 'material-bread';
 import HeaderButton from './HeaderButton';
@@ -16,6 +17,8 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import Analytics from 'appcenter-analytics';
 import * as Enums from '../../model/Enums';
 import * as UtilityStylus from '../../utility/UstilityStyles';
+import App from '../../../App';
+import {AboutApp} from '../AboutApp';
 
 interface Props {
   backLayerStyle?: any;
@@ -169,7 +172,9 @@ class Backdrop extends PureComponent<Props> {
           onBackdropPress={() => this.setState({sheetSideVisible: false})}
           onSwipeRight={() => this.setState({sheetSideVisible: false})}
           side={'left'}
-          duration={320}></SheetSide>
+          duration={320}>
+          <AboutApp />
+        </SheetSide>
         <Ripple
           style={{
             height: 56,

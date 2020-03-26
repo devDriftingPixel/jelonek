@@ -67,7 +67,7 @@ class HeaderButton extends Component<Props> {
 
     const spin = this.spinValue.interpolate({
       inputRange: [0, 1],
-      outputRange: ['180deg', '0deg'],
+      outputRange: ['360deg', '0deg'],
     });
     const style = [
       this.styles.container,
@@ -85,7 +85,7 @@ class HeaderButton extends Component<Props> {
             name={iconName}
             size={32}
             color="white"
-            style={[UtilityStyles.styles.flipY, this.styles.icon]}
+            style={[this.styles.icon]}
           />
         </Ripple>
       </Animated.View>

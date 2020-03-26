@@ -8,23 +8,14 @@ export class ExternalDataService {
   constructor() {}
 
   public static getShops(): Promise<ListItem[]> {
-    console.log(`Get shops from ExternalDataService`);
-    console.log(dataStorage);
-
     return ExternalDataService.getItems(DataItemTypes.SHOPS);
   }
 
   public static getRestaurants(): Promise<ListItem[]> {
-    console.log(`Get Restaurants from ExternalDataService`);
-    console.log(dataStorage);
-
     return ExternalDataService.getItems(DataItemTypes.RESTAURANTS);
   }
 
   public static getFavorites(): ListItem[] {
-    console.log(`Get Favorites from ExternalDataService`);
-    console.log(dataStorage);
-
     return dataStorage.objects.filter((object: ListItem) => object.isFavorite);
   }
 
@@ -36,7 +27,7 @@ export class ExternalDataService {
         );
         setTimeout(() => {
           resolve(result);
-        }, 2000);
+        }, 0);
       } catch (exception) {
         reject(exception);
       }

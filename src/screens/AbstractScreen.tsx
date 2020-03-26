@@ -29,6 +29,7 @@ export abstract class AbstractScreen extends Component<Props> {
   state = {
     items: [] as ListItem[],
     errorMessage: ``,
+    activeItem: 0,
   };
 
   protected pageContent() {
@@ -37,6 +38,9 @@ export abstract class AbstractScreen extends Component<Props> {
         <Text> Abstract!!! </Text>
       </View>
     );
+  }
+  protected footerContent() {
+    return <></>;
   }
 
   protected getState() {
@@ -65,9 +69,6 @@ export abstract class AbstractScreen extends Component<Props> {
           title={this.pageName}
           navigation={'arrow-back'}
           onNavigation={() => this.props.navigation?.goBack()}
-          actionItems={[
-            {name: 'favorite', onPress: () => console.log('onSearch')},
-          ]}
         />
         {this.state.errorMessage.length > 0 ? (
           <ScrollView style={{minHeight: 60}}>
@@ -82,6 +83,7 @@ export abstract class AbstractScreen extends Component<Props> {
           </ScrollView>
         ) : null}
         <this.pageContent />
+        <this.footerContent />
       </SafeAreaView>
     );
   }

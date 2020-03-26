@@ -19,6 +19,7 @@ import Entypo from 'react-native-vector-icons/Entypo';
 import {NavigationStackProp} from 'react-navigation-stack';
 import {Utility} from '../utility/Utility';
 import {ListItem} from '../model/ListItem';
+import * as Costants from '../utility/Constants';
 
 interface Props {
   item: ListItem;
@@ -97,7 +98,7 @@ export class ListItemComponent extends Component<Props> {
           <View style={{width: 10, height: 10}} />
           {this.props.item.amenities.indexOf(Enums.Amenities.TRANSPORT) > -1 ? (
             <Icon
-              name={'truck'}
+              name={Costants.icons.amenitiesTransport}
               size={17}
               color={Colors.PRIMARY}
               style={{width: 20, height: 20, marginRight: 5}}
@@ -106,7 +107,7 @@ export class ListItemComponent extends Component<Props> {
           ) : null}
           {this.props.item.amenities.indexOf(Enums.Amenities.PICKUP) > -1 ? (
             <Icon
-              name={'hands'}
+              name={Costants.icons.amenitiesPickup}
               size={17}
               color={Colors.PRIMARY}
               style={{width: 24, height: 20, marginRight: 5}}
@@ -115,7 +116,7 @@ export class ListItemComponent extends Component<Props> {
           ) : null}
           {this.props.item.amenities.indexOf(Enums.Amenities.FULL24) > -1 ? (
             <Icon
-              name={'back-in-time'}
+              name={Costants.icons.amenitiesFull24}
               size={19}
               color={Colors.PRIMARY}
               style={{width: 20, height: 20, marginRight: 5}}
@@ -124,22 +125,36 @@ export class ListItemComponent extends Component<Props> {
           ) : null}
           {this.props.item.amenities.indexOf(Enums.Amenities.IN_PLACE) > -1 ? (
             <Icon
-              name={'shopping-cart'}
+              name={Costants.icons.amenitiesInPlace}
               size={17}
               color={Colors.PRIMARY}
               style={{width: 20, height: 20, marginRight: 5}}
               iconComponent={FontAwesome5}
             />
           ) : null}
-          <Text
-            style={{
-              flex: 1,
-              color: Colors.PRIMARY,
-              fontSize: 12,
-              textAlign: 'center',
-            }}>
-            {this.props.item.district.toUpperCase()}
-          </Text>
+          {this.props.item.amenities.indexOf(
+            Enums.Amenities.NO_CONTACT_DELIVERY,
+          ) > -1 ? (
+            <Icon
+              name={Costants.icons.amenitiesNoContactDelivery}
+              size={17}
+              color={Colors.PRIMARY}
+              style={{width: 20, height: 20, marginRight: 5}}
+              iconComponent={FontAwesome5}
+            />
+          ) : null}
+
+          {this.props.item.district ? (
+            <Text
+              style={{
+                flex: 1,
+                color: Colors.PRIMARY,
+                fontSize: 12,
+                textAlign: 'center',
+              }}>
+              {this.props.item.district.toUpperCase()}
+            </Text>
+          ) : null}
           <View style={{width: this.props.item.amenities.length * 29}}></View>
         </View>
       </Card>

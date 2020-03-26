@@ -20,6 +20,11 @@ export class Utility {
             return 'carrot';
           case DataItemSubtypes.FOOD:
             return 'shopping-basket';
+          case DataItemSubtypes.DRUGSTORE:
+            return 'spray-can';
+          case DataItemSubtypes.ELECTRONICS: {
+            return 'blender-phone';
+          }
         }
     }
   }
