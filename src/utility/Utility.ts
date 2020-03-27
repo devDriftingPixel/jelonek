@@ -48,4 +48,45 @@ export class Utility {
 
     return monthNames[monthIndex];
   }
+
+  public static getNameOfDay(dayIndex: number): string {
+    const dayNames = [
+      App.translate('Monday'),
+      App.translate('Tuesday'),
+      App.translate('Wednesday'),
+      App.translate('Thursday'),
+      App.translate('Friday'),
+      App.translate('Saturday'),
+      App.translate('Sunday'),
+    ];
+
+    return dayNames[dayIndex];
+  }
+
+  public static getShortNameOfDay(dayIndex: number): string {
+    const dayNames = [
+      App.translate('ShortMonday'),
+      App.translate('ShortTuesday'),
+      App.translate('ShortWednesday'),
+      App.translate('ShortThursday'),
+      App.translate('ShortFriday'),
+      App.translate('ShortSaturday'),
+      App.translate('ShortSunday'),
+    ];
+
+    return dayNames[dayIndex];
+  }
+
+  public static getHour(hour: string): string {
+    switch (hour.length) {
+      case 1:
+        return `0${hour}:00`;
+      case 2:
+        return `${hour}:00`;
+      case 4:
+        return `0${hour}`;
+      default:
+        return hour;
+    }
+  }
 }

@@ -10,6 +10,8 @@ import * as Constants from '../utility/Constants';
 import App from '../../App';
 import {Amenities, AnaliticsCategories} from '../model/Enums';
 import Analytics from 'appcenter-analytics';
+import {Ripple} from 'material-bread';
+import * as Colors from '../utility/Colors';
 
 type Props = {
   navigation?: NavigationStackProp;
@@ -46,12 +48,20 @@ export class ScreenShops extends AbstractScreen {
       <FlatList
         data={this.state.items}
         renderItem={({item}) => (
-          <ListItemComponent
-            item={item}
-            onFavoriteSelected={(item: ListItem) =>
-              this.onFavoriteSelected(item)
-            }
-          />
+          <Ripple
+            rippleColor={Colors.ACCENT_DARK}
+            onPress={() =>
+              this.props.navigation!.navigate('ObjectDetails', {
+                item: item,
+              })
+            }>
+            <ListItemComponent
+              item={item}
+              onFavoriteSelected={(item: ListItem) =>
+                this.onFavoriteSelected(item)
+              }
+            />
+          </Ripple>
         )}
         keyExtractor={(item, index) => index.toString()}
       />

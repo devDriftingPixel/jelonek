@@ -27,5 +27,21 @@
   "September": "Wrzesień",
   "October": "Październik",
   "November": "Listopad",
-  "December": "Grudzeiń"
+  "December": "Grudzień",
+  "Monday": "Poniedziałek",
+  "Tuesday": "Wtorek",
+  "Wednesday": "Sroda",
+  "Thursday": "Czartek",
+  "Friday": "Piątek",
+  "Saturday": "Sobota",
+  "Sunday": "Niedziela",
+  "ShortMonday": "Pon.",
+  "ShortTuesday": "Wt.",
+  "ShortWednesday": "Sr.",
+  "ShortThursday": "Czw.",
+  "ShortFriday": "Pt.",
+  "ShortSaturday": "Sob.",
+  "ShortSunday": "Niedz.",
+  "allWeek": "Cały tydzień",
+  "SeeObjectFacebook": "Zobacz Facebook tego miejsca"
 }

@@ -11,6 +11,7 @@ import {ScreenInformations} from '../screens/Informations';
 import {ScreenPhones} from '../screens/Phones';
 import {ScreenChemists} from '../screens/Chemists';
 import {ScreenOffices} from '../screens/Offices';
+import {ScreenObjectDetails} from '../screens/ObjectDetails';
 
 const stack = createStackNavigator({
   Login: {
@@ -63,6 +64,12 @@ const stack = createStackNavigator({
   },
   Offices: {
     screen: ScreenOffices,
+    navigationOptions: {
+      headerShown: false,
+    },
+  },
+  ObjectDetails: {
+    screen: ScreenObjectDetails,
     navigationOptions: {
       headerShown: false,
     },

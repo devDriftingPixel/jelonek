@@ -4,6 +4,7 @@ import {
   DataItemSubtypes,
   Amenities,
 } from '../model/Enums';
+import {Hours} from './Hours';
 
 export interface ListItem {
   name: string;
@@ -16,7 +17,7 @@ export interface ListItem {
   email: [string];
   telephone: string[];
   additionalInfo: string;
-  hours: [][];
+  hours: Hours[];
   www: string;
   facebook: string;
 }

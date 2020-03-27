@@ -2,9 +2,15 @@
   "objects": [{
       "name": "Zielony Stragan",
       "fullName": "Zielony Stragan – delikatesy warzywno-owocowe",
-      "hours": [
-        ["8", "17"], null, null, null, null, ["8", "14"],
-        []
+      "hours": [{
+          "startDay": 0,
+          "endDay": 4,
+          "hours": ["8", "17"]
+        },
+        {
+          "startDay": 5,
+          "hours": ["8", "14"]
+        }
       ],
       "additionalInfo": "Dowóz do wszystkich klientów bez dodatkowych opłat oraz minimum logistycznego.",
       "contectName": "Jacek",
@@ -55,9 +61,15 @@
     {
       "name": "SEREK - dla firm",
       "fullName": "SEREK – Hurtownia warzyw i owoców",
-      "hours": [
-        ["5", "12"], null, null, null, null, ["5", "11"],
-        []
+      "hours": [{
+          "startDay": 0,
+          "endDay": 4,
+          "hours": ["5", "12"]
+        },
+        {
+          "startDay": 5,
+          "hours": ["5", "11"]
+        }
       ],
       "additionalInfo": "Tu kupisz: warzywa i owoce dla firmy. \nDarmowy dowóz dla wszystkich klientów firmowych w promieniu 30km od Jeleniej Góry.",
       "telephone": ["75 755 28 49"],
@@ -94,10 +106,11 @@
     {
       "name": "kupjablko.pl",
       "fullName": "kupjablko.pl -punkt sprzedaży Apple | GoPro | DJI",
-      "hours": [
-        ["9:30", "17:30"], null, null, null, null, [],
-        []
-      ],
+      "hours": [{
+        "startDay": 0,
+        "endDay": 4,
+        "hours": ["9:30", "17:30"]
+      }],
       "additionalInfo": "Dostawy bez dodatkowych opłat realizujemy przez firmę kurierską DHL.",
       "telephone": ["75 643 60 44"],
       "www": "kupjablko.pl",
@@ -111,10 +124,11 @@
     {
       "name": "Ekonomiczna Pomarańcza",
       "fullName": "Ekonomiczna Pomarańcza Agnieszka Szumilak",
-      "hours": [
-        ["9", "12"], null, null, null, null, [],
-        []
-      ],
+      "hours": [{
+        "startDay": 0,
+        "endDay": 4,
+        "hours": ["9", "12"]
+      }],
       "additionalInfo": "Prowadzimy obiady na wywóz od poniedziałku do piątku czekamy na zamówienie od 09.00-12.00 cena 16 zł za osobę",
       "telephone": ["604 820 698"],
       "facebook": "https://www.facebook.com/Ekonomiczna-Pomarańcza-226462724476863/",
@@ -148,9 +162,15 @@
     },
     {
       "name": "Pierogarnia z Gitarą i Piórem",
-      "hours": [
-        ["10", "17"], null, null, null, null, ["10", "15"],
-        []
+      "hours": [{
+          "startDay": 0,
+          "endDay": 4,
+          "hours": ["10", "17"]
+        },
+        {
+          "startDay": 5,
+          "hours": ["10", "15"]
+        }
       ],
       "additionalInfo": "Prowadzimy sprzedaż naszych pierogów ciepłych gotowych do zjedzenia lub zimnych do przechowywania w lodówce lub zamrożenia. Wszelkie informacje codziennie na naszym Facebooku.",
       "telephone": ["789 093 292"],
@@ -161,10 +181,38 @@
       "district": "Centrum"
     },
     {
-      "name": " Gawełczyk Bary Restauracyjne",
-      "hours": [
-        ["9", "14"], null, null, null, null, null, []
+      "name": "Twoja Ulubiona Restauracja",
+      "hours": [{
+          "startDay": 0,
+          "endDay": 2,
+          "hours": ["10", "17"]
+        },
+        {
+          "startDay": 3,
+          "endDay": 4,
+          "hours": ["11", "22"]
+        },
+        {
+          "startDay": 5,
+          "hours": ["10", "15"]
+        }
       ],
+      "additionalInfo": "Sprzedajemy Twoje ulubione dania w najlepszych cenach w mieście. Tylko u nas mozesz zakupić dania na wynos lub na dowóz. Wprowadziliśmy dla Ciebie takze dostawe bez kontaktową. Gwarantujemy super smak w super cenie!.",
+      "telephone": ["555 555 555"],
+      "facebook": "https://www.facebook.com/TwojaKnajpaJgoraPL/",
+      "www": "www.twojaUlubionaRestauracja.jgora.pl",
+      "type": "RESTAURANTS",
+      "isFavorite": false,
+      "amenities": ["TRANSPORT", "PICKUP", "NO_CONTACT_DELIVER"],
+      "district": "Centrum"
+    },
+    {
+      "name": " Gawełczyk Bary Restauracyjne",
+      "hours": [{
+        "startDay": 0,
+        "endDay": 5,
+        "hours": ["9", "14"]
+      }],
       "www": " www.obiady.jgora.pl",
       "additionalInfo": "Prowadzimy działalność gastronomiczną na terenie Jeleniej Góry oraz okolic. Kuchnia Polska (Mięsa, Pierogi, Dania wegetariańskie, naleśniki itp). W menu mogą znaleźć Państwo kuchnie Polską, ale również wegetariańską, codziennie do wyboru 2-3 zupy oraz 5 drugich dań z różnymi dodatkami. Można zamawiać w opakowaniach ekologicznych. Cena zestawu zupa + drugie danie 17 zł. Sklep internetowy znajduje się na naszej stronie www.obiady.jgora.pl",
       "telephone": ["792 030 733"],
@@ -177,9 +225,9 @@
     {
       "name": "Lord Lounge",
       "fillName": "Restauracja Lord Lounge",
-      "hours": [
-        ["11", "22"]
-      ],
+      "hours": [{
+        "hours": ["11", "22"]
+      }],
       "www": "www.restauracjalord.pl",
       "additionalInfo": "Nasze menu można znaleźć na www.restauracjalord.pl, oraz na portalach pyszne.pl, pizza portal oraz Glovo. Dowozimy zarówno na terenie Jeleniej Góry jak i w dalszych lokalizacjach.",
       "telephone": ["570 581 896", "573 000 504"],
