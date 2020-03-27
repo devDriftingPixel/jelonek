@@ -58,7 +58,7 @@ export abstract class AbstractScreen extends Component<Props> {
 
   componentDidMount() {
     Analytics.trackEvent(`Open page: ${this.pageName}`, {
-      Category: Enums.AnaliticsCategories.NAVIGATION,
+      Category: Enums.AnalyticsCategories.NAVIGATION,
     });
   }
 

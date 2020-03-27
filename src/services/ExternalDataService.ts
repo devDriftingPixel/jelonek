@@ -29,6 +29,10 @@ export class ExternalDataService {
     return ExternalDataService.getItems(DataItemTypes.RESTAURANTS);
   }
 
+  public static getChemists(): Promise<ListItem[]> {
+    return ExternalDataService.getItems(DataItemTypes.CHEMIST);
+  }
+
   public static getFavorites(): ListItem[] {
     return dataStorage.objects.filter((object: ListItem) => object.isFavorite);
   }

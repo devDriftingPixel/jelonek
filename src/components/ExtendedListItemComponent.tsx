@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Text, View} from 'react-native';
+import {Text, View, Linking} from 'react-native';
 import * as Colors from '../utility/Colors';
 import * as Images from '../utility/Images';
 import {Ripple, Icon, Card} from 'material-bread';
@@ -9,19 +9,22 @@ import * as Styles from '../utility/UstilityStyles';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Entypo from 'react-native-vector-icons/Entypo';
+import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import {Utility} from '../utility/Utility';
 import {ListItem} from '../model/ListItem';
 import * as Costants from '../utility/Constants';
+import {OpenHours} from './OpenHours';
 
 interface Props {
   item: ListItem;
   onFavoriteSelected: Function;
 }
 
-export class ListItemComponent extends Component<Props> {
+export class ExtendedListItemComponent extends Component<Props> {
   public render() {
     return (
-      <Card style={[Styles.styles.shadow, Styles.styles.itemList]}>
+      <Card
+        style={[Styles.styles.shadow, Styles.styles.itemList, {height: 320}]}>
         <View
           style={{
             height: 35,
@@ -78,6 +81,52 @@ export class ListItemComponent extends Component<Props> {
           </Text>
           {/**Place holder for Icon balancing */}
           <View style={{width: 62, height: 40}} />
+        </View>
+        <Ripple
+          style={{
+            flexDirection: 'row',
+            backgroundColor: Colors.ACCENT,
+            height: 50,
+            width: '100%',
+            justifyContent: 'center',
+            alignItems: 'center',
+            marginTop: 30,
+          }}
+          rippleColor={Colors.PRIMARY}
+          onPress={() => {
+            Linking.openURL(`tel:${this.props.item.telephone[0]}`);
+          }}>
+          <Icon
+            name={'phone'}
+            size={30}
+            color={Colors.PRIMARY}
+            style={{width: 30, height: 30, marginRight: 20, marginLeft: 20}}
+            iconComponent={FontAwesome5}
+          />
+          <Text style={{color: Colors.PRIMARY, fontSize: 30}}>
+            {this.props.item.telephone[0]}
+          </Text>
+        </Ripple>
+        <View style={{marginLeft: 40}}>
+          <OpenHours hours={this.props.item.hours} />
+        </View>
+        <View
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            width: '100%',
+            marginLeft: 51,
+          }}>
+          <Icon
+            name={'location'}
+            size={55}
+            color={Colors.PRIMARY}
+            style={{width: 45, height: 45, marginRight: 20}}
+            iconComponent={EvilIcons}
+          />
+          <Text style={{color: Colors.PRIMARY, fontSize: 16}}>
+            {this.props.item.address}
+          </Text>
         </View>
         <View
           style={{

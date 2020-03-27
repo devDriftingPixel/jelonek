@@ -1,5 +1,8 @@
 import {DataItemTypes, DataItemSubtypes} from '../model/Enums';
 import App from '../../App';
+import {Linking} from 'react-native';
+import * as Enums from '../model/Enums';
+import Analytics from 'appcenter-analytics';
 
 export class Utility {
   public static iconFromItemType(
@@ -88,5 +91,21 @@ export class Utility {
       default:
         return hour;
     }
+  }
+
+  public static openLink(url: string) {
+    const containsHttpPrefix = url.indexOf('http') > -1;
+    Linking.canOpenURL(containsHttpPrefix ? url : `http://${url}`).then(
+      (supported: boolean) => {
+        if (supported) {
+          Linking.openURL(containsHttpPrefix ? url : `http://${url}`);
+        } else {
+          console.log("Don't know how to open URI: " + url);
+          Analytics.trackEvent('Close Favorite panel on MainMenu', {
+            Category: Enums.AnalyticsCategories.NAVIGATION,
+          });
+        }
+      },
+    );
   }
 }

@@ -20,6 +20,7 @@ export class URLComponent extends React.Component<Props> {
           alignItems: 'center',
           marginVertical: 4,
         }}
+        onPress={this.props.onPress}
         rippleColor={Colors.ACCENT}>
         <View
           style={{

@@ -20,4 +20,5 @@ export interface ListItem {
   hours: Hours[];
   www: string;
   facebook: string;
+  address: string;
 }

@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {NavigationStackProp} from 'react-navigation-stack';
 import {AbstractScreen} from './AbstractScreen';
 import {FlatList} from 'react-native-gesture-handler';
@@ -8,7 +8,7 @@ import {ListItemComponent} from '../components/ListItemComponent';
 import {BottomNavigation} from '../components/BottonNavigation';
 import * as Constants from '../utility/Constants';
 import App from '../../App';
-import {Amenities, AnaliticsCategories} from '../model/Enums';
+import {Amenities, AnalyticsCategories} from '../model/Enums';
 import Analytics from 'appcenter-analytics';
 import {Ripple} from 'material-bread';
 import * as Colors from '../utility/Colors';
@@ -106,7 +106,7 @@ export class ScreenShops extends AbstractScreen {
 
   onSelectionChange(selectedAmenities: Amenities) {
     Analytics.trackEvent(`Filter items by amenities: ${selectedAmenities}`, {
-      Category: AnaliticsCategories.USER_EXPERIENCE,
+      Category: AnalyticsCategories.USER_EXPERIENCE,
     });
 
     this.setState({

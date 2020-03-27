@@ -28,8 +28,9 @@ export enum DataItemSubtypes {
   ELECTRONICS = 'ELECTRONICS',
 }
 
-export enum AnaliticsCategories {
+export enum AnalyticsCategories {
   USER_EXPERIENCE = 'User Experience',
   NAVIGATION = 'Navigation',
   FUN = 'Fun',
+  FAIL = 'Fail',
 }

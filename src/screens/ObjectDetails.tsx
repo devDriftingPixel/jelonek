@@ -12,6 +12,7 @@ import {URLComponent} from '../components/URLComponent';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import App from '../../App';
+import {Utility} from '../utility/Utility';
 
 type Props = {
   navigation?: NavigationStackProp;
@@ -88,6 +89,7 @@ export class ScreenObjectDetails extends Component<Props> {
                     content={this.item.www}
                     iconName={'web'}
                     iconComponent={MaterialCommunityIcons}
+                    onPress={() => Utility.openLink(this.item.www)}
                   />
                 ) : null}
                 {this.item.facebook ? (
@@ -95,6 +97,7 @@ export class ScreenObjectDetails extends Component<Props> {
                     content={App.translate('SeeObjectFacebook')}
                     iconName={'facebook-square'}
                     iconComponent={FontAwesome5}
+                    onPress={() => Utility.openLink(this.item.facebook)}
                   />
                 ) : null}
               </View>

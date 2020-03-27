@@ -248,7 +248,7 @@
     {
       "name": "ARNIKA",
       "district": "Cieplice",
-      "address": "Plac Piastowski 40, 58-560 Jelenia Góra",
+      "address": "Plac Piastowski 40, \n58-560 Jelenia Góra",
       "telephone": ["756 453 000"],
       "hours": [{
           "startDay": 0,

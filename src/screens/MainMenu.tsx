@@ -78,6 +78,7 @@ export class ScreenMainMenu extends Component<Props> {
           <FavoritesList
             data={this.state.favorites}
             onUnFavoriteItem={this.onUnFavoriteItem.bind(this)}
+            navigation={this.props.navigation}
           />
         )}
       </View>

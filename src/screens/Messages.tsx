@@ -7,7 +7,7 @@ import {ExternalDataService} from '../services/ExternalDataService';
 import {ListItemComponent} from '../components/ListItemComponent';
 import * as Constants from '../utility/Constants';
 import App from '../../App';
-import {Amenities, AnaliticsCategories} from '../model/Enums';
+import {Amenities, AnalyticsCategories} from '../model/Enums';
 import Analytics from 'appcenter-analytics';
 import {Message} from '../model/Message';
 import {View} from 'react-native';

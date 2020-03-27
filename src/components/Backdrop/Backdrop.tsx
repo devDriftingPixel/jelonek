@@ -94,12 +94,12 @@ class Backdrop extends PureComponent<Props> {
 
     if (backConcealed) {
       Analytics.trackEvent('Open Favorite panel on MainMenu', {
-        Category: Enums.AnaliticsCategories.NAVIGATION,
+        Category: Enums.AnalyticsCategories.NAVIGATION,
       });
       this.setState({backRevealed: true, iconName: 'close'});
     } else {
       Analytics.trackEvent('Close Favorite panel on MainMenu', {
-        Category: Enums.AnaliticsCategories.NAVIGATION,
+        Category: Enums.AnalyticsCategories.NAVIGATION,
       });
       this.setState({backConcealed: true, iconName: 'favorite'});
     }

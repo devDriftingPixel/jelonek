@@ -61,7 +61,7 @@ export class ZeroFavorites extends React.Component<Props> {
   handleIconFavoriteZeroClick(): void {
     if (!this.state.messageStay)
       Analytics.trackEvent('On empty favorite list - Icon clicked!', {
-        Category: Enums.AnaliticsCategories.FUN,
+        Category: Enums.AnalyticsCategories.FUN,
       });
 
     this.setState({
