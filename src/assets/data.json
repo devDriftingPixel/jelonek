@@ -1,9 +1,11 @@
 {
-  "objects": [
-    {
+  "objects": [{
       "name": "Zielony Stragan",
       "fullName": "Zielony Stragan – delikatesy warzywno-owocowe",
-      "hours": [["8", "17"], null, null, null, null, ["8", "14"], []],
+      "hours": [
+        ["8", "17"], null, null, null, null, ["8", "14"],
+        []
+      ],
       "additionalInfo": "Dowóz do wszystkich klientów bez dodatkowych opłat oraz minimum logistycznego.",
       "contectName": "Jacek",
       "telephone": ["660 522 763"],
@@ -53,7 +55,10 @@
     {
       "name": "SEREK - dla firm",
       "fullName": "SEREK – Hurtownia warzyw i owoców",
-      "hours": [["5", "12"], null, null, null, null, ["5", "11"], []],
+      "hours": [
+        ["5", "12"], null, null, null, null, ["5", "11"],
+        []
+      ],
       "additionalInfo": "Tu kupisz: warzywa i owoce dla firmy. \nDarmowy dowóz dla wszystkich klientów firmowych w promieniu 30km od Jeleniej Góry.",
       "telephone": ["75 755 28 49"],
       "address": "Jelenia Góra,\nul. Wolności 167",
@@ -81,7 +86,7 @@
       "www": "https://www.cz-pl-service.com/pl/produktow-w-magazynie/",
       "address": "Zachełmie 22, 58-562 Podgórzyn",
       "type": "SHOPS",
-      "subType": "VEGETABLES",
+      "subType": "FOOD",
       "isFavorite": false,
       "district": "ZACHELMIE",
       "amenities": ["TRANSPORT"]
@@ -89,7 +94,10 @@
     {
       "name": "kupjablko.pl",
       "fullName": "kupjablko.pl -punkt sprzedaży Apple | GoPro | DJI",
-      "hours": [["9:30", "17:30"], null, null, null, null, [], []],
+      "hours": [
+        ["9:30", "17:30"], null, null, null, null, [],
+        []
+      ],
       "additionalInfo": "Dostawy bez dodatkowych opłat realizujemy przez firmę kurierską DHL.",
       "telephone": ["75 643 60 44"],
       "www": "kupjablko.pl",
@@ -103,7 +111,10 @@
     {
       "name": "Ekonomiczna Pomarańcza",
       "fullName": "Ekonomiczna Pomarańcza Agnieszka Szumilak",
-      "hours": [["9", "12"], null, null, null, null, [], []],
+      "hours": [
+        ["9", "12"], null, null, null, null, [],
+        []
+      ],
       "additionalInfo": "Prowadzimy obiady na wywóz od poniedziałku do piątku czekamy na zamówienie od 09.00-12.00 cena 16 zł za osobę",
       "telephone": ["604 820 698"],
       "facebook": "https://www.facebook.com/Ekonomiczna-Pomarańcza-226462724476863/",
@@ -137,7 +148,10 @@
     },
     {
       "name": "Pierogarnia z Gitarą i Piórem",
-      "hours": [["10", "17"], null, null, null, null, ["10", "15"], []],
+      "hours": [
+        ["10", "17"], null, null, null, null, ["10", "15"],
+        []
+      ],
       "additionalInfo": "Prowadzimy sprzedaż naszych pierogów ciepłych gotowych do zjedzenia lub zimnych do przechowywania w lodówce lub zamrożenia. Wszelkie informacje codziennie na naszym Facebooku.",
       "telephone": ["789 093 292"],
       "facebook": "https://www.facebook.com/PierogarniaGitaraiPiorem/",
@@ -148,7 +162,9 @@
     },
     {
       "name": " Gawełczyk Bary Restauracyjne",
-      "hours": [["9", "14"], null, null, null, null, null, []],
+      "hours": [
+        ["9", "14"], null, null, null, null, null, []
+      ],
       "www": " www.obiady.jgora.pl",
       "additionalInfo": "Prowadzimy działalność gastronomiczną na terenie Jeleniej Góry oraz okolic. Kuchnia Polska (Mięsa, Pierogi, Dania wegetariańskie, naleśniki itp). W menu mogą znaleźć Państwo kuchnie Polską, ale również wegetariańską, codziennie do wyboru 2-3 zupy oraz 5 drugich dań z różnymi dodatkami. Można zamawiać w opakowaniach ekologicznych. Cena zestawu zupa + drugie danie 17 zł. Sklep internetowy znajduje się na naszej stronie www.obiady.jgora.pl",
       "telephone": ["792 030 733"],
@@ -161,7 +177,9 @@
     {
       "name": "Lord Lounge",
       "fillName": "Restauracja Lord Lounge",
-      "hours": [["11", "22"]],
+      "hours": [
+        ["11", "22"]
+      ],
       "www": "www.restauracjalord.pl",
       "additionalInfo": "Nasze menu można znaleźć na www.restauracjalord.pl, oraz na portalach pyszne.pl, pizza portal oraz Glovo. Dowozimy zarówno na terenie Jeleniej Góry jak i w dalszych lokalizacjach.",
       "telephone": ["570 581 896", "573 000 504"],
@@ -178,6 +196,28 @@
       "isFavorite": false,
       "amenities": ["TRANSPORT"],
       "district": "Centrum"
+    }
+  ],
+  "messages": [{
+      "createDate": "2020-02-22T09:51:29.829Z",
+      "editDate": "2020-02-22T09:51:29.829Z",
+      "title": "Pamiętajmy o seniorach w czasie pandemii",
+      "short": "Wychodzimy naprzeciw obecnie panującej sytuacji i zwracamy szczególną uwagę w czasie pandemii na Seniorów – grupę osób w wieku 60+.",
+      "content": "Wychodzimy naprzeciw obecnie panującej sytuacji i zwracamy szczególną uwagę w czasie pandemii na Seniorów – grupę osób w wieku 60+. Ta część społeczeństwa jest najbardziej narażona na zarażenie chorobą COVID-19 wywołaną przez koronawirusa SARS-Cov-2. Dla Seniorów, których odporność jest często niższa niż osób w młodszym wieku, konsekwencje zachorowania są dużo bardziej dotkliwe. Wspierajmy Seniorów pamiętając o zasadach bezpieczeństwa.\n\nSTOP KORONA-OSZUSTWOM\n\nWyjątkowa sytuacja powoduje, że do „pomocy” włączają się również oszuści, dostrzegając szybki i łatwy zysk w obliczu wybuchu społecznej paniki. Wszechobecny lęk, szczególnie wśród osób w wieku 60+, skrzętnie wykorzystują manipulatorzy na wielu płaszczyznach. Działają w Internecie, ale też w kontakcie bezpośrednim. Informacje na ten temat spływają do policji z całej Polski. Oszuści sprzedają w Internecie różnego typu środki (np. lekarstwa, suplementy, herbaty czy amulety), których działanie ma uchronić osobę przed zachorowaniem na koronawirusa. Coraz częściej dochodzi także do działań bezpośrednich. Delikwenci podszywają się pod lekarzy, pracowników Sanepidu czy służby mundurowe i w trakcie wizyty w domu ofiary, kradną pieniądze i inne przedmioty."
+    },
+    {
+      "createDate": "2020-02-22T10:51:29.829Z",
+      "editDate": "2020-02-22T10:51:29.829Z",
+      "title": "Godzina dla seniorów",
+      "short": "Sieć Tesco wprowadza specjalne godziny na zakupy dla osób z grupy podwyższonego ryzyka, w szczególności dla osób starszych.",
+      "content": "Zgodnie z zaleceniami, osoby z grupy podwyższonego ryzyka powinny jak najmniej wychodzić z domów – jednak nie zawsze jest to możliwe. Celem akcji jest umożliwienie osobom starszym sprawne zrobienie najpilniejszych zakupów. Dzięki temu będą mogli szybciej wrócić do domu i będą mniej narażeni na zarażenie koronawirusem. Akcja będzie prowadzona codziennie w godzinach 9-10. W tym czasie seniorzy mogą liczyć na wsparcie obsługi sklepów oraz pierwszeństwo w kolejkach do kas. W trakcie specjalnych godzin sklepy Tesco pozostaną otwarte dla wszystkich klientów, ale sieć handlowa prosi swoich pozostałych klientów o zrozumienie i ustępowanie pierwszeństwa osobom starszym w wyznaczonym czasie."
+    },
+    {
+      "createDate": "2020-02-22T09:55:29.829Z",
+      "editDate": "2020-02-22T11:51:29.829Z",
+      "title": "Kolejne zmiany w komunikacji miejskiej",
+      "short": "W związku z nowymi ograniczeniami, w trosce o zdrowie mieszkańców Jeleniej Góry i pozostałych gmin, od 25 marca (środa) Miejski Zakład Komunikacyjny wprowadza kolejne zmiany w funkcjonowaniu komunikacji miejskiej",
+      "content": "W związku z nowymi ograniczeniami, w trosce o zdrowie mieszkańców Jeleniej Góry i pozostałych gmin, od 25 marca (środa) Miejski Zakład Komunikacyjny wprowadza kolejne zmiany w funkcjonowaniu komunikacji miejskiej:\n\nMZK informuje:\n\n1. Linie najbardziej obciążone obsługiwać będą autobusy, o największej liczbie dostępnych miejsc siedzących, w szczególności autobusy przegubowe.\n\n2. W każdym autobusie jednorazowo będzie mogła podróżować liczba pasażerów nie większa niż połowa znajdujących się w tym autobusie miejsc siedzących. Szacunkowo jest to od 15 osób w nowych autobusach typy Volvo i Man – do 25 osób w autobusach przegubowych.\n\n3. Na bieżąco będziemy monitorować sytuację w autobusach i podejmować adekwatne działania. Tak jak do tej pory prosimy Państwa o uwagi i spostrzeżenia.\n\n4. Sytuacja jest trudna dla nas wszystkich, dlatego prosimy o wyrozumiałość dla wprowadzanych zmian. Mogą wystąpić przejściowe trudności, które mamy nadzieję szybko zażegnać. Pracujemy codziennie, aby każdy z Państwa czuł się w naszych autobusach bezpiecznie.\n\n5. Dołożymy wszelkich starań, aby w ciągu najbliższych dni możliwie najlepiej dopasować komunikację miejską do zmienionych zasad jej funkcjonowania i sprostać Państwa oczekiwaniom."
     }
   ]
 }

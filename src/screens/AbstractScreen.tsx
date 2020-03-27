@@ -2,13 +2,14 @@ import React, {Component} from 'react';
 import {Text, View} from 'react-native';
 import {NavigationStackProp} from 'react-navigation-stack';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import {Appbar} from 'material-bread';
+import {Appbar, ProgressBar} from 'material-bread';
 import Analytics from 'appcenter-analytics';
 import * as Enums from '../model/Enums';
 import * as Colors from '../utility/Colors';
 import {ScrollView} from 'react-native-gesture-handler';
 import {ListItem} from '../model/ListItem';
 import {ExternalDataService} from '../services/ExternalDataService';
+import {Message} from '../model/Message';
 
 type Props = {
   navigation?: NavigationStackProp;
@@ -27,9 +28,10 @@ export abstract class AbstractScreen extends Component<Props> {
   }
 
   state = {
-    items: [] as ListItem[],
+    items: [] as ListItem[] | Message[],
     errorMessage: ``,
     activeItem: 0,
+    progressBarVisible: true,
   };
 
   protected pageContent() {
@@ -81,6 +83,15 @@ export abstract class AbstractScreen extends Component<Props> {
               {this.state.errorMessage}
             </Text>
           </ScrollView>
+        ) : null}
+        {this.state.progressBarVisible ? (
+          <ProgressBar
+            visible
+            indicatorStartPosition={0}
+            color={Colors.ACCENT}
+            height={15}
+            style={{margin: 20}}
+          />
         ) : null}
         <this.pageContent />
         <this.footerContent />

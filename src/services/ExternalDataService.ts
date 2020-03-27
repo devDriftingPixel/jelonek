@@ -1,11 +1,25 @@
 import {DataStorage} from '../model/DataStorage';
 import {ListItem} from '../model/ListItem';
 import {DataItemTypes} from '../model/Enums';
+import {Message} from '../model/Message';
 
 const dataStorage: DataStorage = require('../assets/data.json');
 
 export class ExternalDataService {
   constructor() {}
+
+  public static getMessages(): Promise<Message[]> {
+    return new Promise((resolve: Function, reject: Function) => {
+      try {
+        const result = dataStorage.messages;
+        setTimeout(() => {
+          resolve(result);
+        }, 2000);
+      } catch (exception) {
+        reject(exception);
+      }
+    });
+  }
 
   public static getShops(): Promise<ListItem[]> {
     return ExternalDataService.getItems(DataItemTypes.SHOPS);

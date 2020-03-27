@@ -1,4 +1,5 @@
 import {DataItemTypes, DataItemSubtypes} from '../model/Enums';
+import App from '../../App';
 
 export class Utility {
   public static iconFromItemType(
@@ -27,5 +28,24 @@ export class Utility {
           }
         }
     }
+  }
+
+  public static getNameOfMonth(monthIndex: number): string {
+    const monthNames = [
+      App.translate('January'),
+      App.translate('February'),
+      App.translate('March'),
+      App.translate('April'),
+      App.translate('May'),
+      App.translate('June'),
+      App.translate('July'),
+      App.translate('August'),
+      App.translate('September'),
+      App.translate('October'),
+      App.translate('November'),
+      App.translate('December'),
+    ];
+
+    return monthNames[monthIndex];
   }
 }
