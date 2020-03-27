@@ -4,7 +4,7 @@ import {NavigationStackProp} from 'react-navigation-stack';
 
 import {SafeAreaView} from 'react-native-safe-area-context';
 import * as Colors from '../utility/Colors';
-import {Avatar, IconButton} from 'material-bread';
+import {Avatar, IconButton, ListItem} from 'material-bread';
 import Backdrop from '../components/Backdrop/Backdrop';
 
 import App from '../../App';
@@ -32,6 +32,11 @@ export class ScreenMainMenu extends Component<Props> {
 
   private willFocus() {
     this.setState({favorites: ExternalDataService.getFavorites()});
+  }
+
+  private onUnFavoriteItem(item: ListItem) {
+    ExternalDataService.changeFavorite(item);
+    this.willFocus();
   }
 
   componentDidMount() {
@@ -70,7 +75,10 @@ export class ScreenMainMenu extends Component<Props> {
         {this.state.favorites.length == 0 ? (
           <ZeroFavorites />
         ) : (
-          <FavoritesList data={this.state.favorites} />
+          <FavoritesList
+            data={this.state.favorites}
+            onUnFavoriteItem={this.onUnFavoriteItem.bind(this)}
+          />
         )}
       </View>
     );

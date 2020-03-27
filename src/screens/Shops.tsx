@@ -12,6 +12,7 @@ import {Amenities, AnaliticsCategories} from '../model/Enums';
 import Analytics from 'appcenter-analytics';
 import {Ripple} from 'material-bread';
 import * as Colors from '../utility/Colors';
+import {Utility} from '../utility/Utility';
 
 type Props = {
   navigation?: NavigationStackProp;
@@ -53,6 +54,7 @@ export class ScreenShops extends AbstractScreen {
             onPress={() =>
               this.props.navigation!.navigate('ObjectDetails', {
                 item: item,
+                iconName: Utility.iconFromItemType(item.type, item.subType),
               })
             }>
             <ListItemComponent

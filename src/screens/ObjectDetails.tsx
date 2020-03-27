@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {NavigationStackProp} from 'react-navigation-stack';
 import {Text, SafeAreaView, ScrollView, View, StyleSheet} from 'react-native';
 import {ListItem} from '../model/ListItem';
-import {Appbar, Card} from 'material-bread';
+import {Appbar, Card, Icon} from 'material-bread';
 import * as Colors from '../utility/Colors';
 import {Fab} from '../components/Fab';
 import {Linking} from 'react-native';
@@ -19,11 +19,13 @@ type Props = {
 
 export class ScreenObjectDetails extends Component<Props> {
   private item: ListItem;
+  private iconName: string;
 
   constructor(props: Props) {
     super(props);
     const {params} = this.props.navigation!.state;
     this.item = params!.item;
+    this.iconName = params!.iconName;
   }
 
   render() {
@@ -54,6 +56,13 @@ export class ScreenObjectDetails extends Component<Props> {
                 marginVertical: 20,
                 marginHorizontal: 20,
               }}>
+              <Icon
+                name={this.iconName}
+                size={45}
+                color={Colors.PRIMARY}
+                style={{width: 45, height: 45, margin: 20}}
+                iconComponent={FontAwesome5}
+              />
               <Text
                 style={{
                   textAlign: 'center',

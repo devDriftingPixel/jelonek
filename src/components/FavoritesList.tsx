@@ -6,6 +6,7 @@ import {ListItemComponent} from './ListItemComponent';
 
 interface Props {
   data: ListItem[];
+  onUnFavoriteItem: Function;
 }
 
 export class FavoritesList extends React.Component<Props> {
@@ -16,7 +17,9 @@ export class FavoritesList extends React.Component<Props> {
           <ListItemComponent
             key={index}
             item={item}
-            onFavoriteSelected={() => {}}
+            onFavoriteSelected={(item: ListItem) =>
+              this.props.onUnFavoriteItem(item)
+            }
           />
         ))}
       </ScrollView>

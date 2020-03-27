@@ -244,6 +244,28 @@
       "isFavorite": false,
       "amenities": ["TRANSPORT"],
       "district": "Centrum"
+    },
+    {
+      "name": "ARNIKA",
+      "district": "Cieplice",
+      "address": "Plac Piastowski 40, 58-560 Jelenia Góra",
+      "telephone": ["756 453 000"],
+      "hours": [{
+          "startDay": 0,
+          "endDay": 4,
+          "hours": ["8", "20"]
+        },
+        {
+          "startDay": 5,
+          "hours": ["9", "15"]
+        },
+        {
+          "startDay": 6,
+          "hours": ["9", "13"]
+        }
+      ],
+      "type": "CHEMIST",
+      "isFavorite": false
     }
   ],
   "messages": [{
