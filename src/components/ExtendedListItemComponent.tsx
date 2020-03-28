@@ -17,7 +17,7 @@ import {OpenHours} from './OpenHours';
 
 interface Props {
   item: ListItem;
-  onFavoriteSelected: Function;
+  onFavoriteSelected?: Function;
 }
 
 export class ExtendedListItemComponent extends Component<Props> {
@@ -31,28 +31,30 @@ export class ExtendedListItemComponent extends Component<Props> {
             width: '100%',
             flexDirection: 'row-reverse',
           }}>
-          <Ripple
-            rippleContainerBorderRadius={20}
-            rippleColor={Colors.PRIMARY}
-            onPress={() => {
-              this.props.onFavoriteSelected(this.props.item);
-            }}
-            style={{
-              width: 40,
-              height: 40,
-              marginRight: 7,
-              marginTop: 5,
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}>
-            <Icon
-              name={this.props.item.isFavorite ? 'heart' : 'heart-o'}
-              size={32}
-              color={Colors.PRIMARY}
-              style={{width: 32, height: 32}}
-              iconComponent={FontAwesome}
-            />
-          </Ripple>
+          {this.props.onFavoriteSelected ? (
+            <Ripple
+              rippleContainerBorderRadius={20}
+              rippleColor={Colors.PRIMARY}
+              onPress={() => {
+                this.props.onFavoriteSelected!(this.props.item);
+              }}
+              style={{
+                width: 40,
+                height: 40,
+                marginRight: 7,
+                marginTop: 5,
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>
+              <Icon
+                name={this.props.item.isFavorite ? 'heart' : 'heart-o'}
+                size={32}
+                color={Colors.PRIMARY}
+                style={{width: 32, height: 32}}
+                iconComponent={FontAwesome}
+              />
+            </Ripple>
+          ) : null}
         </View>
         <View style={{flex: 1, flexDirection: 'row', alignItems: 'center'}}>
           <Icon
@@ -94,7 +96,7 @@ export class ExtendedListItemComponent extends Component<Props> {
           }}
           rippleColor={Colors.PRIMARY}
           onPress={() => {
-            Linking.openURL(`tel:${this.props.item.telephone[0]}`);
+            Linking.openURL(`tel:${this.props.item.phones[0]}`);
           }}>
           <Icon
             name={'phone'}
@@ -104,12 +106,14 @@ export class ExtendedListItemComponent extends Component<Props> {
             iconComponent={FontAwesome5}
           />
           <Text style={{color: Colors.PRIMARY, fontSize: 30}}>
-            {this.props.item.telephone[0]}
+            {this.props.item.phones[0]}
           </Text>
         </Ripple>
-        <View style={{marginLeft: 40}}>
-          <OpenHours hours={this.props.item.hours} />
-        </View>
+        {this.props.item.hours ? (
+          <View style={{marginLeft: 40}}>
+            <OpenHours hours={this.props.item.hours} />
+          </View>
+        ) : null}
         <View
           style={{
             flexDirection: 'row',

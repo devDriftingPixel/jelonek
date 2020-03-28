@@ -2,6 +2,7 @@ import {DataStorage} from '../model/DataStorage';
 import {ListItem} from '../model/ListItem';
 import {DataItemTypes} from '../model/Enums';
 import {Message} from '../model/Message';
+import {Phone} from '../model/Phone';
 
 const dataStorage: DataStorage = require('../assets/data.json');
 
@@ -12,6 +13,19 @@ export class ExternalDataService {
     return new Promise((resolve: Function, reject: Function) => {
       try {
         const result = dataStorage.messages;
+        setTimeout(() => {
+          resolve(result);
+        }, 2000);
+      } catch (exception) {
+        reject(exception);
+      }
+    });
+  }
+
+  public static getPhones(): Promise<Phone[]> {
+    return new Promise((resolve: Function, reject: Function) => {
+      try {
+        const result = dataStorage.phones;
         setTimeout(() => {
           resolve(result);
         }, 2000);

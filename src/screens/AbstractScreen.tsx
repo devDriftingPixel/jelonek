@@ -10,6 +10,7 @@ import {ScrollView} from 'react-native-gesture-handler';
 import {ListItem} from '../model/ListItem';
 import {ExternalDataService} from '../services/ExternalDataService';
 import {Message} from '../model/Message';
+import {Phone} from '../model/Phone';
 
 type Props = {
   navigation?: NavigationStackProp;
@@ -28,7 +29,7 @@ export abstract class AbstractScreen extends Component<Props> {
   }
 
   state = {
-    items: [] as ListItem[] | Message[],
+    items: [] as ListItem[] | Message[] | Phone[],
     errorMessage: ``,
     activeItem: 0,
     progressBarVisible: true,

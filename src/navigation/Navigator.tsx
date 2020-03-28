@@ -50,7 +50,7 @@ const stack = createStackNavigator({
       headerShown: false,
     },
   },
-  Telephones: {
+  phoness: {
     screen: ScreenPhones,
     navigationOptions: {
       headerShown: false,

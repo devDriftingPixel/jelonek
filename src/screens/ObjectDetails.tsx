@@ -103,30 +103,28 @@ export class ScreenObjectDetails extends Component<Props> {
               </View>
             </View>
           </ScrollView>
-          {this.item.telephone && this.item.telephone.length == 1 ? (
+          {this.item.phones && this.item.phones.length == 1 ? (
             <Fab
               iconName="phone"
               color={Colors.ACCENT}
               iconColor={Colors.PRIMARY}
               onPress={() => {
-                Linking.openURL(`tel:${this.item.telephone[0]}`);
+                Linking.openURL(`tel:${this.item.phones[0]}`);
               }}
             />
-          ) : this.item.telephone && this.item.telephone.length > 1 ? (
+          ) : this.item.phones && this.item.phones.length > 1 ? (
             <FabWithMultiIcons
               iconName="phone"
               color={Colors.ACCENT}
               iconColor={Colors.PRIMARY}
-              actions={this.item.telephone.map(
-                (phone: string, index: number) => {
-                  return {
-                    iconName: 'phone',
-                    content: phone,
-                    onPress: () =>
-                      Linking.openURL(`tel:${this.item.telephone[index]}`),
-                  };
-                },
-              )}
+              actions={this.item.phones.map((phone: string, index: number) => {
+                return {
+                  iconName: 'phone',
+                  content: phone,
+                  onPress: () =>
+                    Linking.openURL(`tel:${this.item.phones[index]}`),
+                };
+              })}
             />
           ) : null}
         </Card>

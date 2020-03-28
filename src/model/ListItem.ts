@@ -15,7 +15,7 @@ export interface ListItem {
   isFavorite: boolean;
   amenities: Amenities[];
   email: [string];
-  telephone: string[];
+  phones: string[];
   additionalInfo: string;
   hours: Hours[];
   www: string;
