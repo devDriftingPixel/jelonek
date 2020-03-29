@@ -21,4 +21,5 @@ export interface ListItem {
   www: string;
   facebook: string;
   address: string;
+  htmlContent: string;
 }

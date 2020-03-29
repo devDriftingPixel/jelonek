@@ -45,6 +45,10 @@ export class ExternalDataService {
     });
   }
 
+  public static getOffices(): Promise<ListItem[]> {
+    return ExternalDataService.getItems(DataItemTypes.OFFICE);
+  }
+
   public static getShops(): Promise<ListItem[]> {
     return ExternalDataService.getItems(DataItemTypes.SHOPS);
   }

@@ -1,6 +1,13 @@
 import React, {Component} from 'react';
 import {NavigationStackProp} from 'react-navigation-stack';
-import {Text, SafeAreaView, ScrollView, View, StyleSheet} from 'react-native';
+import {
+  Text,
+  SafeAreaView,
+  ScrollView,
+  View,
+  StyleSheet,
+  Dimensions,
+} from 'react-native';
 import {ListItem} from '../model/ListItem';
 import {Appbar, Card, Icon} from 'material-bread';
 import * as Colors from '../utility/Colors';
@@ -14,6 +21,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import App from '../../App';
 import {Utility} from '../utility/Utility';
 import {AddressComponent} from '../components/AddressComponent';
+import HTML from 'react-native-render-html';
 
 type Props = {
   navigation?: NavigationStackProp;
@@ -78,15 +86,23 @@ export class ScreenObjectDetails extends Component<Props> {
                 }}>
                 {this.item.fullName ? this.item.fullName : this.item.name}
               </Text>
-              <Text
-                style={{
-                  fontSize: 16,
-                  color: Colors.DARK_TEXT,
-                  marginTop: 20,
-                  textAlign: 'justify',
-                }}>
-                {this.item.additionalInfo}
-              </Text>
+              {this.item.additionalInfo ? (
+                <Text
+                  style={{
+                    fontSize: 16,
+                    color: Colors.DARK_TEXT,
+                    marginTop: 20,
+                    textAlign: 'justify',
+                  }}>
+                  {this.item.additionalInfo}
+                </Text>
+              ) : null}
+              {this.item.htmlContent ? (
+                <HTML
+                  html={this.item.htmlContent}
+                  imagesMaxWidth={Dimensions.get('window').width}
+                />
+              ) : null}
               {this.item.hours ? <OpenHours hours={this.item.hours} /> : null}
               <View style={{width: '100%'}}>
                 {this.item.www ? (
@@ -108,6 +124,7 @@ export class ScreenObjectDetails extends Component<Props> {
               </View>
             </View>
             <AddressComponent item={this.item} />
+            <View style={{height: 20}}></View>
           </ScrollView>
           {this.item.phones && this.item.phones.length == 1 ? (
             <Fab

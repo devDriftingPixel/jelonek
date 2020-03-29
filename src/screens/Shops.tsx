@@ -70,10 +70,6 @@ export class ScreenShops extends AbstractScreen {
     );
   };
 
-  protected handleChange(value: number) {
-    this.setState({value});
-  }
-
   protected footerContent = () => {
     return (
       <BottomNavigation

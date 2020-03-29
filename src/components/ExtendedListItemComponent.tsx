@@ -87,45 +87,48 @@ export class ExtendedListItemComponent extends Component<Props> {
         {this.props.item.phones && this.props.item.phones.length > 0 ? (
           <View style={{height: 20}} />
         ) : null}
-        {this.props.item.phones.map((phone: string, index: number) => (
-          <View>
-            <View
-              style={{
-                height: index > 0 ? 1 : 0,
-                backgroundColor: Colors.PRIMARY,
-                width: '100%',
-              }}
-            />
-            <Ripple
-              key={index.toString()}
-              style={{
-                flexDirection: 'row',
-                backgroundColor: Colors.ACCENT,
-                height: 50,
-                width: '100%',
-                justifyContent: 'center',
-                alignItems: 'center',
-              }}
-              rippleColor={Colors.PRIMARY}
-              onPress={() => {
-                Linking.openURL(`tel:${phone}`);
-              }}>
-              <Icon
-                name={'phone'}
-                size={30}
-                color={Colors.PRIMARY}
-                style={{
-                  width: 30,
-                  height: 30,
-                  marginRight: 20,
-                  marginLeft: 20,
-                }}
-                iconComponent={FontAwesome5}
-              />
-              <Text style={{color: Colors.PRIMARY, fontSize: 30}}>{phone}</Text>
-            </Ripple>
-          </View>
-        ))}
+        {this.props.item.phones
+          ? this.props.item.phones.map((phone: string, index: number) => (
+              <View key={index.toString()}>
+                <View
+                  style={{
+                    height: index > 0 ? 1 : 0,
+                    backgroundColor: Colors.PRIMARY,
+                    width: '100%',
+                  }}
+                />
+                <Ripple
+                  style={{
+                    flexDirection: 'row',
+                    backgroundColor: Colors.ACCENT,
+                    height: 50,
+                    width: '100%',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}
+                  rippleColor={Colors.PRIMARY}
+                  onPress={() => {
+                    Linking.openURL(`tel:${phone}`);
+                  }}>
+                  <Icon
+                    name={'phone'}
+                    size={30}
+                    color={Colors.PRIMARY}
+                    style={{
+                      width: 30,
+                      height: 30,
+                      marginRight: 20,
+                      marginLeft: 20,
+                    }}
+                    iconComponent={FontAwesome5}
+                  />
+                  <Text style={{color: Colors.PRIMARY, fontSize: 30}}>
+                    {phone}
+                  </Text>
+                </Ripple>
+              </View>
+            ))
+          : null}
         {this.props.item.hours ? (
           <View style={{marginLeft: 40}}>
             <OpenHours hours={this.props.item.hours} />

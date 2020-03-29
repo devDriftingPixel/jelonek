@@ -19,6 +19,7 @@ export enum DataItemTypes {
   SHOPS = 'SHOPS',
   CHEMIST = 'CHEMIST',
   MEDIC = 'MEDIC',
+  OFFICE = 'OFFICE',
 }
 
 export enum DataItemSubtypes {

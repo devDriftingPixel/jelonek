@@ -36,6 +36,11 @@ export class Utility {
           default:
             return 'clinic-medical';
         }
+      case DataItemTypes.OFFICE:
+        switch (subType) {
+          default:
+            return 'building';
+        }
     }
   }
 

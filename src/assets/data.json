@@ -1,8 +1,10 @@
 {
-  "objects": [{
+  "objects": [
+    {
       "name": "Zielony Stragan",
       "fullName": "Zielony Stragan – delikatesy warzywno-owocowe",
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["8", "17"]
@@ -61,7 +63,8 @@
     {
       "name": "SEREK - dla firm",
       "fullName": "SEREK – Hurtownia warzyw i owoców",
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["5", "12"]
@@ -106,11 +109,13 @@
     {
       "name": "kupjablko.pl",
       "fullName": "kupjablko.pl -punkt sprzedaży Apple | GoPro | DJI",
-      "hours": [{
-        "startDay": 0,
-        "endDay": 4,
-        "hours": ["9:30", "17:30"]
-      }],
+      "hours": [
+        {
+          "startDay": 0,
+          "endDay": 4,
+          "hours": ["9:30", "17:30"]
+        }
+      ],
       "additionalInfo": "Dostawy bez dodatkowych opłat realizujemy przez firmę kurierską DHL.",
       "phones": ["75 643 60 44"],
       "www": "kupjablko.pl",
@@ -124,11 +129,13 @@
     {
       "name": "Ekonomiczna Pomarańcza",
       "fullName": "Ekonomiczna Pomarańcza Agnieszka Szumilak",
-      "hours": [{
-        "startDay": 0,
-        "endDay": 4,
-        "hours": ["9", "12"]
-      }],
+      "hours": [
+        {
+          "startDay": 0,
+          "endDay": 4,
+          "hours": ["9", "12"]
+        }
+      ],
       "additionalInfo": "Prowadzimy obiady na wywóz od poniedziałku do piątku czekamy na zamówienie od 09.00-12.00 cena 16 zł za osobę",
       "phones": ["604 820 698"],
       "facebook": "https://www.facebook.com/Ekonomiczna-Pomarańcza-226462724476863/",
@@ -162,7 +169,8 @@
     },
     {
       "name": "Pierogarnia z Gitarą i Piórem",
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["10", "17"]
@@ -182,7 +190,8 @@
     },
     {
       "name": "Twoja Ulubiona Restauracja",
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 2,
           "hours": ["10", "17"]
@@ -208,11 +217,13 @@
     },
     {
       "name": " Gawełczyk Bary Restauracyjne",
-      "hours": [{
-        "startDay": 0,
-        "endDay": 5,
-        "hours": ["9", "14"]
-      }],
+      "hours": [
+        {
+          "startDay": 0,
+          "endDay": 5,
+          "hours": ["9", "14"]
+        }
+      ],
       "www": " www.obiady.jgora.pl",
       "additionalInfo": "Prowadzimy działalność gastronomiczną na terenie Jeleniej Góry oraz okolic. Kuchnia Polska (Mięsa, Pierogi, Dania wegetariańskie, naleśniki itp). W menu mogą znaleźć Państwo kuchnie Polską, ale również wegetariańską, codziennie do wyboru 2-3 zupy oraz 5 drugich dań z różnymi dodatkami. Można zamawiać w opakowaniach ekologicznych. Cena zestawu zupa + drugie danie 17 zł. Sklep internetowy znajduje się na naszej stronie www.obiady.jgora.pl",
       "phones": ["792 030 733"],
@@ -225,9 +236,11 @@
     {
       "name": "Lord Lounge",
       "fillName": "Restauracja Lord Lounge",
-      "hours": [{
-        "hours": ["11", "22"]
-      }],
+      "hours": [
+        {
+          "hours": ["11", "22"]
+        }
+      ],
       "www": "www.restauracjalord.pl",
       "additionalInfo": "Nasze menu można znaleźć na www.restauracjalord.pl, oraz na portalach pyszne.pl, pizza portal oraz Glovo. Dowozimy zarówno na terenie Jeleniej Góry jak i w dalszych lokalizacjach.",
       "phones": ["570 581 896", "573 000 504"],
@@ -250,7 +263,8 @@
       "district": "Cieplice",
       "address": "Plac Piastowski 40,\n58-560 Jelenia Góra",
       "phones": ["75 642 66 00"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["8", "20"]
@@ -272,7 +286,8 @@
       "district": "Cieplice",
       "address": "Cieplicka 192B,\n58-570 Jelenia Góra",
       "phones": ["75 755 00 33"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["8", "19"]
@@ -299,7 +314,8 @@
       "district": "Zabobrze",
       "address": "Letnia 2,\n58-506 Jelenia Góra",
       "phones": ["75 646 63 80"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["8", "20"]
@@ -317,11 +333,13 @@
       "district": "Cieplice",
       "address": "Sprzymierzonych 4,\n58-560 Jelenia Góra",
       "phones": ["75 755 89 75"],
-      "hours": [{
-        "startDay": 0,
-        "endDay": 4,
-        "hours": ["8", "18"]
-      }],
+      "hours": [
+        {
+          "startDay": 0,
+          "endDay": 4,
+          "hours": ["8", "18"]
+        }
+      ],
       "type": "CHEMIST",
       "isFavorite": false
     },
@@ -330,7 +348,8 @@
       "district": "Zabobrze",
       "address": "Al.Jana Pawła II 17 C.H.TESCO,\n58-506 Jelenia Góra",
       "phones": ["75 612 18 10"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["8", "21"]
@@ -352,7 +371,8 @@
       "district": "Zabobrze",
       "address": "Al.Jana Pawła II 24 C.H.KAUFLAND,\n58-506 Jelenia Góra",
       "phones": ["75 753 10 96"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["8", "21"]
@@ -374,7 +394,8 @@
       "district": "Centrum",
       "address": "1 Maja 2,\n58-500 Jelenia Góra",
       "phones": ["75 752 42 28"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["7:30", "20"]
@@ -392,7 +413,8 @@
       "district": "Centrum",
       "address": "Bankowa 7,\n58-500 Jelenia Góra",
       "phones": ["75 645 20 29"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 3,
           "hours": ["9", "20"]
@@ -414,7 +436,8 @@
       "district": "Zabobrze",
       "address": "Elsnera 1A,\n58-506 Jelenia Góra",
       "phones": ["75 647 55 91"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["8", "20"]
@@ -432,7 +455,8 @@
       "district": "Cieplice",
       "address": "Wita Stwosza 17,\n58-560 Jelenia Góra",
       "phones": ["75 755 76 40"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["8", "20"]
@@ -454,7 +478,8 @@
       "district": "Cieplice",
       "address": "Jana Pawła II 51,\n58-506 Jelenia Góra",
       "phones": ["75 612 16 89"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["9", "21"]
@@ -476,7 +501,8 @@
       "district": "Cieplice",
       "address": "Plac Piastowski 30,\n58-560 Jelenia Góra",
       "phones": ["75 755 12 27"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["8", "20"]
@@ -494,7 +520,8 @@
       "district": "Centrum",
       "address": "Plac Ratuszowy 47,\n58-500 Jelenia Góra",
       "phones": ["75 752 20 02"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["8", "19"]
@@ -512,7 +539,8 @@
       "district": "Sobieszów",
       "address": "Sądowa 5,\n58-570 Jelenia Góra",
       "phones": ["75 755 34 04"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["9", "18"]
@@ -530,7 +558,8 @@
       "district": "Centrum",
       "address": "1 Maja 30,\n58-500 Jelenia Góra",
       "phones": ["75 755 34 04"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["8", "19"]
@@ -548,7 +577,8 @@
       "district": "Cieplice",
       "address": "Wolności 246,\n58-560 Jelenia Góra",
       "phones": ["75 755 12 38"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["9", "19"]
@@ -566,7 +596,8 @@
       "district": "Centrum",
       "address": "Morcinka 1,\n58-500 Jelenia Góra",
       "phones": ["75 752 48 26"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["8", "20"]
@@ -584,7 +615,8 @@
       "district": "Centrum",
       "address": "Sudecka 16,\n58-500 Jelenia Góra",
       "phones": ["75 752 33 39"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["8", "18:30"]
@@ -602,7 +634,8 @@
       "district": "Zabobrze",
       "address": "Różyckiego 6,\n58-506 Jelenia Góra",
       "phones": ["75 645 05 20"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["7:30", "19:30"]
@@ -620,7 +653,8 @@
       "district": "Centrum",
       "address": "Długa 21,\n58-500 Jelenia Góra",
       "phones": ["75 752 61 47"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["8", "19"]
@@ -638,7 +672,8 @@
       "district": "Zabobrze",
       "address": "Sygietyńskiego 3,\n58-506 Jelenia Góra",
       "phones": ["75 646 46 06"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["7:30", "21"]
@@ -660,7 +695,8 @@
       "district": "Zabobrze",
       "address": "Bacewicz 23,\n58-506 Jelenia Góra",
       "phones": ["75 764 57 45"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["8", "20"]
@@ -678,7 +714,8 @@
       "district": "Centrum",
       "address": "Kochanowskiego 5A/3,\n58-500 Jelenia Góra",
       "phones": ["75 641 31 05"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["8", "20"]
@@ -696,7 +733,8 @@
       "district": "Zabobrze",
       "address": "Ogińskiego 13,\n58-506 Jelenia Góra",
       "phones": ["75 307 03 90"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["8", "20"]
@@ -714,7 +752,8 @@
       "district": "Centrum",
       "address": "Morcinka 33,\n58-500 Jelenia Góra",
       "phones": ["75 303 09 80"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["8", "20"]
@@ -732,7 +771,8 @@
       "district": "Centrum",
       "address": "Wojska Polskiego 75,\n58-500 Jelenia Góra",
       "phones": ["75 649 61 90"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["8", "19"]
@@ -750,7 +790,8 @@
       "district": "Zabobrze",
       "address": "Kiepury 77,\n58-506 Jelenia Góra",
       "phones": ["75 643 16 71"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["8", "18:30"]
@@ -768,7 +809,8 @@
       "district": "Centrum",
       "address": "1 Maja 6/1,\n58-500 Jelenia Góra",
       "phones": ["75 647 06 57"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["8", "18:30"]
@@ -786,7 +828,8 @@
       "district": "Zabobrze",
       "address": "Trzcińskiego 12,\n58-506 Jelenia Góra",
       "phones": ["75 643 16 91"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["8", "18:30"]
@@ -804,7 +847,8 @@
       "district": "Zabobrze",
       "address": "Ogińskiego 1B,\n58-506 Jelenia Góra",
       "phones": ["75 643 06 50"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["8", "22"]
@@ -822,7 +866,8 @@
       "district": "Zabobrze",
       "address": "Ogińskiego 6,\n58-506 Jelenia Góra",
       "phones": ["75 643 06 53"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["8", "22"]
@@ -844,7 +889,8 @@
       "district": "Cieplice",
       "address": "Daniłowskiego 2A,\n58-560 Jelenia Góra",
       "phones": ["75 713 08 81"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["8", "19"]
@@ -862,7 +908,8 @@
       "district": "Centrum",
       "address": "Podwale 25,\n58-500 Jelenia Góra",
       "phones": ["75 757 50 66"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["8", "19"]
@@ -884,7 +931,8 @@
       "district": "Zabobrze",
       "address": "Kiepury 26,\n58-506 Jelenia Góra",
       "phones": ["75 754 23 22"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["9", "21"]
@@ -902,11 +950,13 @@
       "district": "Cieplice",
       "address": "Zielona 6 lok 2,\n58-560 Jelenia Góra",
       "phones": ["75 754 23 22"],
-      "hours": [{
-        "startDay": 0,
-        "endDay": 4,
-        "hours": ["8", "18"]
-      }],
+      "hours": [
+        {
+          "startDay": 0,
+          "endDay": 4,
+          "hours": ["8", "18"]
+        }
+      ],
       "type": "CHEMIST",
       "isFavorite": false
     },
@@ -915,7 +965,8 @@
       "district": "Centrum",
       "address": "Okrzei 11,\n58-500 Jelenia Góra",
       "phones": ["75 303 02 88"],
-      "hours": [{
+      "hours": [
+        {
           "startDay": 0,
           "endDay": 4,
           "hours": ["8", "20"]
@@ -931,11 +982,10 @@
     {
       "name": "WOJEWÓDZKIE CENTRUM SZPITALNE KOTLINY JELENIOGÓRSKIEJ",
       "address": "ul.Ogińskiego 6, \n58-501 Jelenia Góra",
-      "phones": [
-        "75 753 71 00"
-      ],
+      "phones": ["75 753 71 00"],
       "additionalInfo": "Pozostałe telefony: \nSekretariat – 75 753 7201\nFax Sekretariat – 75 754 2335\nSzpitalny Oddział Ratunkowy – 75 753 7118\nRejestracja do Poradni Specjalistycznych – 75 753 7489 oraz 75 753 7490",
-      "messages": [{
+      "messages": [
+        {
           "type": "URL",
           "name": "Zmiana zasad w WCSKJ",
           "content": "https://spzoz.jgora.pl/wp-content/uploads/2020/03/info.pdf",
@@ -956,9 +1006,7 @@
       "address": "ul.Sanatoryjna 27, \n58-530 Kowary",
       "type": "MEDIC",
       "subType": "HOSPITAL",
-      "phones": [
-        "75 64 58 866"
-      ],
+      "phones": ["75 64 58 866"],
       "email": "e-mail:kowary@spzoz.jgora.pl"
     },
     {
@@ -967,18 +1015,14 @@
       "address": "ul.Sanatoryjna 15, \n58-530 Kowary",
       "type": "MEDIC",
       "subType": "HOSPITAL",
-      "phones": [
-        "75 641 57 15"
-      ]
+      "phones": ["75 641 57 15"]
     },
     {
       "name": "CENTRUM MEDYCZNE KARPACZ",
       "address": "ul.Myśliwska 13, \n58-540 Karpacz",
       "type": "MEDIC",
       "subType": "HOSPITAL",
-      "phones": [
-        "883 358 135,883 358 138"
-      ],
+      "phones": ["883 358 135,883 358 138"],
       "www": "www.cmkarpacz.pl",
       "email": "kontakt@cmkarpacz.pl"
     },
@@ -1235,9 +1279,40 @@
       "type": "MEDIC",
       "subType": "AMBULATORIES",
       "phones": ["883 358 171", "883 358 172"]
+    },
+    {
+      "name": "Urząd skarbowy",
+      "address": "ul. Thebesiusa 1, \n58-506 Jelenia Góra",
+      "phones": ["75 64 73 500", "75 64 73 537"],
+      "mail": "us.jelenia_gora@mf.gov.pl",
+      "htmlContent": "<p>Warto skontaktować się telefonicznie <br />w sprawie ewentualnych ograniczeń dotyczących przyjęć.</p><p><strong>PODATKI BĘDZIE MOŻNA ROZLICZYĆ NA 2 SPOSOBY</strong></p><p>&bull; On-line poprzez Tw&oacute;j e-PIT, e-Deklaracje, e-PUAP,</p><p>&bull; w urzędzie &ndash; poprzez wrzucenie deklaracji, pism, innych dokument&oacute;w do wystawionych urn. W tym przypadku bez potwierdzenia wpływu do urzędu.</p><p><strong><br />Kontakt telefoniczny do urzędu skarbowego:</strong></p><p>PIT &ndash; nr telefonu 75 64 73 574, 75 64 73 507, 75 64 73 549</p><p>VAT &ndash; nr telefonu 75 64 73 568, 75 64 73 559, 75 64 73 565, 75 64 73 527</p><p>CIT &ndash; nr telefonu 75 64 73 553</p><p>kasy rejestrujące i profil zaufany &ndash; nr telefonu &ndash; 75 64 73 527</p><p>zaświadczenia o dochodach &ndash; nr telefonu 75 64 73 542, 75 64 73 583</p><p>zaświadczenia o niezaleganiu &ndash; nr telefonu 75 64 73 532, 75 64 73 525</p><p>spadki/darowizny i PCC &ndash; nr telefonu 75 64 73 529, 75 64 73 522</p><p>rejestracja podatnik&oacute;w &ndash; nr telefonu 75 64 73 541, 75 64 73 543</p><p>egzekucja administracyjna &ndash; nr telefonu 75 64 73 561, 75 64 73 515</p><p>rachunkowość podatkowa &ndash; nr telefonu 75 64 73 546, 75 64 73 547, 75 64 73 525, 75 64 73 523, 75 64 76 545, 75 64 73 524</p><p>kom&oacute;rka wierzycielska &ndash; nr telefonu 75 64 73 552</p><p>Informacje podatkowe oraz usługa Tw&oacute;j e-PIT znajdziesz na www.podatki.gov.pl</p",
+      "type": "OFFICE"
+    },
+    {
+      "name": "Zakład Ubezpieczeń Społecznych",
+      "fullName": "Zakład Ubezpieczeń Społecznych Inspektorat w Jeleniej Górze",
+      "address": "ul. Sygietyńskiego 10,\n58-500 Jelenia Góra",
+      "type": "OFFICE",
+      "htmlContent": "<p><strong>Godziny obsługi klient&oacute;w</strong></p><p>Poniedziałek: 8.00-18.00</p><p>Wtorek - Piątek: 8.00-15.00</p><p><strong>Informacja og&oacute;lnopolska:</strong></p><p>Aby ułatwić Państwu kontakt telefoniczny w najważniejszych aktualnie sprawach, od 18 marca uruchomiliśmy 3 nowe linie tematyczne<br />pod nowymi numerami telefon&oacute;w:</p><p>1. nr telefonu 22 290 87 01</p><p>- obsługa w sprawie świadczeń z powodu poddania się kwarantannie lub izolacji<br /> - obsługa w sprawie zasiłk&oacute;w opiekuńczych na czas opieki nad dzieckiem w związku z zamknięciem żłobka, klubu dziecięcego, przedszkola, szkoły</p><p>2.nr telefonu 22 290 87 02</p><p>- obsługa w sprawie wsparcia dla przedsiębiorc&oacute;w</p><p>3.nr telefonu 22 290 87 03</p><p>- obsługa w sprawie odwołanych badań lekarskich i rehabilitacji leczniczej</p><p>Pod tymi numerami jesteśmy dostępni w dni robocze (pn.- pt.) w godzinach 7 - 15</p><p>Nadal do Państwa dyspozycji jest og&oacute;lnopolska linia telefoniczna pod numerem telefonu 22 560 16 00 dostępna w dni robocze (pn.-pt) w godzinach 7-18.</p><p>Po wybraniu &bdquo;0&rdquo;(połączenie z konsultantem Centrum Obsługi Telefonicznej), należy wybrać odpowiedni temat rozmowy:</p><p>1 - Pomoc techniczna i obsługa e-ZLA,<br />2 - Renty i emerytury,<br />3 &ndash; Zasiłki,<br />4 - Informacje dla ubezpieczonych,<br />5 - Informacje dla płatnik&oacute;w,<br />7 &ndash; Wsparcie dla przedsiębiorc&oacute;w<br />9 - Zasiłek opiekuńczy i świadczenia z powodu poddania się kwarantannie lub izolacji</p>"
+    },
+    {
+      "name": "Miejski Ośrodek Pomocy SPołecznej",
+      "address": "al. Jana Pawła II nr 7, \n58-506 Jelenia Góra",
+      "phones": ["75 75 23 951", "75 64 67 002"],
+      "type": "OFFICE",
+      "htmlContent": "<p><strong>Obwieszczenie<br /></strong></p><p>W trosce o bezpieczeństwo, zwracamy się z prośbą o ograniczenie osobistych wizyt w Miejskim Ośrodku Pomocy Społecznej w Jeleniej G&oacute;rze, a w miarę możliwości załatwianie spraw drogą elektroniczną lub przez telefon. <br /><br />Wykaz bezpośrednich numer&oacute;w telefonu do poszczeg&oacute;lnych pracownik&oacute;w znajduje się na stronie internetowej Miejskiego Ośrodka Pomocy Społecznej w Jeleniej G&oacute;rze http://www.mops.jelenia-gora.pl w zakładkach każdego działu. <br /><br />Można r&oacute;wnież zadzwonić pod numer: 75 75 23 951, 75 75 24 657, skąd nastąpi przekierowanie do właściwej kom&oacute;rki organizacyjnej. OD DNIA 16.03.2020 r.</p><p><strong>OSOBY OSOBIŚCIE ZAŁATWIAJĄCE SPRAWY DO BUDYNKU MOPS BĘDĄ WPUSZCZANE POJEDYNCZO. KASA CZYNNA 11:00 - 13:00</strong>. Osoby oczekujące na załatwienie sprawy są proszone, by zachowały odpowiednią odległość - co najmniej 1 metr od innych os&oacute;b oczekujących. <br />Za wszelkie utrudnienia serdecznie przepraszamy. Dyrektor MOPS w Jeleniej G&oacute;rze</p><p><strong>Telefony</strong></p><p>Centrala: 75 75 23 951, 75 64 67 002, 75 75 24 657, 75 64 78 578</p><p>Dzienny Dom Pomocy Społecznej: 75 75 255 71</p><p><strong>Godziny pracy</strong></p><p>Ośrodek czynny w dni robocze w godzinach 7:30-15:30</p><p>Pracownicy socjalni przyjmują klient&oacute;w w godzinach 7:30-10:00 i 14:00-15:30</p><p>Dzienny Dom Pomocy Społecznej czynny w dni robocze w godzinach 8:00-16:00</p><p><em>Kasa czynna</em> 11:00-13:00&nbsp;</p>"
+    },
+    {
+      "name": "Urząd Pracy w Jeleniej Górze",
+      "address": "ul.Podchorążych 15, \n58-508 Jelenia Góra",
+      "phones": ["75 64 73 160", "75 64 73 162"],
+      "email": "wrje@praca.gov.pl",
+      "type": "OFFICE",
+      "htmlContent": "<p>Godziny pracy Urzędu:07:30-15:30,<br />Godziny przyjmowania interesant&oacute;w: 08:00 - 14:00, przerwa 9:45-10:00</p><p>Zielona linia urzędu pracy 19524</p>"
     }
   ],
-  "messages": [{
+  "messages": [
+    {
       "createDate": "2020-02-22T09:51:29.829Z",
       "editDate": "2020-02-22T09:51:29.829Z",
       "title": "Pamiętajmy o seniorach w czasie pandemii",
@@ -1259,7 +1334,8 @@
       "content": "W związku z nowymi ograniczeniami, w trosce o zdrowie mieszkańców Jeleniej Góry i pozostałych gmin, od 25 marca (środa) Miejski Zakład Komunikacyjny wprowadza kolejne zmiany w funkcjonowaniu komunikacji miejskiej:\n\nMZK informuje:\n\n1. Linie najbardziej obciążone obsługiwać będą autobusy, o największej liczbie dostępnych miejsc siedzących, w szczególności autobusy przegubowe.\n\n2. W każdym autobusie jednorazowo będzie mogła podróżować liczba pasażerów nie większa niż połowa znajdujących się w tym autobusie miejsc siedzących. Szacunkowo jest to od 15 osób w nowych autobusach typy Volvo i Man – do 25 osób w autobusach przegubowych.\n\n3. Na bieżąco będziemy monitorować sytuację w autobusach i podejmować adekwatne działania. Tak jak do tej pory prosimy Państwa o uwagi i spostrzeżenia.\n\n4. Sytuacja jest trudna dla nas wszystkich, dlatego prosimy o wyrozumiałość dla wprowadzanych zmian. Mogą wystąpić przejściowe trudności, które mamy nadzieję szybko zażegnać. Pracujemy codziennie, aby każdy z Państwa czuł się w naszych autobusach bezpiecznie.\n\n5. Dołożymy wszelkich starań, aby w ciągu najbliższych dni możliwie najlepiej dopasować komunikację miejską do zmienionych zasad jej funkcjonowania i sprostać Państwa oczekiwaniom."
     }
   ],
-  "phones": [{
+  "phones": [
+    {
       "name": "INFOLINIA NFZ",
       "phones": ["800 190 590"]
     },
