@@ -17,29 +17,32 @@ export class OpenHours extends React.Component<Props> {
     super(props);
     this.hourItems = [];
 
-    this.props.hours.forEach((dayHours: Hours) => {
-      console.log(dayHours);
-      if (dayHours.startDay == null)
-        this.hourItems.push(
-          `${Utility.getHour(dayHours.hours[0])}-${Utility.getHour(
-            dayHours.hours[1],
-          )} ${App.translate('allWeek')}`,
-        );
-      else if (dayHours.startDay != undefined && dayHours.endDay == undefined)
-        this.hourItems.push(
-          `${Utility.getHour(dayHours.hours[0])}-${Utility.getHour(
-            dayHours.hours[1],
-          )} ${Utility.getNameOfDay(dayHours.startDay)}`,
-        );
-      else
-        this.hourItems.push(
-          `${Utility.getHour(dayHours.hours[0])}-${Utility.getHour(
-            dayHours.hours[1],
-          )} ${Utility.getShortNameOfDay(
-            dayHours.startDay,
-          )}-${Utility.getShortNameOfDay(dayHours.endDay)}`,
-        );
-    });
+    if (this.props.hours.length == 0)
+      this.hourItems.push(`${App.translate('24hours')}`);
+    else
+      this.props.hours.forEach((dayHours: Hours) => {
+        console.log(dayHours);
+        if (dayHours.startDay == null)
+          this.hourItems.push(
+            `${Utility.getHour(dayHours.hours[0])}-${Utility.getHour(
+              dayHours.hours[1],
+            )} ${App.translate('allWeek')}`,
+          );
+        else if (dayHours.startDay != undefined && dayHours.endDay == undefined)
+          this.hourItems.push(
+            `${Utility.getHour(dayHours.hours[0])}-${Utility.getHour(
+              dayHours.hours[1],
+            )} ${Utility.getNameOfDay(dayHours.startDay)}`,
+          );
+        else
+          this.hourItems.push(
+            `${Utility.getHour(dayHours.hours[0])}-${Utility.getHour(
+              dayHours.hours[1],
+            )} ${Utility.getShortNameOfDay(
+              dayHours.startDay,
+            )}-${Utility.getShortNameOfDay(dayHours.endDay)}`,
+          );
+      });
   }
 
   render() {
@@ -48,7 +51,8 @@ export class OpenHours extends React.Component<Props> {
         style={{
           width: '100%',
           flexDirection: 'row',
-          margin: 20,
+          marginHorizontal: 20,
+          marginTop: 20,
           alignItems: 'center',
         }}>
         <Icon

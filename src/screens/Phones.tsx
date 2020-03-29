@@ -41,7 +41,11 @@ export class ScreenPhones extends AbstractScreen {
       <FlatList
         data={this.state.items}
         renderItem={({item}) => (
-          <ExtendedListItemComponent item={(item as unknown) as ListItem} />
+          <ExtendedListItemComponent
+            item={(item as unknown) as ListItem}
+            maxLines={4}
+            fontSize={18}
+          />
         )}
         keyExtractor={(item, index) => index.toString()}
       />

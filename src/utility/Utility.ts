@@ -2,6 +2,7 @@ import {DataItemTypes, DataItemSubtypes} from '../model/Enums';
 import App from '../../App';
 import {Linking} from 'react-native';
 import * as Enums from '../model/Enums';
+import * as Constants from '../utility/Constants';
 import Analytics from 'appcenter-analytics';
 
 export class Utility {
@@ -29,6 +30,11 @@ export class Utility {
           case DataItemSubtypes.ELECTRONICS: {
             return 'blender-phone';
           }
+        }
+      case DataItemTypes.MEDIC:
+        switch (subType) {
+          default:
+            return 'clinic-medical';
         }
     }
   }

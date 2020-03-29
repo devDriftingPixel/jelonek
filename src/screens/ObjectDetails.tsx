@@ -13,6 +13,7 @@ import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import App from '../../App';
 import {Utility} from '../utility/Utility';
+import {AddressComponent} from '../components/AddressComponent';
 
 type Props = {
   navigation?: NavigationStackProp;
@@ -43,7 +44,11 @@ export class ScreenObjectDetails extends Component<Props> {
         <Appbar
           barType={'normal'}
           color={Colors.PRIMARY}
-          title={this.item.name}
+          title={
+            this.item.name.length < 25
+              ? this.item.name
+              : `${this.item.name.substr(0, 20)}...`
+          }
           navigation={'arrow-back'}
           onNavigation={() => this.props.navigation?.goBack()}
         />
@@ -61,7 +66,7 @@ export class ScreenObjectDetails extends Component<Props> {
                 name={this.iconName}
                 size={45}
                 color={Colors.PRIMARY}
-                style={{width: 45, height: 45, margin: 20}}
+                style={{width: 50, height: 50, margin: 15}}
                 iconComponent={FontAwesome5}
               />
               <Text
@@ -102,6 +107,7 @@ export class ScreenObjectDetails extends Component<Props> {
                 ) : null}
               </View>
             </View>
+            <AddressComponent item={this.item} />
           </ScrollView>
           {this.item.phones && this.item.phones.length == 1 ? (
             <Fab

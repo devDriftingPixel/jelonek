@@ -7,7 +7,17 @@ import {Phone} from '../model/Phone';
 const dataStorage: DataStorage = require('../assets/data.json');
 
 export class ExternalDataService {
+  private static additionalHospitalInfoVisible: boolean = true;
+
   constructor() {}
+
+  public static getAdditionalHospitalInfoVisible(): boolean {
+    return this.additionalHospitalInfoVisible;
+  }
+
+  public static setAadditionalHospitalInfoVisible(newValue: boolean) {
+    return (this.additionalHospitalInfoVisible = newValue);
+  }
 
   public static getMessages(): Promise<Message[]> {
     return new Promise((resolve: Function, reject: Function) => {
@@ -28,7 +38,7 @@ export class ExternalDataService {
         const result = dataStorage.phones;
         setTimeout(() => {
           resolve(result);
-        }, 2000);
+        }, 0);
       } catch (exception) {
         reject(exception);
       }
@@ -45,6 +55,10 @@ export class ExternalDataService {
 
   public static getChemists(): Promise<ListItem[]> {
     return ExternalDataService.getItems(DataItemTypes.CHEMIST);
+  }
+
+  public static getHospitals(): Promise<ListItem[]> {
+    return ExternalDataService.getItems(DataItemTypes.MEDIC);
   }
 
   public static getFavorites(): ListItem[] {

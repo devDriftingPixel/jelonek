@@ -5,7 +5,6 @@ import {ExternalDataService} from '../services/ExternalDataService';
 import {ListItem} from '../model/ListItem';
 import {FlatList} from 'react-native-gesture-handler';
 import {ExtendedListItemComponent} from '../components/ExtendedListItemComponent';
-import * as Colors from '../utility/Colors';
 
 type Props = {
   navigation?: NavigationStackProp;
@@ -48,6 +47,7 @@ export class ScreenChemists extends AbstractScreen {
             onFavoriteSelected={(item: ListItem) =>
               this.onFavoriteSelected(item)
             }
+            paddingBottom={20}
           />
         )}
         keyExtractor={(item, index) => index.toString()}

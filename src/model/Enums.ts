@@ -18,6 +18,7 @@ export enum DataItemTypes {
   RESTAURANTS = 'RESTAURANTS',
   SHOPS = 'SHOPS',
   CHEMIST = 'CHEMIST',
+  MEDIC = 'MEDIC',
 }
 
 export enum DataItemSubtypes {
@@ -26,6 +27,7 @@ export enum DataItemSubtypes {
   VEGETABLES = 'VEGETABLES',
   DRUGSTORE = 'DRUGSTORE',
   ELECTRONICS = 'ELECTRONICS',
+  AMBULATORIES = 'AMBULATORIES',
 }
 
 export enum AnalyticsCategories {

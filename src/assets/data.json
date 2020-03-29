@@ -927,6 +927,314 @@
       ],
       "type": "CHEMIST",
       "isFavorite": false
+    },
+    {
+      "name": "WOJEWÓDZKIE CENTRUM SZPITALNE KOTLINY JELENIOGÓRSKIEJ",
+      "address": "ul.Ogińskiego 6, \n58-501 Jelenia Góra",
+      "phones": [
+        "75 753 71 00"
+      ],
+      "additionalInfo": "Pozostałe telefony: \nSekretariat – 75 753 7201\nFax Sekretariat – 75 754 2335\nSzpitalny Oddział Ratunkowy – 75 753 7118\nRejestracja do Poradni Specjalistycznych – 75 753 7489 oraz 75 753 7490",
+      "messages": [{
+          "type": "URL",
+          "name": "Zmiana zasad w WCSKJ",
+          "content": "https://spzoz.jgora.pl/wp-content/uploads/2020/03/info.pdf",
+          "date": null
+        },
+        {
+          "type": "URL",
+          "name": "Ankiety kwalifikacyjne",
+          "content": "https://spzoz.jgora.pl/wp-content/uploads/2020/03/informacja-1.pdf",
+          "date": null
+        }
+      ],
+      "type": "MEDIC",
+      "subType": "HOSPITAL"
+    },
+    {
+      "name": "WCSKJ - JEDNOSTKA ZAMIEJSCOWA 'WYSOKA ŁĄKA'",
+      "address": "ul.Sanatoryjna 27, \n58-530 Kowary",
+      "type": "MEDIC",
+      "subType": "HOSPITAL",
+      "phones": [
+        "75 64 58 866"
+      ],
+      "email": "e-mail:kowary@spzoz.jgora.pl"
+    },
+    {
+      "name": "EMC Szpital Bukowiec",
+      "fullName": "EMC Szpital Bukowiec - Niepubliczny Zaklad Opieki Zdrowotnej Powiatowe Centrum Zdrowia w Kowarach",
+      "address": "ul.Sanatoryjna 15, \n58-530 Kowary",
+      "type": "MEDIC",
+      "subType": "HOSPITAL",
+      "phones": [
+        "75 641 57 15"
+      ]
+    },
+    {
+      "name": "CENTRUM MEDYCZNE KARPACZ",
+      "address": "ul.Myśliwska 13, \n58-540 Karpacz",
+      "type": "MEDIC",
+      "subType": "HOSPITAL",
+      "phones": [
+        "883 358 135,883 358 138"
+      ],
+      "www": "www.cmkarpacz.pl",
+      "email": "kontakt@cmkarpacz.pl"
+    },
+    {
+      "name": "CENTRUM MEDYCZNE PROMED (PLACÓWKA GŁÓWNA)",
+      "address": "ul.Różyckiego 6, \n58-506 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["75 641 71 01"]
+    },
+    {
+      "name": "PRZYCHODNIA DRZYMAŁY",
+      "address": "ul.M.Drzymały 31, \n58-500 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["75 64 171 21"]
+    },
+    {
+      "name": "PRZYCHODNIA POWSTAŃCÓW ŚL.",
+      "address": "ul.Powstańców Śląskich 6, \n58-500, Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["75 75 347 71", "75 64 332 53"]
+    },
+    {
+      "name": "PRZYCHODNIA NASZ LEKARZ ",
+      "address": "al.Wojska Polskiego 57, \n58-500 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["75 642 25 50"]
+    },
+    {
+      "name": "ZABOBRZE CENTRUM MEDYCZNE",
+      "address": "ul.Wiejska 11, \n58-506 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["75 889 01 70"]
+    },
+    {
+      "name": "PRZYCHODNIA MEDINAP NA LETNIEJ",
+      "address": "UL.LETNIA 2, \n58-500 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["75 645 650", "75 645 651"]
+    },
+    {
+      "name": "SAMODZIELNY PUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ MSW",
+      "address": "ul.Nowowiejska 43, \n58-500 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["75 612 07 78"]
+    },
+    {
+      "name": "PRZYCHODNIA LEKARZ RODZINNY",
+      "address": "ul.Kopernika 2, \n58-500 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["75 752 31 14"]
+    },
+    {
+      "name": "KCM-KARKONOSKIE CENTRUM MEDYCZNE NZOZ",
+      "address": "ul.Bankowa 5/7, \n58-500 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["75 645 20 00"]
+    },
+    {
+      "name": "PRZYCHODNIA DOKTOR Sp.z o.o.",
+      "address": "ul.A.Grottgera 10, \n58-500 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["75 642 25 02"]
+    },
+
+    {
+      "name": "PORADNIE MEDICTA",
+      "address": "ul.Wolności 140, \n58-200 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["883 358 100"]
+    },
+    {
+      "name": "LASER PRZYCHODNIA CHIRURGICZNA",
+      "address": "ul.Skłodowskiej-Curie 13, \n58-500 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["501 391 604"]
+    },
+
+    {
+      "name": "ZDROWIE Sp.z o.o ZAKŁAD USŁUG LEKARSKICH",
+      "address": "ul.Mostowa 2, \n58-500 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["75 767 49 37"]
+    },
+    {
+      "name": "PRZYCHODNIA PROTETYCZNO-STOMATOLOGICZNA KARDIS",
+      "address": "ul.1 Maja 59, \n58-500 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["509 263 183"]
+    },
+    {
+      "name": "ARS MEDICA NZOZ PRZYCHODNIA SPORTOWA",
+      "address": "ul.Kopernika 1, \n58-500 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["75 752 51 49"]
+    },
+    {
+      "name": "JELENIOGÓRSKIE CENTRUM LARYNGOLOGII",
+      "address": "al.Wojska Polskiego 75, \n58-500 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["601 641 503"]
+    },
+    {
+      "name": "PHARMED CENTRUM MEDYCZNE",
+      "address": "ul.Zielona 6, \n58-560 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["75 642 30 00"]
+    },
+    {
+      "name": "TWÓJ CHIRURG",
+      "address": "ul.S.Moniuszki 5A, \n58-500 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["75 753 13 27"]
+    },
+
+    {
+      "name": "PRZYCHODNIA STOMATOLOGICZNA UŚMIECH",
+      "address": "ul.5A/3, \n58-560 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["75 755 95 44"]
+    },
+    {
+      "name": "CHIRURGIA CIEPLICE ANDRZEJ CHRUŚCIEL",
+      "address": "ul.Sprzymierzonych 4, \n58-560 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["75 755 05 66"]
+    },
+
+    {
+      "name": "SP ZOZ SZPITAL SPECJALISTYCZNY MSWiA - PORADNIA ZDROWIA PSYCHICZNEGO",
+      "address": "ul. Cieplicka 59, \n58-560 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["75 643 57 33"]
+    },
+
+    {
+      "name": "NZOZ OSTEOCYT",
+      "address": "ul.Lwówecka 18 bud.2, \n58-500 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["75 649 06 80"]
+    },
+    {
+      "name": "PRZYCHODNIA POZ ORLE CIEPLICE",
+      "address": "ul.Cieplicka 83a, \n58-560 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["883 358 201", "883 358 210"]
+    },
+
+    {
+      "name": "PRZYCHODNIA NZOZ CIEPLICE",
+      "address": "pl.Piastowski 20, \n58-560 Jelenia Góra ",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["75 642 32 03"]
+    },
+
+    {
+      "name": "REHABILITACJA KLONOWICA 9",
+      "address": "ul.Klonowica 9, \n58-500 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["75 742 32 32"]
+    },
+    {
+      "name": "SUDETY",
+      "address": "ul.Piłsudskiego 35, \n58-500 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["75 764 71 35"]
+    },
+
+    {
+      "name": "CENTRUM STOMATOLOGICZNE",
+      "address": "ul.W.Polskiego 36, \n58-500 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["75 752 21 85"]
+    },
+
+    {
+      "name": "NZOZ STOMATOLOGIA BEZ BÓLU",
+      "address": "ul.W.Polskiego 30A, \n58-500 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["75 642 45 58"]
+    },
+    {
+      "name": "SOBIESZÓW NZOZ",
+      "address": "ul.Cieplicka 164, \n58-570 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["75 755 35 30"]
+    },
+    {
+      "name": "CENTRUM LECZENIA BÓLU",
+      "address": "ul.Bankowa 8, \n58-500 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["574 306 309"]
+    },
+    {
+      "name": "STOMATOLOGIA NZOS GRAŻYNA NAŁĘCZ-SOCHA",
+      "address": "ul.Kiepury 77, \n58-506 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["75 754 23 56"]
+    },
+    {
+      "name": "NZOZ MCD VOXEL",
+      "address": "ul.Piłsudskiego 35, \n58-500 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["75 647 06 90"]
+    },
+    {
+      "name": "DENTAL AND SKIN CLINIC ESPENSCHIED",
+      "address": "ul.Wiejska 24A, \n58-506 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["506 899 277"]
+    },
+    {
+      "name": "LEKARZ STOMATOLOG MONIKA ROGALSKA",
+      "address": "ul.Sygietyńskiego 19/1, \n58-506 Jelenia Góra",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["607 383 665"]
+    },
+    {
+      "name": "PRZYCHODNIA POZ KARPACZ",
+      "address": "ul.Konstytucji 3 Maja 71, \n58-540 Karpacz",
+      "type": "MEDIC",
+      "subType": "AMBULATORIES",
+      "phones": ["883 358 171", "883 358 172"]
     }
   ],
   "messages": [{
@@ -957,7 +1265,7 @@
     },
     {
       "name": "POWIATOWA STACJA SANITARNO-EPIDEMIOLOGICZNA W JELENIEJ GÓRZE",
-      "phones": ["75 64 35 560", "75 64 35 561"]
+      "phones": ["75 64 35 560", "693 367 922"]
     },
     {
       "name": "POGOTOWIE RATUNKOWE",

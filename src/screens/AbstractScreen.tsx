@@ -33,6 +33,7 @@ export abstract class AbstractScreen extends Component<Props> {
     errorMessage: ``,
     activeItem: 0,
     progressBarVisible: true,
+    infoVisible: true,
   };
 
   protected pageContent() {
