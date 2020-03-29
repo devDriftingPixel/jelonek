@@ -21,7 +21,6 @@ export class OpenHours extends React.Component<Props> {
       this.hourItems.push(`${App.translate('24hours')}`);
     else
       this.props.hours.forEach((dayHours: Hours) => {
-        console.log(dayHours);
         if (dayHours.startDay == null)
           this.hourItems.push(
             `${Utility.getHour(dayHours.hours[0])}-${Utility.getHour(

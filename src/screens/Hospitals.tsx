@@ -26,15 +26,15 @@ export class ScreenHospitals extends AbstractScreen {
 
   componentDidMount() {
     this.setState({
-      infoVisible: ExternalDataService.getAdditionalHospitalInfoVisible(),
+      infoVisible: ExternalDataService.getInstance().getAdditionalHospitalInfoVisible(),
     });
     this.getItems();
   }
 
   getItems() {
-    ExternalDataService.getHospitals()
+    ExternalDataService.getInstance()
+      .getHospitals()
       .then((ambulatories: ListItem[]) => {
-        console.log(ambulatories);
         this.allItems = ambulatories;
         this.setState({
           items: this.allItems,
@@ -207,11 +207,12 @@ export class ScreenHospitals extends AbstractScreen {
   };
 
   private handleChangeInfoVisibility() {
-    ExternalDataService.setAadditionalHospitalInfoVisible(
-      !ExternalDataService.getAdditionalHospitalInfoVisible(),
+    const dataService = ExternalDataService.getInstance();
+    dataService.setAdditionalHospitalInfoVisible(
+      !dataService.getAdditionalHospitalInfoVisible(),
     );
     this.setState({
-      infoVisible: ExternalDataService.getAdditionalHospitalInfoVisible(),
+      infoVisible: dataService.getAdditionalHospitalInfoVisible(),
     });
   }
 

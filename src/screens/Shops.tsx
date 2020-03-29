@@ -31,7 +31,8 @@ export class ScreenShops extends AbstractScreen {
   }
 
   getItems() {
-    ExternalDataService.getShops()
+    ExternalDataService.getInstance()
+      .getShops()
       .then((shops: ListItem[]) => {
         this.allItems = shops;
         this.setState({

@@ -52,7 +52,7 @@ export abstract class AbstractScreen extends Component<Props> {
   }
 
   protected onFavoriteSelected(item: any) {
-    ExternalDataService.changeFavorite(item);
+    ExternalDataService.getInstance().changeFavorite(item);
     this.getItems();
   }
 

@@ -27,7 +27,8 @@ export class ScreenMessages extends AbstractScreen {
   }
 
   getItems() {
-    ExternalDataService.getMessages()
+    ExternalDataService.getInstance()
+      .getMessages()
       .then((messages: Message[]) => {
         this.setState({
           items: messages,

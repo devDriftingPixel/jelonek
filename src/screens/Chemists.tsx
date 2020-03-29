@@ -23,9 +23,9 @@ export class ScreenChemists extends AbstractScreen {
   }
 
   getItems() {
-    ExternalDataService.getChemists()
+    ExternalDataService.getInstance()
+      .getChemists()
       .then((chemists: ListItem[]) => {
-        console.log(chemists);
         this.allItems = chemists;
         this.setState({
           items: this.allItems.sort((a: ListItem, b: ListItem) =>

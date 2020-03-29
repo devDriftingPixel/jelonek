@@ -16,8 +16,7 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Analytics from 'appcenter-analytics';
 import * as Enums from '../../model/Enums';
-import * as UtilityStylus from '../../utility/UstilityStyles';
-import App from '../../../App';
+import * as UtilityStyles from '../../utility/UtilityStyles';
 import {AboutApp} from '../AboutApp';
 
 interface Props {
@@ -189,7 +188,7 @@ class Backdrop extends PureComponent<Props> {
             name={'bullhorn'}
             size={34}
             color="white"
-            style={[UtilityStylus.styles.flipX, {marginTop: -2}]}
+            style={[UtilityStyles.styles.flipX, {marginTop: -2}]}
             iconComponent={MaterialCommunityIcons}
           />
         </Ripple>

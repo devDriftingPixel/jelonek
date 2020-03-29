@@ -5,7 +5,7 @@ import * as Images from '../utility/Images';
 import {Ripple, Icon, Card} from 'material-bread';
 import App from '../../App';
 import * as Enums from '../model/Enums';
-import * as Styles from '../utility/UstilityStyles';
+import * as Styles from '../utility/UtilityStyles';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Entypo from 'react-native-vector-icons/Entypo';

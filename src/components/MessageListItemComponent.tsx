@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Text, View} from 'react-native';
 import {Card} from 'material-bread';
-import * as Styles from '../utility/UstilityStyles';
+import * as Styles from '../utility/UtilityStyles';
 
 import {Message} from '../model/Message';
 import {Utility} from '../utility/Utility';

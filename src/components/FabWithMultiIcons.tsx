@@ -58,7 +58,6 @@ export class FabWithMultiIcons extends React.Component<Props> {
 
   render() {
     let currentBottomPosition = 5;
-    console.log(this.state.fadeAnim, this.state.position);
     return (
       <>
         <Ripple

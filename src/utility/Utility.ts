@@ -111,7 +111,6 @@ export class Utility {
         if (supported) {
           Linking.openURL(containsHttpPrefix ? url : `http://${url}`);
         } else {
-          console.log("Don't know how to open URI: " + url);
           Analytics.trackEvent('Close Favorite panel on MainMenu', {
             Category: Enums.AnalyticsCategories.NAVIGATION,
           });

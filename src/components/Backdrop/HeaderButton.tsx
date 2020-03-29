@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {Animated, Easing, StyleSheet} from 'react-native';
 import {Icon, Ripple, withTheme} from 'material-bread';
-import * as UtilityStyles from '../../utility/UstilityStyles';
 
 interface Props {
   backConcealed: any;

@@ -17,7 +17,8 @@ export class ScreenRestaurants extends ScreenShops {
   }
 
   getItems() {
-    ExternalDataService.getRestaurants()
+    ExternalDataService.getInstance()
+      .getRestaurants()
       .then((restaurants: ListItem[]) => {
         this.allItems = restaurants;
         this.setState({

@@ -10,7 +10,6 @@ import Backdrop from '../components/Backdrop/Backdrop';
 import App from '../../App';
 import {ZeroFavorites} from '../components/ZeroFavorites';
 import {Dimensions} from 'react-native';
-import {MenuComponent} from '../components/MenuComponent';
 import {MenuComponentHorizontalBars} from '../components/MenuComponentHorizontalBars';
 import {ExternalDataService} from '../services/ExternalDataService';
 import {FavoritesList} from '../components/FavoritesList';
@@ -32,11 +31,13 @@ export class ScreenMainMenu extends Component<Props> {
   }
 
   private willFocus() {
-    this.setState({favorites: ExternalDataService.getFavorites()});
+    this.setState({
+      favorites: ExternalDataService.getInstance().getFavorites(),
+    });
   }
 
   private onUnFavoriteItem(item: ListItem) {
-    ExternalDataService.changeFavorite(item);
+    ExternalDataService.getInstance().changeFavorite(item);
     this.willFocus();
   }
 

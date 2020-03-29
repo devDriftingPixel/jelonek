@@ -3,7 +3,7 @@ import {Text, View, Linking} from 'react-native';
 import * as Colors from '../utility/Colors';
 import {Ripple, Icon, Card} from 'material-bread';
 import * as Enums from '../model/Enums';
-import * as Styles from '../utility/UstilityStyles';
+import * as Styles from '../utility/UtilityStyles';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Entypo from 'react-native-vector-icons/Entypo';
