@@ -11,6 +11,7 @@ import App from '../../App';
 import {ZeroFavorites} from '../components/ZeroFavorites';
 import {Dimensions} from 'react-native';
 import {MenuComponent} from '../components/MenuComponent';
+import {MenuComponentHorizontalBars} from '../components/MenuComponentHorizontalBars';
 import {ExternalDataService} from '../services/ExternalDataService';
 import {FavoritesList} from '../components/FavoritesList';
 
@@ -111,7 +112,7 @@ export class ScreenMainMenu extends Component<Props> {
             offset={this.getOffsetForFavoriteItemNumber(
               this.state.favorites.length,
             )}>
-            <MenuComponent
+            <MenuComponentHorizontalBars
               dimension={this.windowDimesions}
               navigation={this.props.navigation}
             />
