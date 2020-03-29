@@ -8,4 +8,5 @@ export interface DataStorage {
   messages: Message[];
   phones: Phone[];
   appState: AppState;
+  lastUpdate: string;
 }
