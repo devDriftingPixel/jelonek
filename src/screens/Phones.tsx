@@ -25,21 +25,17 @@ export class ScreenPhones extends AbstractScreen {
   }
 
   getItems() {
-    ExternalDataService.getPhones()
-      .then((phones: Phone[]) => {
-        this.allItems = phones;
-        this.setState({
-          items: phones,
-          progressBarVisible: false,
-        });
-      })
-      .catch((error: any) => console.error(error));
+    this.allItems = ExternalDataService.getInstance().getPhones();
+    this.setState({
+      items: this.allItems,
+      progressBarVisible: false,
+    });
   }
 
   protected pageContent = () => {
     return (
       <FlatList
-        data={this.state.items}
+        data={this.state.items as Phone[]}
         renderItem={({item}) => (
           <ExtendedListItemComponent
             item={(item as unknown) as ListItem}

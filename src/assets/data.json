@@ -1,1371 +1,1439 @@
 {
-  "lastUpdate": "2020-03-22T16:11:24.829Z",
   "appState": {
     "additionalHospitalInfoVisible": true
   },
-  "objects": [
-    {
-      "name": "Zielony Stragan",
-      "fullName": "Zielony Stragan – delikatesy warzywno-owocowe",
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["8", "17"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["8", "14"]
-        }
-      ],
-      "additionalInfo": "Dowóz do wszystkich klientów bez dodatkowych opłat oraz minimum logistycznego.",
-      "contectName": "Jacek",
-      "phones": ["660 522 763"],
-      "address": "Targowisko Zabobrze,\nPawilon 27 D/E",
-      "type": "SHOPS",
-      "subType": "VEGETABLES",
-      "isFavorite": false,
-      "amenities": ["TRANSPORT", "IN_PLACE"],
-      "district": "Zabobrze"
-    },
-    {
-      "name": "TianDe Karkonosze",
-      "fullName": "TianDe Karkonosze – drogeria",
-      "additionalInfo": "Tu dostaniesz bogaty asortyment produktów pierwszej potrzeby: higieny intymnej, higieny jamy ustnej, pielęgnacji twarzy, włosów oraz ciała, produkty ekologiczne do prania i mycia naczyń oraz wiele wiele innych.",
-      "phones": ["577 158 008"],
-      "address": "Jelenia Góra,\nul. Krótka 12",
-      "type": "SHOPS",
-      "subType": "DRUGSTORE",
-      "isFavorite": false,
-      "amenities": ["IN_PLACE"],
-      "district": "Centrum"
-    },
-    {
-      "name": "Valdi – zakupy na telefon",
-      "additionalInfo": "Dowozimy: wędliny i drób od kilku dostawców, między innymi z Siedlęcina, nabiał, jaja z fermy w Starej Kamienicy, owoce i warzywa, artykuły spożywcze, pieczywo z piekarni Pasiecznik i Chalczyńscy, wyroby tytoniowe i alkohol, (wyłącznie dla osób pełnoletnich), napoje, soki, prasę, artykuły papiernicze, papier do drukarek, artykuły biurowe, chemię gospodarczą, doładowania telefonów, pierogi ruskie, z mięsem, galaretka z drobiu i wieprzowa oraz sałatki, ziemniaki z gospodarstwa rolnego z Pielgrzymki również na worki.",
-      "phones": ["+(48) 603 055 948", "75 76 48 107"],
-      "type": "SHOPS",
-      "subType": "FOOD",
-      "isFavorite": false,
-      "amenities": ["TRANSPORT"],
-      "email": ["zakupynatelefon@onet.pl"],
-      "district": "Jelenia Góra"
-    },
-    {
-      "name": "Castorama Polska",
-      "fullName": "Castorama Polska sp z o.o.",
-      "additionalInfo": "Darmowy dowóz dla wszystkich klientów firmowych w promieniu 30km od Jeleniej Góry.",
-      "phones": ["75 75 551 60"],
-      "www": "www.castorama.pl",
-      "address": "Jelenia Góra, \nul. Jana Pawła II 11",
-      "type": "SHOPS",
-      "subType": "BUILDING",
-      "isFavorite": false,
-      "amenities": ["TRANSPORT", "IN_PLACE", "PICKUP"],
-      "district": "Centrum"
-    },
-    {
-      "name": "SEREK - dla firm",
-      "fullName": "SEREK – Hurtownia warzyw i owoców",
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["5", "12"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["5", "11"]
-        }
-      ],
-      "additionalInfo": "Tu kupisz: warzywa i owoce dla firmy. \nDarmowy dowóz dla wszystkich klientów firmowych w promieniu 30km od Jeleniej Góry.",
-      "phones": ["75 755 28 49"],
-      "address": "Jelenia Góra,\nul. Wolności 167",
-      "type": "SHOPS",
-      "subType": "VEGETABLES",
-      "isFavorite": false,
-      "amenities": ["TRANSPORT", "IN_PLACE"],
-      "district": "Cieplice"
-    },
-    {
-      "name": "FH Jan Dec",
-      "fullName": "Firma Handlowa Jan Dec",
-      "additionalInfo": "Oferowany asortyment: świeże warzywa i owoce. Darmowy dowóz do klienta na terenie Jeleniem Góry",
-      "phones": ["722 262 850"],
-      "address": "Targowisko Zabobrze",
-      "type": "SHOPS",
-      "subType": "VEGETABLES",
-      "isFavorite": false,
-      "amenities": ["TRANSPORT", "IN_PLACE"],
-      "district": "Zabobrze"
-    },
-    {
-      "name": "Cz-pl-service",
-      "additionalInfo": "W ofercie mamy czeskie słodycze, herbaty, keczupy i inne produkty (również dietetyczne i bez cukru). Przygotowujemy też paczki- niespodzianki. Koszt dostawy zależy od wartości zamówienia i jest ustalany indywidualnie.",
-      "www": "https://www.cz-pl-service.com/pl/produktow-w-magazynie/",
-      "address": "Zachełmie 22,\n58-562 Podgórzyn",
-      "type": "SHOPS",
-      "subType": "FOOD",
-      "isFavorite": false,
-      "district": "ZACHELMIE",
-      "amenities": ["TRANSPORT"]
-    },
-    {
-      "name": "kupjablko.pl",
-      "fullName": "kupjablko.pl -punkt sprzedaży Apple | GoPro | DJI",
-      "hours": [
-        {
+  "shops": {
+    "lastUpdate": "2020-03-22T16:11:24.829Z",
+    "items": [{
+        "name": "Zielony Stragan",
+        "fullName": "Zielony Stragan – delikatesy warzywno-owocowe",
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["8", "17"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["8", "14"]
+          }
+        ],
+        "additionalInfo": "Dowóz do wszystkich klientów bez dodatkowych opłat oraz minimum logistycznego.",
+        "contectName": "Jacek",
+        "phones": ["660 522 763"],
+        "address": "Targowisko Zabobrze,\nPawilon 27 D/E",
+        "type": "SHOPS",
+        "subType": "VEGETABLES",
+        "isFavorite": false,
+        "amenities": ["TRANSPORT", "IN_PLACE"],
+        "district": "Zabobrze",
+        "id": "361c25b7-88e6-5490-aee5-739b05a98315"
+      },
+      {
+        "name": "TianDe Karkonosze",
+        "fullName": "TianDe Karkonosze – drogeria",
+        "additionalInfo": "Tu dostaniesz bogaty asortyment produktów pierwszej potrzeby: higieny intymnej, higieny jamy ustnej, pielęgnacji twarzy, włosów oraz ciała, produkty ekologiczne do prania i mycia naczyń oraz wiele wiele innych.",
+        "phones": ["577 158 008"],
+        "address": "Jelenia Góra,\nul. Krótka 12",
+        "type": "SHOPS",
+        "subType": "DRUGSTORE",
+        "isFavorite": false,
+        "amenities": ["IN_PLACE"],
+        "district": "Centrum",
+        "id": "c0cb7162-61b5-5b18-bbbd-0be244952739"
+      },
+      {
+        "name": "Valdi – zakupy na telefon",
+        "additionalInfo": "Dowozimy: wędliny i drób od kilku dostawców, między innymi z Siedlęcina, nabiał, jaja z fermy w Starej Kamienicy, owoce i warzywa, artykuły spożywcze, pieczywo z piekarni Pasiecznik i Chalczyńscy, wyroby tytoniowe i alkohol, (wyłącznie dla osób pełnoletnich), napoje, soki, prasę, artykuły papiernicze, papier do drukarek, artykuły biurowe, chemię gospodarczą, doładowania telefonów, pierogi ruskie, z mięsem, galaretka z drobiu i wieprzowa oraz sałatki, ziemniaki z gospodarstwa rolnego z Pielgrzymki również na worki.",
+        "phones": ["+(48) 603 055 948", "75 76 48 107"],
+        "type": "SHOPS",
+        "subType": "FOOD",
+        "isFavorite": false,
+        "amenities": ["TRANSPORT"],
+        "email": ["zakupynatelefon@onet.pl"],
+        "district": "Jelenia Góra",
+        "id": "f150eb9c-9974-5045-947b-0e7d5e51f79f"
+      },
+      {
+        "name": "Castorama Polska",
+        "fullName": "Castorama Polska sp z o.o.",
+        "additionalInfo": "Darmowy dowóz dla wszystkich klientów firmowych w promieniu 30km od Jeleniej Góry.",
+        "phones": ["75 75 551 60"],
+        "www": "www.castorama.pl",
+        "address": "Jelenia Góra, \nul. Jana Pawła II 11",
+        "type": "SHOPS",
+        "subType": "BUILDING",
+        "isFavorite": false,
+        "amenities": ["TRANSPORT", "IN_PLACE", "PICKUP"],
+        "district": "Centrum",
+        "id": "73a9f972-155d-50fb-93e3-6a8f34d1418f"
+      },
+      {
+        "name": "SEREK - dla firm",
+        "fullName": "SEREK – Hurtownia warzyw i owoców",
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["5", "12"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["5", "11"]
+          }
+        ],
+        "additionalInfo": "Tu kupisz: warzywa i owoce dla firmy. \nDarmowy dowóz dla wszystkich klientów firmowych w promieniu 30km od Jeleniej Góry.",
+        "phones": ["75 755 28 49"],
+        "address": "Jelenia Góra,\nul. Wolności 167",
+        "type": "SHOPS",
+        "subType": "VEGETABLES",
+        "isFavorite": false,
+        "amenities": ["TRANSPORT", "IN_PLACE"],
+        "district": "Cieplice",
+        "id": "f13d7738-2078-5f88-9f20-eb22ae5a7984"
+      },
+      {
+        "name": "FH Jan Dec",
+        "fullName": "Firma Handlowa Jan Dec",
+        "additionalInfo": "Oferowany asortyment: świeże warzywa i owoce. Darmowy dowóz do klienta na terenie Jeleniem Góry",
+        "phones": ["722 262 850"],
+        "address": "Targowisko Zabobrze",
+        "type": "SHOPS",
+        "subType": "VEGETABLES",
+        "isFavorite": false,
+        "amenities": ["TRANSPORT", "IN_PLACE"],
+        "district": "Zabobrze",
+        "id": "7b23ba36-72a1-5078-aa5c-9c202788f625"
+      },
+      {
+        "name": "Cz-pl-service",
+        "additionalInfo": "W ofercie mamy czeskie słodycze, herbaty, keczupy i inne produkty (również dietetyczne i bez cukru). Przygotowujemy też paczki- niespodzianki. Koszt dostawy zależy od wartości zamówienia i jest ustalany indywidualnie.",
+        "www": "https://www.cz-pl-service.com/pl/produktow-w-magazynie/",
+        "address": "Zachełmie 22,\n58-562 Podgórzyn",
+        "type": "SHOPS",
+        "subType": "FOOD",
+        "isFavorite": false,
+        "district": "ZACHELMIE",
+        "amenities": ["TRANSPORT"],
+        "id": "87d057f8-53e2-5250-87f0-8f1706f6fc93"
+      },
+      {
+        "name": "kupjablko.pl",
+        "fullName": "kupjablko.pl -punkt sprzedaży Apple | GoPro | DJI",
+        "hours": [{
           "startDay": 0,
           "endDay": 4,
           "hours": ["9:30", "17:30"]
-        }
-      ],
-      "additionalInfo": "Dostawy bez dodatkowych opłat realizujemy przez firmę kurierską DHL.",
-      "phones": ["75 643 60 44"],
-      "www": "kupjablko.pl",
-      "address": "Jelenia Góra, ul. Druciana 2",
-      "type": "SHOPS",
-      "subType": "ELECTRONICS",
-      "isFavorite": false,
-      "amenities": ["TRANSPORT", "IN_PLACE"],
-      "district": "Centrum"
-    },
-    {
-      "name": "Ekonomiczna Pomarańcza",
-      "fullName": "Ekonomiczna Pomarańcza Agnieszka Szumilak",
-      "hours": [
-        {
+        }],
+        "additionalInfo": "Dostawy bez dodatkowych opłat realizujemy przez firmę kurierską DHL.",
+        "phones": ["75 643 60 44"],
+        "www": "kupjablko.pl",
+        "address": "Jelenia Góra, ul. Druciana 2",
+        "type": "SHOPS",
+        "subType": "ELECTRONICS",
+        "isFavorite": false,
+        "amenities": ["TRANSPORT", "IN_PLACE"],
+        "district": "Centrum",
+        "id": "407ca482-75ba-5349-8ada-da0fa451572c"
+      }
+    ]
+  },
+  "restaurants": {
+    "lastUpdate": "2020-03-22T16:11:24.829Z",
+    "items": [{
+        "name": "Ekonomiczna Pomarańcza",
+        "fullName": "Ekonomiczna Pomarańcza Agnieszka Szumilak",
+        "hours": [{
           "startDay": 0,
           "endDay": 4,
           "hours": ["9", "12"]
-        }
-      ],
-      "additionalInfo": "Prowadzimy obiady na wywóz od poniedziałku do piątku czekamy na zamówienie od 09.00-12.00 cena 16 zł za osobę",
-      "phones": ["604 820 698"],
-      "facebook": "https://www.facebook.com/Ekonomiczna-Pomarańcza-226462724476863/",
-      "address": "Jelenia Góra, ul. Nowowiejska 3",
-      "type": "RESTAURANTS",
-      "isFavorite": false,
-      "amenities": ["TRANSPORT"],
-      "district": "Centrum"
-    },
-    {
-      "name": "Perła Zachodu",
-      "fullName": "Perła Zachodu Gościniec PTTK",
-      "additionalInfo": "W naszej restauracji każdy znajdzie coś smakowitego dla siebie, serdecznie zapraszamy na desery, pierogi, bigosy, mięsa, pieczenie.",
-      "phones": ["509 841 000"],
-      "facebook": "https://www.facebook.com/PerlaZachodu/",
-      "type": "RESTAURANTS",
-      "isFavorite": false,
-      "amenities": ["TRANSPORT"]
-    },
-    {
-      "name": "Grande Roma",
-      "www": "www.granderoma.com.pl",
-      "facebook": "https://www.facebook.com/pizzeria.cieplice/",
-      "additionalInfo": "Dowóz dań oraz odbiór na miejscu. W naszej ofercie znajduje się: pizza, dania obiadowe, makarony, sałatki oraz napoje.",
-      "phones": ["665 163 087"],
-      "address": "Cieplice, ul. Gimnazjalna 2",
-      "type": "RESTAURANTS",
-      "isFavorite": false,
-      "amenities": ["TRANSPORT", "PICKUP"],
-      "district": "Cieplice"
-    },
-    {
-      "name": "Pierogarnia z Gitarą i Piórem",
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["10", "17"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["10", "15"]
-        }
-      ],
-      "additionalInfo": "Prowadzimy sprzedaż naszych pierogów ciepłych gotowych do zjedzenia lub zimnych do przechowywania w lodówce lub zamrożenia. Wszelkie informacje codziennie na naszym Facebooku.",
-      "phones": ["789 093 292"],
-      "facebook": "https://www.facebook.com/PierogarniaGitaraiPiorem/",
-      "type": "RESTAURANTS",
-      "isFavorite": false,
-      "amenities": ["TRANSPORT"],
-      "district": "Centrum"
-    },
-    {
-      "name": "Twoja Ulubiona Restauracja",
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 2,
-          "hours": ["10", "17"]
-        },
-        {
-          "startDay": 3,
-          "endDay": 4,
-          "hours": ["11", "22"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["10", "15"]
-        }
-      ],
-      "additionalInfo": "Sprzedajemy Twoje ulubione dania w najlepszych cenach w mieście. Tylko u nas mozesz zakupić dania na wynos lub na dowóz. Wprowadziliśmy dla Ciebie takze dostawe bez kontaktową. Gwarantujemy super smak w super cenie!.",
-      "phones": ["555 555 555"],
-      "facebook": "https://www.facebook.com/TwojaKnajpaJgoraPL/",
-      "www": "www.twojaUlubionaRestauracja.jgora.pl",
-      "type": "RESTAURANTS",
-      "isFavorite": false,
-      "amenities": ["TRANSPORT", "PICKUP", "NO_CONTACT_DELIVER"],
-      "district": "Centrum"
-    },
-    {
-      "name": " Gawełczyk Bary Restauracyjne",
-      "hours": [
-        {
+        }],
+        "additionalInfo": "Prowadzimy obiady na wywóz od poniedziałku do piątku czekamy na zamówienie od 09.00-12.00 cena 16 zł za osobę",
+        "phones": ["604 820 698"],
+        "facebook": "https://www.facebook.com/Ekonomiczna-Pomarańcza-226462724476863/",
+        "address": "Jelenia Góra, ul. Nowowiejska 3",
+        "type": "RESTAURANTS",
+        "isFavorite": false,
+        "amenities": ["TRANSPORT"],
+        "district": "Centrum",
+        "id": "f197120b0-e621-526d-bd10-439ec610020d"
+      },
+      {
+        "name": "Perła Zachodu",
+        "fullName": "Perła Zachodu Gościniec PTTK",
+        "additionalInfo": "W naszej restauracji każdy znajdzie coś smakowitego dla siebie, serdecznie zapraszamy na desery, pierogi, bigosy, mięsa, pieczenie.",
+        "phones": ["509 841 000"],
+        "facebook": "https://www.facebook.com/PerlaZachodu/",
+        "type": "RESTAURANTS",
+        "isFavorite": false,
+        "amenities": ["TRANSPORT"],
+        "id": "f000003a8-e621-526d-bd10-439ec610000d"
+      },
+      {
+        "name": "Grande Roma",
+        "www": "www.granderoma.com.pl",
+        "facebook": "https://www.facebook.com/pizzeria.cieplice/",
+        "additionalInfo": "Dowóz dań oraz odbiór na miejscu. W naszej ofercie znajduje się: pizza, dania obiadowe, makarony, sałatki oraz napoje.",
+        "phones": ["665 163 087"],
+        "address": "Cieplice, ul. Gimnazjalna 2",
+        "type": "RESTAURANTS",
+        "isFavorite": false,
+        "amenities": ["TRANSPORT", "PICKUP"],
+        "district": "Cieplice",
+        "id": "f197123a8-e621-526d-bd10-439ec610000d"
+      },
+      {
+        "name": "Pierogarnia z Gitarą i Piórem",
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["10", "17"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["10", "15"]
+          }
+        ],
+        "additionalInfo": "Prowadzimy sprzedaż naszych pierogów ciepłych gotowych do zjedzenia lub zimnych do przechowywania w lodówce lub zamrożenia. Wszelkie informacje codziennie na naszym Facebooku.",
+        "phones": ["789 093 292"],
+        "facebook": "https://www.facebook.com/PierogarniaGitaraiPiorem/",
+        "type": "RESTAURANTS",
+        "isFavorite": false,
+        "amenities": ["TRANSPORT"],
+        "district": "Centrum",
+        "id": "f11123a8-e621-526d-bd10-439ec619411d"
+      },
+      {
+        "name": "Twoja Ulubiona Restauracja",
+        "hours": [{
+            "startDay": 0,
+            "endDay": 2,
+            "hours": ["10", "17"]
+          },
+          {
+            "startDay": 3,
+            "endDay": 4,
+            "hours": ["11", "22"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["10", "15"]
+          }
+        ],
+        "additionalInfo": "Sprzedajemy Twoje ulubione dania w najlepszych cenach w mieście. Tylko u nas mozesz zakupić dania na wynos lub na dowóz. Wprowadziliśmy dla Ciebie takze dostawe bez kontaktową. Gwarantujemy super smak w super cenie!.",
+        "phones": ["555 555 555", "75 44 44 444"],
+        "facebook": "https://www.facebook.com/TwojaKnajpaJgoraPL/",
+        "www": "www.twojaUlubionaRestauracja.jgora.pl",
+        "type": "RESTAURANTS",
+        "isFavorite": false,
+        "amenities": ["TRANSPORT", "PICKUP", "NO_CONTACT_DELIVER"],
+        "district": "Centrum",
+        "id": "f88123a8-e621-526d-bd10-669ec619411d"
+      },
+      {
+        "name": " Gawełczyk Bary Restauracyjne",
+        "hours": [{
           "startDay": 0,
           "endDay": 5,
           "hours": ["9", "14"]
-        }
-      ],
-      "www": " www.obiady.jgora.pl",
-      "additionalInfo": "Prowadzimy działalność gastronomiczną na terenie Jeleniej Góry oraz okolic. Kuchnia Polska (Mięsa, Pierogi, Dania wegetariańskie, naleśniki itp). W menu mogą znaleźć Państwo kuchnie Polską, ale również wegetariańską, codziennie do wyboru 2-3 zupy oraz 5 drugich dań z różnymi dodatkami. Można zamawiać w opakowaniach ekologicznych. Cena zestawu zupa + drugie danie 17 zł. Sklep internetowy znajduje się na naszej stronie www.obiady.jgora.pl",
-      "phones": ["792 030 733"],
-      "facebook": "https://www.facebook.com/obiadydomowejg/",
-      "type": "RESTAURANTS",
-      "isFavorite": false,
-      "amenities": ["TRANSPORT"],
-      "district": "Jelenia Góra"
-    },
-    {
-      "name": "Lord Lounge",
-      "fillName": "Restauracja Lord Lounge",
-      "hours": [
-        {
+        }],
+        "www": " www.obiady.jgora.pl",
+        "additionalInfo": "Prowadzimy działalność gastronomiczną na terenie Jeleniej Góry oraz okolic. Kuchnia Polska (Mięsa, Pierogi, Dania wegetariańskie, naleśniki itp). W menu mogą znaleźć Państwo kuchnie Polską, ale również wegetariańską, codziennie do wyboru 2-3 zupy oraz 5 drugich dań z różnymi dodatkami. Można zamawiać w opakowaniach ekologicznych. Cena zestawu zupa + drugie danie 17 zł. Sklep internetowy znajduje się na naszej stronie www.obiady.jgora.pl",
+        "phones": ["792 030 733"],
+        "facebook": "https://www.facebook.com/obiadydomowejg/",
+        "type": "RESTAURANTS",
+        "isFavorite": false,
+        "amenities": ["TRANSPORT"],
+        "district": "Jelenia Góra",
+        "id": "f87113a9-e621-526d-bd10-669ec619411d"
+      },
+      {
+        "name": "Lord Lounge",
+        "fillName": "Restauracja Lord Lounge",
+        "hours": [{
           "hours": ["11", "22"]
-        }
-      ],
-      "www": "www.restauracjalord.pl",
-      "additionalInfo": "Nasze menu można znaleźć na www.restauracjalord.pl, oraz na portalach pyszne.pl, pizza portal oraz Glovo. Dowozimy zarówno na terenie Jeleniej Góry jak i w dalszych lokalizacjach.",
-      "phones": ["570 581 896", "573 000 504"],
-      "type": "RESTAURANTS",
-      "isFavorite": false,
-      "amenities": ["TRANSPORT", "PICKUP", "NO_CONTACT_DELIVER"],
-      "district": "Centrum"
-    },
-    {
-      "name": "Piwiarnia Warka",
-      "additionalInfo": " Serwowane dania to pizze, makarony, sałatki, dania obiadowe.",
-      "phones": ["756 453 000"],
-      "type": "RESTAURANTS",
-      "isFavorite": false,
-      "amenities": ["TRANSPORT"],
-      "district": "Centrum"
-    },
-    {
-      "name": "ARNIKA",
-      "district": "Cieplice",
-      "address": "Plac Piastowski 40,\n58-560 Jelenia Góra",
-      "phones": ["75 642 66 00"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["8", "20"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["9", "15"]
-        },
-        {
-          "startDay": 6,
-          "hours": ["9", "13"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "ARNIKA",
-      "district": "Cieplice",
-      "address": "Cieplicka 192B,\n58-570 Jelenia Góra",
-      "phones": ["75 755 00 33"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["8", "19"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["8", "15"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "BANKOWA",
-      "district": "Centrum",
-      "address": "Solna 1,\n58-500 Jelenia Góra",
-      "phones": ["75 764 78 01"],
-      "hours": [],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "APTEKA CENTRUM",
-      "district": "Zabobrze",
-      "address": "Letnia 2,\n58-506 Jelenia Góra",
-      "phones": ["75 646 63 80"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["8", "20"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["8", "15"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "APTEKA CIEPLICKA",
-      "district": "Cieplice",
-      "address": "Sprzymierzonych 4,\n58-560 Jelenia Góra",
-      "phones": ["75 755 89 75"],
-      "hours": [
-        {
+        }],
+        "www": "www.restauracjalord.pl",
+        "additionalInfo": "Nasze menu można znaleźć na www.restauracjalord.pl, oraz na portalach pyszne.pl, pizza portal oraz Glovo. Dowozimy zarówno na terenie Jeleniej Góry jak i w dalszych lokalizacjach.",
+        "phones": ["570 581 896", "573 000 504"],
+        "type": "RESTAURANTS",
+        "isFavorite": false,
+        "amenities": ["TRANSPORT", "PICKUP", "NO_CONTACT_DELIVER"],
+        "district": "Centrum",
+        "id": "f87118b9-e621-526d-bd10-669ec6196d1d"
+      },
+      {
+        "name": "Piwiarnia Warka",
+        "additionalInfo": " Serwowane dania to pizze, makarony, sałatki, dania obiadowe.",
+        "phones": ["756 453 000"],
+        "type": "RESTAURANTS",
+        "isFavorite": false,
+        "amenities": ["TRANSPORT"],
+        "district": "Centrum",
+        "id": "f87348b9-e621-526d-bd10-669ec6196d1d"
+      }
+    ]
+
+  },
+  "chemists": {
+    "lastUpdate": "2020-03-22T16:11:24.829Z",
+    "items": [{
+        "name": "ARNIKA",
+        "district": "Cieplice",
+        "address": "Plac Piastowski 40,\n58-560 Jelenia Góra",
+        "phones": ["75 642 66 00"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["8", "20"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["9", "15"]
+          },
+          {
+            "startDay": 6,
+            "hours": ["9", "13"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "f87348b9-e621-526d-bd10-669ec619644d"
+      },
+      {
+        "name": "ARNIKA",
+        "district": "Cieplice",
+        "address": "Cieplicka 192B,\n58-570 Jelenia Góra",
+        "phones": ["75 755 00 33"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["8", "19"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["8", "15"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "f87348b9-e621-526d-bd10-669ec619644d"
+      },
+      {
+        "name": "BANKOWA",
+        "district": "Centrum",
+        "address": "Solna 1,\n58-500 Jelenia Góra",
+        "phones": ["75 764 78 01"],
+        "hours": [],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "c2314fc6-1a26-519b-9f46-23e951ccf79c"
+      },
+      {
+        "name": "APTEKA CENTRUM",
+        "district": "Zabobrze",
+        "address": "Letnia 2,\n58-506 Jelenia Góra",
+        "phones": ["75 646 63 80"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["8", "20"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["8", "15"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "d3c2d09c-48fb-5731-a5cc-3ed312855f2c"
+      },
+      {
+        "name": "APTEKA CIEPLICKA",
+        "district": "Cieplice",
+        "address": "Sprzymierzonych 4,\n58-560 Jelenia Góra",
+        "phones": ["75 755 89 75"],
+        "hours": [{
           "startDay": 0,
           "endDay": 4,
           "hours": ["8", "18"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "DR.MAX",
-      "district": "Zabobrze",
-      "address": "Al.Jana Pawła II 17 C.H.TESCO,\n58-506 Jelenia Góra",
-      "phones": ["75 612 18 10"],
-      "hours": [
-        {
+        }],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "0a69f534-9941-5a78-9ff2-6e6da8f6ba15"
+      },
+      {
+        "name": "DR.MAX",
+        "district": "Zabobrze",
+        "address": "Al.Jana Pawła II 17 C.H.TESCO,\n58-506 Jelenia Góra",
+        "phones": ["75 612 18 10"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["8", "21"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["8", "21"]
+          },
+          {
+            "startDay": 6,
+            "hours": ["9", "19"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "7b95e3d1-e514-5646-a583-2978d5c3b5d7"
+      },
+      {
+        "name": "DR.MAX",
+        "district": "Zabobrze",
+        "address": "Al.Jana Pawła II 24 C.H.KAUFLAND,\n58-506 Jelenia Góra",
+        "phones": ["75 753 10 96"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["8", "21"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["8", "21"]
+          },
+          {
+            "startDay": 6,
+            "hours": ["9", "19"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "7b95e3d1-e514-5646-a583-2978d5c3b5d7"
+      },
+      {
+        "name": "APTEKA SPOŁECZNA",
+        "district": "Centrum",
+        "address": "1 Maja 2,\n58-500 Jelenia Góra",
+        "phones": ["75 752 42 28"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["7:30", "20"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["8", "16"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "3feb2a3a-128d-50ac-a83a-eb16afaa3e87"
+      },
+      {
+        "name": "APTEKA KCM",
+        "district": "Centrum",
+        "address": "Bankowa 7,\n58-500 Jelenia Góra",
+        "phones": ["75 645 20 29"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 3,
+            "hours": ["9", "20"]
+          },
+          {
+            "startDay": 4,
+            "hours": ["8", "19"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["8", "16"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "60c678f4-c2a7-52b3-ac0c-915f15fb9b4a"
+      },
+      {
+        "name": "ZDROWIT",
+        "district": "Zabobrze",
+        "address": "Elsnera 1A,\n58-506 Jelenia Góra",
+        "phones": ["75 647 55 91"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["8", "20"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["8", "16"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "f9e189fd-34f7-5cf9-be26-a740fe8c9f2f"
+      },
+      {
+        "name": "NA ORLIM",
+        "district": "Cieplice",
+        "address": "Wita Stwosza 17,\n58-560 Jelenia Góra",
+        "phones": ["75 755 76 40"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["8", "20"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["8", "18"]
+          },
+          {
+            "startDay": 6,
+            "hours": ["9", "16"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "8424f0e3-cd93-57b8-8ca8-f88e87ce5832"
+      },
+      {
+        "name": "SUPER-PHARM APTEKA",
+        "district": "Cieplice",
+        "address": "Jana Pawła II 51,\n58-506 Jelenia Góra",
+        "phones": ["75 612 16 89"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["9", "21"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["9", "21"]
+          },
+          {
+            "startDay": 6,
+            "hours": ["10", "20"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "1f99ec8a-a530-534b-81e9-ae6dba4fa22d"
+      },
+      {
+        "name": "PIASTOWSKA",
+        "district": "Cieplice",
+        "address": "Plac Piastowski 30,\n58-560 Jelenia Góra",
+        "phones": ["75 755 12 27"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["8", "20"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["8", "17"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "b6035011-27de-5472-bbe5-99fa0ebb6ffc"
+      },
+      {
+        "name": "POD ARKADAMI",
+        "district": "Centrum",
+        "address": "Plac Ratuszowy 47,\n58-500 Jelenia Góra",
+        "phones": ["75 752 20 02"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["8", "19"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["8:30", "16"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "1d666af7-dfb4-5956-ab53-659497a97e20"
+      },
+      {
+        "name": "POD CHOJNIKIEM",
+        "district": "Sobieszów",
+        "address": "Sądowa 5,\n58-570 Jelenia Góra",
+        "phones": ["75 755 34 04"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["9", "18"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["9", "14"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "f4bb97e8-5936-5cc5-9919-db14ad540d1e"
+      },
+      {
+        "name": "POD JELENIEM",
+        "district": "Centrum",
+        "address": "1 Maja 30,\n58-500 Jelenia Góra",
+        "phones": ["75 755 34 04"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["8", "19"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["8", "15"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "b1d50446-794f-5a29-8221-221f9e082a39"
+      },
+      {
+        "name": "POD KORONĄ",
+        "district": "Cieplice",
+        "address": "Wolności 246,\n58-560 Jelenia Góra",
+        "phones": ["75 755 12 38"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["9", "19"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["9", "15"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "ec2412a5-4bc7-5b68-8e72-f90a0d6bb0d3"
+      },
+      {
+        "name": "POD LWEM",
+        "district": "Centrum",
+        "address": "Morcinka 1,\n58-500 Jelenia Góra",
+        "phones": ["75 752 48 26"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["8", "20"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["8", "15"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "a053d0d9-8a83-57d2-9343-bbbae6ad54e0"
+      },
+      {
+        "name": "POD TEATREM",
+        "district": "Centrum",
+        "address": "Sudecka 16,\n58-500 Jelenia Góra",
+        "phones": ["75 752 33 39"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["8", "18:30"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["8", "15"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "dcad394d-2c31-56ac-89ec-8af40181aae4"
+      },
+      {
+        "name": "PROMEDNOVA",
+        "district": "Zabobrze",
+        "address": "Różyckiego 6,\n58-506 Jelenia Góra",
+        "phones": ["75 645 05 20"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["7:30", "19:30"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["8", "15"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "0566623a-4385-5e62-a428-180e52ca4931"
+      },
+      {
+        "name": "STAROMIEJSKA",
+        "district": "Centrum",
+        "address": "Długa 21,\n58-500 Jelenia Góra",
+        "phones": ["75 752 61 47"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["8", "19"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["9", "15"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "2d6dca1a-436d-5789-8c1d-8195ae4df470"
+      },
+      {
+        "name": "STOKROTKA",
+        "district": "Zabobrze",
+        "address": "Sygietyńskiego 3,\n58-506 Jelenia Góra",
+        "phones": ["75 646 46 06"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["7:30", "21"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["8", "16"]
+          },
+          {
+            "startDay": 6,
+            "hours": ["8", "16"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "ea76148b-4b5f-5c1d-b74b-35665d63c9c9"
+      },
+      {
+        "name": "SUDECKA",
+        "district": "Zabobrze",
+        "address": "Bacewicz 23,\n58-506 Jelenia Góra",
+        "phones": ["75 764 57 45"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["8", "20"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["8", "14"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "515b8f95-daa5-5af9-a3ad-70286389ff0b"
+      },
+      {
+        "name": "KOWARSKA",
+        "district": "Centrum",
+        "address": "Kochanowskiego 5A/3,\n58-500 Jelenia Góra",
+        "phones": ["75 641 31 05"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["8", "20"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["8", "17"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "4432252f-dd1d-5471-87df-25f5195dfec8"
+      },
+      {
+        "name": "TWOJA",
+        "district": "Zabobrze",
+        "address": "Ogińskiego 13,\n58-506 Jelenia Góra",
+        "phones": ["75 307 03 90"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["8", "20"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["8", "16"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "7106a10c-fb18-50b6-999e-f1c478a96f36"
+      },
+      {
+        "name": "WITAMINKA",
+        "district": "Centrum",
+        "address": "Morcinka 33,\n58-500 Jelenia Góra",
+        "phones": ["75 303 09 80"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["8", "20"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["8", "15"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "c62b6a64-9fb5-5b35-a09d-39419611d1fa"
+      },
+      {
+        "name": "VITA",
+        "district": "Centrum",
+        "address": "Wojska Polskiego 75,\n58-500 Jelenia Góra",
+        "phones": ["75 649 61 90"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["8", "19"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["9", "15"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "183e92f2-ea60-5c61-8836-bb19f3fa34de"
+      },
+      {
+        "name": "ZABOBRZE-KIEPURY",
+        "district": "Zabobrze",
+        "address": "Kiepury 77,\n58-506 Jelenia Góra",
+        "phones": ["75 643 16 71"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["8", "18:30"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["8", "15"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "35dd364d-a9a7-5ef8-abfd-2cb7f27a0730"
+      },
+      {
+        "name": "ZABOBRZE-MAJOWA",
+        "district": "Centrum",
+        "address": "1 Maja 6/1,\n58-500 Jelenia Góra",
+        "phones": ["75 647 06 57"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["8", "18:30"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["8", "15"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "789cfb47-1ee3-59b8-9c34-c4f73769bb68"
+      },
+      {
+        "name": "ZABOBRZE-PASTYLKA",
+        "district": "Zabobrze",
+        "address": "Trzcińskiego 12,\n58-506 Jelenia Góra",
+        "phones": ["75 643 16 91"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["8", "18:30"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["8", "15"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "aa2de2c5-c003-58b4-bbe5-939ca2f12c94"
+      },
+      {
+        "name": "ZABOBRZE-PRZYCHODNIA",
+        "district": "Zabobrze",
+        "address": "Ogińskiego 1B,\n58-506 Jelenia Góra",
+        "phones": ["75 643 06 50"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["8", "22"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["8", "22"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "1731e5b4-d54a-5b82-b687-2ac320269d84"
+      },
+      {
+        "name": "ZABOBRZE-SZPITAL",
+        "district": "Zabobrze",
+        "address": "Ogińskiego 6,\n58-506 Jelenia Góra",
+        "phones": ["75 643 06 53"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["8", "22"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["8", "22"]
+          },
+          {
+            "startDay": 6,
+            "hours": ["8", "22"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "a182f112-a049-5699-9139-47e5f93c9da7"
+      },
+      {
+        "name": "PRZY TERMACH",
+        "district": "Cieplice",
+        "address": "Daniłowskiego 2A,\n58-560 Jelenia Góra",
+        "phones": ["75 713 08 81"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["8", "19"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["8", "15"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "859c6f34-a9c2-5b76-9d06-bcd3f0818989"
+      },
+      {
+        "name": "COSMEDICA",
+        "district": "Centrum",
+        "address": "Podwale 25,\n58-500 Jelenia Góra",
+        "phones": ["75 757 50 66"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["8", "19"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["9", "21"]
+          },
+          {
+            "startDay": 6,
+            "hours": ["10", "20"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "f6483dce-95d2-5f01-84df-78ef270734b5"
+      },
+      {
+        "name": "NOWA",
+        "district": "Zabobrze",
+        "address": "Kiepury 26,\n58-506 Jelenia Góra",
+        "phones": ["75 754 23 22"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["9", "21"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["9", "21"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "b1c5e067-1b92-5c8f-9ec8-723c5f8e7a84"
+      },
+      {
+        "name": "APTEKA ZIELONA",
+        "district": "Cieplice",
+        "address": "Zielona 6 lok 2,\n58-560 Jelenia Góra",
+        "phones": ["75 754 23 22"],
+        "hours": [{
           "startDay": 0,
           "endDay": 4,
-          "hours": ["8", "21"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["8", "21"]
-        },
-        {
-          "startDay": 6,
-          "hours": ["9", "19"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "DR.MAX",
-      "district": "Zabobrze",
-      "address": "Al.Jana Pawła II 24 C.H.KAUFLAND,\n58-506 Jelenia Góra",
-      "phones": ["75 753 10 96"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["8", "21"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["8", "21"]
-        },
-        {
-          "startDay": 6,
-          "hours": ["9", "19"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "APTEKA SPOŁECZNA",
-      "district": "Centrum",
-      "address": "1 Maja 2,\n58-500 Jelenia Góra",
-      "phones": ["75 752 42 28"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["7:30", "20"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["8", "16"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "APTEKA KCM",
-      "district": "Centrum",
-      "address": "Bankowa 7,\n58-500 Jelenia Góra",
-      "phones": ["75 645 20 29"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 3,
-          "hours": ["9", "20"]
-        },
-        {
-          "startDay": 4,
-          "hours": ["8", "19"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["8", "16"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "ZDROWIT",
-      "district": "Zabobrze",
-      "address": "Elsnera 1A,\n58-506 Jelenia Góra",
-      "phones": ["75 647 55 91"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["8", "20"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["8", "16"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "NA ORLIM",
-      "district": "Cieplice",
-      "address": "Wita Stwosza 17,\n58-560 Jelenia Góra",
-      "phones": ["75 755 76 40"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["8", "20"]
-        },
-        {
-          "startDay": 5,
           "hours": ["8", "18"]
-        },
-        {
-          "startDay": 6,
-          "hours": ["9", "16"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "SUPER-PHARM APTEKA",
-      "district": "Cieplice",
-      "address": "Jana Pawła II 51,\n58-506 Jelenia Góra",
-      "phones": ["75 612 16 89"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["9", "21"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["9", "21"]
-        },
-        {
-          "startDay": 6,
-          "hours": ["10", "20"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "PIASTOWSKA",
-      "district": "Cieplice",
-      "address": "Plac Piastowski 30,\n58-560 Jelenia Góra",
-      "phones": ["75 755 12 27"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["8", "20"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["8", "17"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "POD ARKADAMI",
-      "district": "Centrum",
-      "address": "Plac Ratuszowy 47,\n58-500 Jelenia Góra",
-      "phones": ["75 752 20 02"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["8", "19"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["8:30", "16"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "POD CHOJNIKIEM",
-      "district": "Sobieszów",
-      "address": "Sądowa 5,\n58-570 Jelenia Góra",
-      "phones": ["75 755 34 04"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["9", "18"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["9", "14"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "POD JELENIEM",
-      "district": "Centrum",
-      "address": "1 Maja 30,\n58-500 Jelenia Góra",
-      "phones": ["75 755 34 04"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["8", "19"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["8", "15"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "POD KORONĄ",
-      "district": "Cieplice",
-      "address": "Wolności 246,\n58-560 Jelenia Góra",
-      "phones": ["75 755 12 38"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["9", "19"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["9", "15"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "POD LWEM",
-      "district": "Centrum",
-      "address": "Morcinka 1,\n58-500 Jelenia Góra",
-      "phones": ["75 752 48 26"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["8", "20"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["8", "15"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "POD TEATREM",
-      "district": "Centrum",
-      "address": "Sudecka 16,\n58-500 Jelenia Góra",
-      "phones": ["75 752 33 39"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["8", "18:30"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["8", "15"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "PROMEDNOVA",
-      "district": "Zabobrze",
-      "address": "Różyckiego 6,\n58-506 Jelenia Góra",
-      "phones": ["75 645 05 20"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["7:30", "19:30"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["8", "15"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "STAROMIEJSKA",
-      "district": "Centrum",
-      "address": "Długa 21,\n58-500 Jelenia Góra",
-      "phones": ["75 752 61 47"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["8", "19"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["9", "15"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "STOKROTKA",
-      "district": "Zabobrze",
-      "address": "Sygietyńskiego 3,\n58-506 Jelenia Góra",
-      "phones": ["75 646 46 06"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["7:30", "21"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["8", "16"]
-        },
-        {
-          "startDay": 6,
-          "hours": ["8", "16"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "SUDECKA",
-      "district": "Zabobrze",
-      "address": "Bacewicz 23,\n58-506 Jelenia Góra",
-      "phones": ["75 764 57 45"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["8", "20"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["8", "14"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "KOWARSKA",
-      "district": "Centrum",
-      "address": "Kochanowskiego 5A/3,\n58-500 Jelenia Góra",
-      "phones": ["75 641 31 05"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["8", "20"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["8", "17"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "TWOJA",
-      "district": "Zabobrze",
-      "address": "Ogińskiego 13,\n58-506 Jelenia Góra",
-      "phones": ["75 307 03 90"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["8", "20"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["8", "16"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "WITAMINKA",
-      "district": "Centrum",
-      "address": "Morcinka 33,\n58-500 Jelenia Góra",
-      "phones": ["75 303 09 80"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["8", "20"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["8", "15"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "VITA",
-      "district": "Centrum",
-      "address": "Wojska Polskiego 75,\n58-500 Jelenia Góra",
-      "phones": ["75 649 61 90"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["8", "19"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["9", "15"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "ZABOBRZE-KIEPURY",
-      "district": "Zabobrze",
-      "address": "Kiepury 77,\n58-506 Jelenia Góra",
-      "phones": ["75 643 16 71"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["8", "18:30"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["8", "15"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "ZABOBRZE-MAJOWA",
-      "district": "Centrum",
-      "address": "1 Maja 6/1,\n58-500 Jelenia Góra",
-      "phones": ["75 647 06 57"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["8", "18:30"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["8", "15"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "ZABOBRZE-PASTYLKA",
-      "district": "Zabobrze",
-      "address": "Trzcińskiego 12,\n58-506 Jelenia Góra",
-      "phones": ["75 643 16 91"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["8", "18:30"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["8", "15"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "ZABOBRZE-PRZYCHODNIA",
-      "district": "Zabobrze",
-      "address": "Ogińskiego 1B,\n58-506 Jelenia Góra",
-      "phones": ["75 643 06 50"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["8", "22"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["8", "22"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "ZABOBRZE-SZPITAL",
-      "district": "Zabobrze",
-      "address": "Ogińskiego 6,\n58-506 Jelenia Góra",
-      "phones": ["75 643 06 53"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["8", "22"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["8", "22"]
-        },
-        {
-          "startDay": 6,
-          "hours": ["8", "22"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "PRZY TERMACH",
-      "district": "Cieplice",
-      "address": "Daniłowskiego 2A,\n58-560 Jelenia Góra",
-      "phones": ["75 713 08 81"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["8", "19"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["8", "15"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "COSMEDICA",
-      "district": "Centrum",
-      "address": "Podwale 25,\n58-500 Jelenia Góra",
-      "phones": ["75 757 50 66"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["8", "19"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["9", "21"]
-        },
-        {
-          "startDay": 6,
-          "hours": ["10", "20"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "NOWA",
-      "district": "Zabobrze",
-      "address": "Kiepury 26,\n58-506 Jelenia Góra",
-      "phones": ["75 754 23 22"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["9", "21"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["9", "21"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "APTEKA ZIELONA",
-      "district": "Cieplice",
-      "address": "Zielona 6 lok 2,\n58-560 Jelenia Góra",
-      "phones": ["75 754 23 22"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["8", "18"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "TWOJA",
-      "district": "Centrum",
-      "address": "Okrzei 11,\n58-500 Jelenia Góra",
-      "phones": ["75 303 02 88"],
-      "hours": [
-        {
-          "startDay": 0,
-          "endDay": 4,
-          "hours": ["8", "20"]
-        },
-        {
-          "startDay": 5,
-          "hours": ["8", "16"]
-        }
-      ],
-      "type": "CHEMIST",
-      "isFavorite": false
-    },
-    {
-      "name": "WOJEWÓDZKIE CENTRUM SZPITALNE KOTLINY JELENIOGÓRSKIEJ",
-      "address": "ul.Ogińskiego 6, \n58-501 Jelenia Góra",
-      "phones": ["75 753 71 00"],
-      "additionalInfo": "Pozostałe telefony: \nSekretariat – 75 753 7201\nFax Sekretariat – 75 754 2335\nSzpitalny Oddział Ratunkowy – 75 753 7118\nRejestracja do Poradni Specjalistycznych – 75 753 7489 oraz 75 753 7490",
-      "messages": [
-        {
-          "type": "URL",
-          "name": "Zmiana zasad w WCSKJ",
-          "content": "https://spzoz.jgora.pl/wp-content/uploads/2020/03/info.pdf",
-          "date": null
-        },
-        {
-          "type": "URL",
-          "name": "Ankiety kwalifikacyjne",
-          "content": "https://spzoz.jgora.pl/wp-content/uploads/2020/03/informacja-1.pdf",
-          "date": null
-        }
-      ],
-      "type": "MEDIC",
-      "subType": "HOSPITAL"
-    },
-    {
-      "name": "WCSKJ - JEDNOSTKA ZAMIEJSCOWA 'WYSOKA ŁĄKA'",
-      "address": "ul.Sanatoryjna 27, \n58-530 Kowary",
-      "type": "MEDIC",
-      "subType": "HOSPITAL",
-      "phones": ["75 64 58 866"],
-      "email": "e-mail:kowary@spzoz.jgora.pl"
-    },
-    {
-      "name": "EMC Szpital Bukowiec",
-      "fullName": "EMC Szpital Bukowiec - Niepubliczny Zaklad Opieki Zdrowotnej Powiatowe Centrum Zdrowia w Kowarach",
-      "address": "ul.Sanatoryjna 15, \n58-530 Kowary",
-      "type": "MEDIC",
-      "subType": "HOSPITAL",
-      "phones": ["75 641 57 15"]
-    },
-    {
-      "name": "CENTRUM MEDYCZNE KARPACZ",
-      "address": "ul.Myśliwska 13, \n58-540 Karpacz",
-      "type": "MEDIC",
-      "subType": "HOSPITAL",
-      "phones": ["883 358 135,883 358 138"],
-      "www": "www.cmkarpacz.pl",
-      "email": "kontakt@cmkarpacz.pl"
-    },
-    {
-      "name": "CENTRUM MEDYCZNE PROMED (PLACÓWKA GŁÓWNA)",
-      "address": "ul.Różyckiego 6, \n58-506 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["75 641 71 01"]
-    },
-    {
-      "name": "PRZYCHODNIA DRZYMAŁY",
-      "address": "ul.M.Drzymały 31, \n58-500 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["75 64 171 21"]
-    },
-    {
-      "name": "PRZYCHODNIA POWSTAŃCÓW ŚL.",
-      "address": "ul.Powstańców Śląskich 6, \n58-500, Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["75 75 347 71", "75 64 332 53"]
-    },
-    {
-      "name": "PRZYCHODNIA NASZ LEKARZ ",
-      "address": "al.Wojska Polskiego 57, \n58-500 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["75 642 25 50"]
-    },
-    {
-      "name": "ZABOBRZE CENTRUM MEDYCZNE",
-      "address": "ul.Wiejska 11, \n58-506 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["75 889 01 70"]
-    },
-    {
-      "name": "PRZYCHODNIA MEDINAP NA LETNIEJ",
-      "address": "UL.LETNIA 2, \n58-500 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["75 645 650", "75 645 651"]
-    },
-    {
-      "name": "SAMODZIELNY PUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ MSW",
-      "address": "ul.Nowowiejska 43, \n58-500 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["75 612 07 78"]
-    },
-    {
-      "name": "PRZYCHODNIA LEKARZ RODZINNY",
-      "address": "ul.Kopernika 2, \n58-500 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["75 752 31 14"]
-    },
-    {
-      "name": "KCM-KARKONOSKIE CENTRUM MEDYCZNE NZOZ",
-      "address": "ul.Bankowa 5/7, \n58-500 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["75 645 20 00"]
-    },
-    {
-      "name": "PRZYCHODNIA DOKTOR Sp.z o.o.",
-      "address": "ul.A.Grottgera 10, \n58-500 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["75 642 25 02"]
-    },
-
-    {
-      "name": "PORADNIE MEDICTA",
-      "address": "ul.Wolności 140, \n58-200 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["883 358 100"]
-    },
-    {
-      "name": "LASER PRZYCHODNIA CHIRURGICZNA",
-      "address": "ul.Skłodowskiej-Curie 13, \n58-500 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["501 391 604"]
-    },
-
-    {
-      "name": "ZDROWIE Sp.z o.o ZAKŁAD USŁUG LEKARSKICH",
-      "address": "ul.Mostowa 2, \n58-500 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["75 767 49 37"]
-    },
-    {
-      "name": "PRZYCHODNIA PROTETYCZNO-STOMATOLOGICZNA KARDIS",
-      "address": "ul.1 Maja 59, \n58-500 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["509 263 183"]
-    },
-    {
-      "name": "ARS MEDICA NZOZ PRZYCHODNIA SPORTOWA",
-      "address": "ul.Kopernika 1, \n58-500 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["75 752 51 49"]
-    },
-    {
-      "name": "JELENIOGÓRSKIE CENTRUM LARYNGOLOGII",
-      "address": "al.Wojska Polskiego 75, \n58-500 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["601 641 503"]
-    },
-    {
-      "name": "PHARMED CENTRUM MEDYCZNE",
-      "address": "ul.Zielona 6, \n58-560 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["75 642 30 00"]
-    },
-    {
-      "name": "TWÓJ CHIRURG",
-      "address": "ul.S.Moniuszki 5A, \n58-500 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["75 753 13 27"]
-    },
-
-    {
-      "name": "PRZYCHODNIA STOMATOLOGICZNA UŚMIECH",
-      "address": "ul.5A/3, \n58-560 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["75 755 95 44"]
-    },
-    {
-      "name": "CHIRURGIA CIEPLICE ANDRZEJ CHRUŚCIEL",
-      "address": "ul.Sprzymierzonych 4, \n58-560 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["75 755 05 66"]
-    },
-
-    {
-      "name": "SP ZOZ SZPITAL SPECJALISTYCZNY MSWiA - PORADNIA ZDROWIA PSYCHICZNEGO",
-      "address": "ul. Cieplicka 59, \n58-560 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["75 643 57 33"]
-    },
-
-    {
-      "name": "NZOZ OSTEOCYT",
-      "address": "ul.Lwówecka 18 bud.2, \n58-500 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["75 649 06 80"]
-    },
-    {
-      "name": "PRZYCHODNIA POZ ORLE CIEPLICE",
-      "address": "ul.Cieplicka 83a, \n58-560 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["883 358 201", "883 358 210"]
-    },
-
-    {
-      "name": "PRZYCHODNIA NZOZ CIEPLICE",
-      "address": "pl.Piastowski 20, \n58-560 Jelenia Góra ",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["75 642 32 03"]
-    },
-
-    {
-      "name": "REHABILITACJA KLONOWICA 9",
-      "address": "ul.Klonowica 9, \n58-500 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["75 742 32 32"]
-    },
-    {
-      "name": "SUDETY",
-      "address": "ul.Piłsudskiego 35, \n58-500 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["75 764 71 35"]
-    },
-
-    {
-      "name": "CENTRUM STOMATOLOGICZNE",
-      "address": "ul.W.Polskiego 36, \n58-500 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["75 752 21 85"]
-    },
-
-    {
-      "name": "NZOZ STOMATOLOGIA BEZ BÓLU",
-      "address": "ul.W.Polskiego 30A, \n58-500 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["75 642 45 58"]
-    },
-    {
-      "name": "SOBIESZÓW NZOZ",
-      "address": "ul.Cieplicka 164, \n58-570 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["75 755 35 30"]
-    },
-    {
-      "name": "CENTRUM LECZENIA BÓLU",
-      "address": "ul.Bankowa 8, \n58-500 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["574 306 309"]
-    },
-    {
-      "name": "STOMATOLOGIA NZOS GRAŻYNA NAŁĘCZ-SOCHA",
-      "address": "ul.Kiepury 77, \n58-506 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["75 754 23 56"]
-    },
-    {
-      "name": "NZOZ MCD VOXEL",
-      "address": "ul.Piłsudskiego 35, \n58-500 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["75 647 06 90"]
-    },
-    {
-      "name": "DENTAL AND SKIN CLINIC ESPENSCHIED",
-      "address": "ul.Wiejska 24A, \n58-506 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["506 899 277"]
-    },
-    {
-      "name": "LEKARZ STOMATOLOG MONIKA ROGALSKA",
-      "address": "ul.Sygietyńskiego 19/1, \n58-506 Jelenia Góra",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["607 383 665"]
-    },
-    {
-      "name": "PRZYCHODNIA POZ KARPACZ",
-      "address": "ul.Konstytucji 3 Maja 71, \n58-540 Karpacz",
-      "type": "MEDIC",
-      "subType": "AMBULATORIES",
-      "phones": ["883 358 171", "883 358 172"]
-    },
-    {
-      "name": "Urząd skarbowy",
-      "address": "ul. Thebesiusa 1, \n58-506 Jelenia Góra",
-      "phones": ["75 64 73 500", "75 64 73 537"],
-      "mail": "us.jelenia_gora@mf.gov.pl",
-      "htmlContent": "<p>Warto skontaktować się telefonicznie <br />w sprawie ewentualnych ograniczeń dotyczących przyjęć.</p><p><strong>PODATKI BĘDZIE MOŻNA ROZLICZYĆ NA 2 SPOSOBY</strong></p><p>&bull; On-line poprzez Tw&oacute;j e-PIT, e-Deklaracje, e-PUAP,</p><p>&bull; w urzędzie &ndash; poprzez wrzucenie deklaracji, pism, innych dokument&oacute;w do wystawionych urn. W tym przypadku bez potwierdzenia wpływu do urzędu.</p><p><strong><br />Kontakt telefoniczny do urzędu skarbowego:</strong></p><p>PIT &ndash; nr telefonu 75 64 73 574, 75 64 73 507, 75 64 73 549</p><p>VAT &ndash; nr telefonu 75 64 73 568, 75 64 73 559, 75 64 73 565, 75 64 73 527</p><p>CIT &ndash; nr telefonu 75 64 73 553</p><p>kasy rejestrujące i profil zaufany &ndash; nr telefonu &ndash; 75 64 73 527</p><p>zaświadczenia o dochodach &ndash; nr telefonu 75 64 73 542, 75 64 73 583</p><p>zaświadczenia o niezaleganiu &ndash; nr telefonu 75 64 73 532, 75 64 73 525</p><p>spadki/darowizny i PCC &ndash; nr telefonu 75 64 73 529, 75 64 73 522</p><p>rejestracja podatnik&oacute;w &ndash; nr telefonu 75 64 73 541, 75 64 73 543</p><p>egzekucja administracyjna &ndash; nr telefonu 75 64 73 561, 75 64 73 515</p><p>rachunkowość podatkowa &ndash; nr telefonu 75 64 73 546, 75 64 73 547, 75 64 73 525, 75 64 73 523, 75 64 76 545, 75 64 73 524</p><p>kom&oacute;rka wierzycielska &ndash; nr telefonu 75 64 73 552</p><p>Informacje podatkowe oraz usługa Tw&oacute;j e-PIT znajdziesz na www.podatki.gov.pl</p",
-      "type": "OFFICE"
-    },
-    {
-      "name": "Zakład Ubezpieczeń Społecznych",
-      "fullName": "Zakład Ubezpieczeń Społecznych Inspektorat w Jeleniej Górze",
-      "address": "ul. Sygietyńskiego 10,\n58-500 Jelenia Góra",
-      "type": "OFFICE",
-      "htmlContent": "<p><strong>Godziny obsługi klient&oacute;w</strong></p><p>Poniedziałek: 8.00-18.00</p><p>Wtorek - Piątek: 8.00-15.00</p><p><strong>Informacja og&oacute;lnopolska:</strong></p><p>Aby ułatwić Państwu kontakt telefoniczny w najważniejszych aktualnie sprawach, od 18 marca uruchomiliśmy 3 nowe linie tematyczne<br />pod nowymi numerami telefon&oacute;w:</p><p>1. nr telefonu 22 290 87 01</p><p>- obsługa w sprawie świadczeń z powodu poddania się kwarantannie lub izolacji<br /> - obsługa w sprawie zasiłk&oacute;w opiekuńczych na czas opieki nad dzieckiem w związku z zamknięciem żłobka, klubu dziecięcego, przedszkola, szkoły</p><p>2.nr telefonu 22 290 87 02</p><p>- obsługa w sprawie wsparcia dla przedsiębiorc&oacute;w</p><p>3.nr telefonu 22 290 87 03</p><p>- obsługa w sprawie odwołanych badań lekarskich i rehabilitacji leczniczej</p><p>Pod tymi numerami jesteśmy dostępni w dni robocze (pn.- pt.) w godzinach 7 - 15</p><p>Nadal do Państwa dyspozycji jest og&oacute;lnopolska linia telefoniczna pod numerem telefonu 22 560 16 00 dostępna w dni robocze (pn.-pt) w godzinach 7-18.</p><p>Po wybraniu &bdquo;0&rdquo;(połączenie z konsultantem Centrum Obsługi Telefonicznej), należy wybrać odpowiedni temat rozmowy:</p><p>1 - Pomoc techniczna i obsługa e-ZLA,<br />2 - Renty i emerytury,<br />3 &ndash; Zasiłki,<br />4 - Informacje dla ubezpieczonych,<br />5 - Informacje dla płatnik&oacute;w,<br />7 &ndash; Wsparcie dla przedsiębiorc&oacute;w<br />9 - Zasiłek opiekuńczy i świadczenia z powodu poddania się kwarantannie lub izolacji</p>"
-    },
-    {
-      "name": "Miejski Ośrodek Pomocy SPołecznej",
-      "address": "al. Jana Pawła II nr 7, \n58-506 Jelenia Góra",
-      "phones": ["75 75 23 951", "75 64 67 002"],
-      "type": "OFFICE",
-      "htmlContent": "<p><strong>Obwieszczenie<br /></strong></p><p>W trosce o bezpieczeństwo, zwracamy się z prośbą o ograniczenie osobistych wizyt w Miejskim Ośrodku Pomocy Społecznej w Jeleniej G&oacute;rze, a w miarę możliwości załatwianie spraw drogą elektroniczną lub przez telefon. <br /><br />Wykaz bezpośrednich numer&oacute;w telefonu do poszczeg&oacute;lnych pracownik&oacute;w znajduje się na stronie internetowej Miejskiego Ośrodka Pomocy Społecznej w Jeleniej G&oacute;rze http://www.mops.jelenia-gora.pl w zakładkach każdego działu. <br /><br />Można r&oacute;wnież zadzwonić pod numer: 75 75 23 951, 75 75 24 657, skąd nastąpi przekierowanie do właściwej kom&oacute;rki organizacyjnej. OD DNIA 16.03.2020 r.</p><p><strong>OSOBY OSOBIŚCIE ZAŁATWIAJĄCE SPRAWY DO BUDYNKU MOPS BĘDĄ WPUSZCZANE POJEDYNCZO. KASA CZYNNA 11:00 - 13:00</strong>. Osoby oczekujące na załatwienie sprawy są proszone, by zachowały odpowiednią odległość - co najmniej 1 metr od innych os&oacute;b oczekujących. <br />Za wszelkie utrudnienia serdecznie przepraszamy. Dyrektor MOPS w Jeleniej G&oacute;rze</p><p><strong>Telefony</strong></p><p>Centrala: 75 75 23 951, 75 64 67 002, 75 75 24 657, 75 64 78 578</p><p>Dzienny Dom Pomocy Społecznej: 75 75 255 71</p><p><strong>Godziny pracy</strong></p><p>Ośrodek czynny w dni robocze w godzinach 7:30-15:30</p><p>Pracownicy socjalni przyjmują klient&oacute;w w godzinach 7:30-10:00 i 14:00-15:30</p><p>Dzienny Dom Pomocy Społecznej czynny w dni robocze w godzinach 8:00-16:00</p><p><em>Kasa czynna</em> 11:00-13:00&nbsp;</p>"
-    },
-    {
-      "name": "Urząd Pracy w Jeleniej Górze",
-      "address": "ul.Podchorążych 15, \n58-508 Jelenia Góra",
-      "phones": ["75 64 73 160", "75 64 73 162"],
-      "email": "wrje@praca.gov.pl",
-      "type": "OFFICE",
-      "htmlContent": "<p>Godziny pracy Urzędu:07:30-15:30,<br />Godziny przyjmowania interesant&oacute;w: 08:00 - 14:00, przerwa 9:45-10:00</p><p>Zielona linia urzędu pracy 19524</p><p><strong>Informacje ze strony PUP:</strong></p><p>Ministerstwo Zdrowia informuje że każda, nawet nieubezpieczona osoba, będzie diagnozowana bezpłatnie w przypadku podejrzenia zakażenia koronawirusem.</p><p>Reguluje to ustawa z dnia 2 marca 2020r. o szczeg&oacute;lnych rozwiązaniach związanych z zapobieganiem, przeciwdziałaniem i zwalczaniem COVID-19, innych chor&oacute;b zakaźnych oraz wywołanych nimi sytuacji kryzysowych (Dz. U. poz. 374)</p><p>W związku z tym proszę o rozważenie tej informacji i powstrzymanie się od rejestracji w celu uzyskania uprawnień do korzystania z ubezpieczenia zdrowotnego.</p><p>Ponadto osoby ubiegające się o nadanie statusu bezrobotnego lub poszukującego pracy mogą złożyć wniosek w postacielektronicznej do właściwego powiatowego urzędu pracy korzystając z systemu Praca.gov.pl (https://www.praca.gov.pl)</p><hr /><p>Szanowni Państwo</p><p>Uwzględniając wnioski i prośby naszych klient&oacute;w, uprzejmie informujemy, iż od dnia 12.03.2020 r. osoby, kt&oacute;re mają wyznaczony obowiązkowy termin wizyty w PUP Jelenia G&oacute;ra w miesiącu marcu, mogą przełożyć go telefonicznie lub mailowo na inny termin spotkania po wcześniejszym uzgodnieniu z doradcą klienta.</p><p>Pozostałym klientom Urzędu, kt&oacute;rzy planują w najbliższych dniach przybycie osobiste do urzędu a ich sprawa nie wymaga konieczności ich osobistego stawiennictwa, proponujemy rozważenie wcześniejszego kontaktu telefonicznego z pracownikami&nbsp;urzędu pracy bądź skorzystania z poniższych rozwiązań elektronicznych:</p><p>Email: wrje@praca.gov.pl<br /> Portal: jeleniagora.praca.gov.pl<br /> Portal: epuap.gov.pl</p><p>w celu ustalenia dalszego sposobu procedowania spraw urzędowych.</p><p>Dyrekcja Powiatowego Urzędu Pracy w Jeleniej G&oacute;rze</p>"
-    }
-  ],
-  "messages": [
-    {
-      "createDate": "2020-02-22T09:51:29.829Z",
-      "editDate": "2020-02-22T09:51:29.829Z",
-      "title": "Pamiętajmy o seniorach w czasie pandemii",
-      "short": "Wychodzimy naprzeciw obecnie panującej sytuacji i zwracamy szczególną uwagę w czasie pandemii na Seniorów – grupę osób w wieku 60+.",
-      "content": "Wychodzimy naprzeciw obecnie panującej sytuacji i zwracamy szczególną uwagę w czasie pandemii na Seniorów – grupę osób w wieku 60+. Ta część społeczeństwa jest najbardziej narażona na zarażenie chorobą COVID-19 wywołaną przez koronawirusa SARS-Cov-2. Dla Seniorów, których odporność jest często niższa niż osób w młodszym wieku, konsekwencje zachorowania są dużo bardziej dotkliwe. Wspierajmy Seniorów pamiętając o zasadach bezpieczeństwa.\n\nSTOP KORONA-OSZUSTWOM\n\nWyjątkowa sytuacja powoduje, że do „pomocy” włączają się również oszuści, dostrzegając szybki i łatwy zysk w obliczu wybuchu społecznej paniki. Wszechobecny lęk, szczególnie wśród osób w wieku 60+, skrzętnie wykorzystują manipulatorzy na wielu płaszczyznach. Działają w Internecie, ale też w kontakcie bezpośrednim. Informacje na ten temat spływają do policji z całej Polski. Oszuści sprzedają w Internecie różnego typu środki (np. lekarstwa, suplementy, herbaty czy amulety), których działanie ma uchronić osobę przed zachorowaniem na koronawirusa. Coraz częściej dochodzi także do działań bezpośrednich. Delikwenci podszywają się pod lekarzy, pracowników Sanepidu czy służby mundurowe i w trakcie wizyty w domu ofiary, kradną pieniądze i inne przedmioty."
-    },
-    {
-      "createDate": "2020-02-22T10:51:29.829Z",
-      "editDate": "2020-02-22T10:51:29.829Z",
-      "title": "Godzina dla seniorów",
-      "short": "Sieć Tesco wprowadza specjalne godziny na zakupy dla osób z grupy podwyższonego ryzyka, w szczególności dla osób starszych.",
-      "content": "Zgodnie z zaleceniami, osoby z grupy podwyższonego ryzyka powinny jak najmniej wychodzić z domów – jednak nie zawsze jest to możliwe. Celem akcji jest umożliwienie osobom starszym sprawne zrobienie najpilniejszych zakupów. Dzięki temu będą mogli szybciej wrócić do domu i będą mniej narażeni na zarażenie koronawirusem. Akcja będzie prowadzona codziennie w godzinach 9-10. W tym czasie seniorzy mogą liczyć na wsparcie obsługi sklepów oraz pierwszeństwo w kolejkach do kas. W trakcie specjalnych godzin sklepy Tesco pozostaną otwarte dla wszystkich klientów, ale sieć handlowa prosi swoich pozostałych klientów o zrozumienie i ustępowanie pierwszeństwa osobom starszym w wyznaczonym czasie."
-    },
-    {
-      "createDate": "2020-02-22T09:55:29.829Z",
-      "editDate": "2020-02-22T11:51:29.829Z",
-      "title": "Kolejne zmiany w komunikacji miejskiej",
-      "short": "W związku z nowymi ograniczeniami, w trosce o zdrowie mieszkańców Jeleniej Góry i pozostałych gmin, od 25 marca (środa) Miejski Zakład Komunikacyjny wprowadza kolejne zmiany w funkcjonowaniu komunikacji miejskiej",
-      "content": "W związku z nowymi ograniczeniami, w trosce o zdrowie mieszkańców Jeleniej Góry i pozostałych gmin, od 25 marca (środa) Miejski Zakład Komunikacyjny wprowadza kolejne zmiany w funkcjonowaniu komunikacji miejskiej:\n\nMZK informuje:\n\n1. Linie najbardziej obciążone obsługiwać będą autobusy, o największej liczbie dostępnych miejsc siedzących, w szczególności autobusy przegubowe.\n\n2. W każdym autobusie jednorazowo będzie mogła podróżować liczba pasażerów nie większa niż połowa znajdujących się w tym autobusie miejsc siedzących. Szacunkowo jest to od 15 osób w nowych autobusach typy Volvo i Man – do 25 osób w autobusach przegubowych.\n\n3. Na bieżąco będziemy monitorować sytuację w autobusach i podejmować adekwatne działania. Tak jak do tej pory prosimy Państwa o uwagi i spostrzeżenia.\n\n4. Sytuacja jest trudna dla nas wszystkich, dlatego prosimy o wyrozumiałość dla wprowadzanych zmian. Mogą wystąpić przejściowe trudności, które mamy nadzieję szybko zażegnać. Pracujemy codziennie, aby każdy z Państwa czuł się w naszych autobusach bezpiecznie.\n\n5. Dołożymy wszelkich starań, aby w ciągu najbliższych dni możliwie najlepiej dopasować komunikację miejską do zmienionych zasad jej funkcjonowania i sprostać Państwa oczekiwaniom."
-    }
-  ],
-  "phones": [
-    {
-      "name": "INFOLINIA NFZ",
-      "phones": ["800 190 590"]
-    },
-    {
-      "name": "POWIATOWA STACJA SANITARNO-EPIDEMIOLOGICZNA W JELENIEJ GÓRZE",
-      "phones": ["75 64 35 560", "693 367 922"]
-    },
-    {
-      "name": "POGOTOWIE RATUNKOWE",
-      "phones": ["999"]
-    },
-    {
-      "name": "STRAZ MIEJSKA JELENIA GÓRA",
-      "phones": ["986", "75 75 25 162"]
-    },
-    {
-      "name": "STRAŻ POŻARNA",
-      "phones": ["998"]
-    },
-    {
-      "name": "POLICJA",
-      "phones": ["997"]
-    },
-    {
-      "name": "POLICJA",
-      "phones": ["997"]
-    }
-  ]
+        }],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "efdd09d4-5b51-5383-ad90-917cc273c289"
+      },
+      {
+        "name": "TWOJA",
+        "district": "Centrum",
+        "address": "Okrzei 11,\n58-500 Jelenia Góra",
+        "phones": ["75 303 02 88"],
+        "hours": [{
+            "startDay": 0,
+            "endDay": 4,
+            "hours": ["8", "20"]
+          },
+          {
+            "startDay": 5,
+            "hours": ["8", "16"]
+          }
+        ],
+        "type": "CHEMIST",
+        "isFavorite": false,
+        "id": "7106a10c-fb18-50b6-999e-f1c478a96f36"
+      }
+    ]
+  },
+  "hospitals": {
+    "lastUpdate": "2020-03-22T16:11:24.829Z",
+    "items": [{
+        "name": "WOJEWÓDZKIE CENTRUM SZPITALNE KOTLINY JELENIOGÓRSKIEJ",
+        "address": "ul.Ogińskiego 6, \n58-501 Jelenia Góra",
+        "phones": ["75 753 71 00"],
+        "additionalInfo": "Pozostałe telefony: \nSekretariat – 75 753 7201\nFax Sekretariat – 75 754 2335\nSzpitalny Oddział Ratunkowy – 75 753 7118\nRejestracja do Poradni Specjalistycznych – 75 753 7489 oraz 75 753 7490",
+        "messages": [{
+            "type": "URL",
+            "name": "Zmiana zasad w WCSKJ",
+            "content": "https://spzoz.jgora.pl/wp-content/uploads/2020/03/info.pdf",
+            "date": null
+          },
+          {
+            "type": "URL",
+            "name": "Ankiety kwalifikacyjne",
+            "content": "https://spzoz.jgora.pl/wp-content/uploads/2020/03/informacja-1.pdf",
+            "date": null
+          }
+        ],
+        "type": "MEDIC",
+        "subType": "HOSPITAL",
+        "id": "419f118c-7b36-5cab-9920-8a81cd0ea1e0"
+      },
+      {
+        "name": "WCSKJ - JEDNOSTKA ZAMIEJSCOWA 'WYSOKA ŁĄKA'",
+        "address": "ul.Sanatoryjna 27, \n58-530 Kowary",
+        "type": "MEDIC",
+        "subType": "HOSPITAL",
+        "phones": ["75 64 58 866"],
+        "email": "e-mail:kowary@spzoz.jgora.pl",
+        "id": "939e552e-912a-57ff-bd71-8c86d53e3cdb"
+      },
+      {
+        "name": "EMC Szpital Bukowiec",
+        "fullName": "EMC Szpital Bukowiec - Niepubliczny Zaklad Opieki Zdrowotnej Powiatowe Centrum Zdrowia w Kowarach",
+        "address": "ul.Sanatoryjna 15, \n58-530 Kowary",
+        "type": "MEDIC",
+        "subType": "HOSPITAL",
+        "phones": ["75 641 57 15"],
+        "id": "aa2ae845-7425-5d99-9492-f31fd467b5f3"
+      },
+      {
+        "name": "CENTRUM MEDYCZNE KARPACZ",
+        "address": "ul.Myśliwska 13, \n58-540 Karpacz",
+        "type": "MEDIC",
+        "subType": "HOSPITAL",
+        "phones": ["883 358 135,883 358 138"],
+        "www": "www.cmkarpacz.pl",
+        "email": "kontakt@cmkarpacz.pl",
+        "id": "63c97e69-bbf4-5a74-94c4-027eb28fa80d"
+      },
+      {
+        "name": "CENTRUM MEDYCZNE PROMED (PLACÓWKA GŁÓWNA)",
+        "address": "ul.Różyckiego 6, \n58-506 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["75 641 71 01"],
+        "id": "7fb72c63-97c2-5f32-938f-b8e8c7645f49"
+      },
+      {
+        "name": "PRZYCHODNIA DRZYMAŁY",
+        "address": "ul.M.Drzymały 31, \n58-500 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["75 64 171 21"],
+        "id": "cbb22090-f883-56ff-94a7-fbc57e9229d5"
+      },
+      {
+        "name": "PRZYCHODNIA POWSTAŃCÓW ŚL.",
+        "address": "ul.Powstańców Śląskich 6, \n58-500, Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["75 75 347 71", "75 64 332 53"],
+        "id": "8a5b1b37-aa47-5bc7-8a3e-54768a763e83"
+      },
+      {
+        "name": "PRZYCHODNIA NASZ LEKARZ ",
+        "address": "al.Wojska Polskiego 57, \n58-500 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["75 642 25 50"],
+        "id": "56a1e4f8-36d1-5bdf-a01e-8c8cae8df9b0"
+      },
+      {
+        "name": "ZABOBRZE CENTRUM MEDYCZNE",
+        "address": "ul.Wiejska 11, \n58-506 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["75 889 01 70"],
+        "id": "d65c5cdd-8b77-59bc-9dc9-9ba6ddefd7d9"
+      },
+      {
+        "name": "PRZYCHODNIA MEDINAP NA LETNIEJ",
+        "address": "UL.LETNIA 2, \n58-500 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["75 645 650", "75 645 651"],
+        "id": "11068815-6023-5950-b90d-c07d07e30978"
+      },
+      {
+        "name": "SAMODZIELNY PUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ MSW",
+        "address": "ul.Nowowiejska 43, \n58-500 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["75 612 07 78"],
+        "id": "d6f0e1b3-ffa8-5dc9-b2eb-e7c42f9fa062"
+      },
+      {
+        "name": "PRZYCHODNIA LEKARZ RODZINNY",
+        "address": "ul.Kopernika 2, \n58-500 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["75 752 31 14"],
+        "id": "54b83066-d224-5216-a207-b1bd8ed00dcb"
+      },
+      {
+        "name": "KCM-KARKONOSKIE CENTRUM MEDYCZNE NZOZ",
+        "address": "ul.Bankowa 5/7, \n58-500 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["75 645 20 00"],
+        "id": "60d30838-f951-52f6-ba00-3861ff48cf00"
+      },
+      {
+        "name": "PRZYCHODNIA DOKTOR Sp.z o.o.",
+        "address": "ul.A.Grottgera 10, \n58-500 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["75 642 25 02"],
+        "id": "b4dc3835-8f3b-506f-a599-a682839dec7e"
+      },
+      {
+        "name": "PORADNIE MEDICTA",
+        "address": "ul.Wolności 140, \n58-200 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["883 358 100"],
+        "id": "6cf10000-cbaa-5e3d-9ff2-50f877673b71"
+      },
+      {
+        "name": "LASER PRZYCHODNIA CHIRURGICZNA",
+        "address": "ul.Skłodowskiej-Curie 13, \n58-500 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["501 391 604"],
+        "id": "cee7f7fe-3d45-50e3-bfe4-486854b983c7"
+      },
+      {
+        "name": "ZDROWIE Sp.z o.o ZAKŁAD USŁUG LEKARSKICH",
+        "address": "ul.Mostowa 2, \n58-500 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["75 767 49 37"],
+        "id": "13071582-c8a8-5541-8b13-2d42313cba0c"
+      },
+      {
+        "name": "PRZYCHODNIA PROTETYCZNO-STOMATOLOGICZNA KARDIS",
+        "address": "ul.1 Maja 59, \n58-500 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["509 263 183"],
+        "id": "0ccd400f-ea7c-5c8d-a1f1-5a19a40d5756"
+      },
+      {
+        "name": "ARS MEDICA NZOZ PRZYCHODNIA SPORTOWA",
+        "address": "ul.Kopernika 1, \n58-500 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["75 752 51 49"],
+        "id": "82213993-d867-5fa6-a639-dc5cd554df44"
+      },
+      {
+        "name": "JELENIOGÓRSKIE CENTRUM LARYNGOLOGII",
+        "address": "al.Wojska Polskiego 75, \n58-500 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["601 641 503"],
+        "id": "20687974-589d-5e50-ae1e-088718bd7492"
+      },
+      {
+        "name": "PHARMED CENTRUM MEDYCZNE",
+        "address": "ul.Zielona 6, \n58-560 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["75 642 30 00"],
+        "id": "e54f2453-b325-50db-87ef-5aa68c4ce3d5"
+      },
+      {
+        "name": "TWÓJ CHIRURG",
+        "address": "ul.S.Moniuszki 5A, \n58-500 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["75 753 13 27"],
+        "id": "6816ff48-841e-5389-b8df-bc59442727a8"
+      },
+      {
+        "name": "PRZYCHODNIA STOMATOLOGICZNA UŚMIECH",
+        "address": "ul.5A/3, \n58-560 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["75 755 95 44"],
+        "id": "a417ac72-7c55-59a2-8d9d-9a5cfdee02ba"
+      },
+      {
+        "name": "CHIRURGIA CIEPLICE ANDRZEJ CHRUŚCIEL",
+        "address": "ul.Sprzymierzonych 4, \n58-560 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["75 755 05 66"],
+        "id": "51ff388a-ad91-592b-9226-f9d04ce71486"
+      },
+      {
+        "name": "SP ZOZ SZPITAL SPECJALISTYCZNY MSWiA - PORADNIA ZDROWIA PSYCHICZNEGO",
+        "address": "ul. Cieplicka 59, \n58-560 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["75 643 57 33"],
+        "id": "2f900004-d51f-5e3a-a605-62a5c7376181"
+      },
+      {
+        "name": "NZOZ OSTEOCYT",
+        "address": "ul.Lwówecka 18 bud.2, \n58-500 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["75 649 06 80"],
+        "id": "c8dc6445-9ad3-5e67-bfb0-a4a2f006e81f"
+      },
+      {
+        "name": "PRZYCHODNIA POZ ORLE CIEPLICE",
+        "address": "ul.Cieplicka 83a, \n58-560 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["883 358 201", "883 358 210"],
+        "id": "ca425778-5bd2-519d-aa00-03e3f9a81f4a"
+      },
+      {
+        "name": "PRZYCHODNIA NZOZ CIEPLICE",
+        "address": "pl.Piastowski 20, \n58-560 Jelenia Góra ",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["75 642 32 03"],
+        "id": "ceb14256-ae01-5757-a5e3-c8032c02176c"
+      },
+      {
+        "name": "REHABILITACJA KLONOWICA 9",
+        "address": "ul.Klonowica 9, \n58-500 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["75 742 32 32"],
+        "id": "8d3f98d1-da6c-59b6-9e28-e169d728335a"
+      },
+      {
+        "name": "SUDETY",
+        "address": "ul.Piłsudskiego 35, \n58-500 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["75 764 71 35"],
+        "id": "9a6dbaa0-067a-5952-bf4f-c0ea660e1ce1"
+      },
+      {
+        "name": "CENTRUM STOMATOLOGICZNE",
+        "address": "ul.W.Polskiego 36, \n58-500 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["75 752 21 85"],
+        "id": "d648a583-4fd6-5a31-bdde-b5c4f54c2161"
+      },
+      {
+        "name": "NZOZ STOMATOLOGIA BEZ BÓLU",
+        "address": "ul.W.Polskiego 30A, \n58-500 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["75 642 45 58"],
+        "id": "0dffdd1c-1007-547f-adfd-c73298b46ba1"
+      },
+      {
+        "name": "SOBIESZÓW NZOZ",
+        "address": "ul.Cieplicka 164, \n58-570 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["75 755 35 30"],
+        "id": "3380cdfd-b66e-5491-a1d6-3d87129b8736"
+      },
+      {
+        "name": "CENTRUM LECZENIA BÓLU",
+        "address": "ul.Bankowa 8, \n58-500 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["574 306 309"],
+        "id": "12986e2a-3c65-53a7-89de-706bd340b952"
+      },
+      {
+        "name": "STOMATOLOGIA NZOS GRAŻYNA NAŁĘCZ-SOCHA",
+        "address": "ul.Kiepury 77, \n58-506 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["75 754 23 56"],
+        "id": "514b4891-894b-5ffe-83c2-5524e50f9f1f"
+      },
+      {
+        "name": "NZOZ MCD VOXEL",
+        "address": "ul.Piłsudskiego 35, \n58-500 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["75 647 06 90"],
+        "id": "3c502797-ab74-572a-95f8-258216677ff1"
+      },
+      {
+        "name": "DENTAL AND SKIN CLINIC ESPENSCHIED",
+        "address": "ul.Wiejska 24A, \n58-506 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["506 899 277"],
+        "id": "8565fb25-8e7b-55c9-ab85-d7f59c1fe4fc"
+      },
+      {
+        "name": "LEKARZ STOMATOLOG MONIKA ROGALSKA",
+        "address": "ul.Sygietyńskiego 19/1, \n58-506 Jelenia Góra",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["607 383 665"],
+        "id": "d4edddeb-2945-5438-b257-5f1cee91d439"
+      },
+      {
+        "name": "PRZYCHODNIA POZ KARPACZ",
+        "address": "ul.Konstytucji 3 Maja 71, \n58-540 Karpacz",
+        "type": "MEDIC",
+        "subType": "AMBULATORIES",
+        "phones": ["883 358 171", "883 358 172"],
+        "id": "31fe46fc-da5d-5f68-860f-5f1d1557ea70"
+      }
+    ]
+  },
+  "offices": {
+    "lastUpdate": "2020-03-22T16:11:24.829Z",
+    "items": [{
+        "name": "Urząd skarbowy",
+        "address": "ul. Thebesiusa 1, \n58-506 Jelenia Góra",
+        "phones": ["75 64 73 500", "75 64 73 537"],
+        "mail": "us.jelenia_gora@mf.gov.pl",
+        "htmlContent": "<p>Warto skontaktować się telefonicznie <br />w sprawie ewentualnych ograniczeń dotyczących przyjęć.</p><p><strong>PODATKI BĘDZIE MOŻNA ROZLICZYĆ NA 2 SPOSOBY</strong></p><p>&bull; On-line poprzez Tw&oacute;j e-PIT, e-Deklaracje, e-PUAP,</p><p>&bull; w urzędzie &ndash; poprzez wrzucenie deklaracji, pism, innych dokument&oacute;w do wystawionych urn. W tym przypadku bez potwierdzenia wpływu do urzędu.</p><p><strong><br />Kontakt telefoniczny do urzędu skarbowego:</strong></p><p>PIT &ndash; nr telefonu 75 64 73 574, 75 64 73 507, 75 64 73 549</p><p>VAT &ndash; nr telefonu 75 64 73 568, 75 64 73 559, 75 64 73 565, 75 64 73 527</p><p>CIT &ndash; nr telefonu 75 64 73 553</p><p>kasy rejestrujące i profil zaufany &ndash; nr telefonu &ndash; 75 64 73 527</p><p>zaświadczenia o dochodach &ndash; nr telefonu 75 64 73 542, 75 64 73 583</p><p>zaświadczenia o niezaleganiu &ndash; nr telefonu 75 64 73 532, 75 64 73 525</p><p>spadki/darowizny i PCC &ndash; nr telefonu 75 64 73 529, 75 64 73 522</p><p>rejestracja podatnik&oacute;w &ndash; nr telefonu 75 64 73 541, 75 64 73 543</p><p>egzekucja administracyjna &ndash; nr telefonu 75 64 73 561, 75 64 73 515</p><p>rachunkowość podatkowa &ndash; nr telefonu 75 64 73 546, 75 64 73 547, 75 64 73 525, 75 64 73 523, 75 64 76 545, 75 64 73 524</p><p>kom&oacute;rka wierzycielska &ndash; nr telefonu 75 64 73 552</p><p>Informacje podatkowe oraz usługa Tw&oacute;j e-PIT znajdziesz na www.podatki.gov.pl</p",
+        "type": "OFFICE",
+        "id": "3be885cf-7561-5617-958c-7c0d6919aff7"
+      },
+      {
+        "name": "Zakład Ubezpieczeń Społecznych",
+        "fullName": "Zakład Ubezpieczeń Społecznych Inspektorat w Jeleniej Górze",
+        "address": "ul. Sygietyńskiego 10,\n58-500 Jelenia Góra",
+        "type": "OFFICE",
+        "htmlContent": "<p><strong>Godziny obsługi klient&oacute;w</strong></p><p>Poniedziałek: 8.00-18.00</p><p>Wtorek - Piątek: 8.00-15.00</p><p><strong>Informacja og&oacute;lnopolska:</strong></p><p>Aby ułatwić Państwu kontakt telefoniczny w najważniejszych aktualnie sprawach, od 18 marca uruchomiliśmy 3 nowe linie tematyczne<br />pod nowymi numerami telefon&oacute;w:</p><p>1. nr telefonu 22 290 87 01</p><p>- obsługa w sprawie świadczeń z powodu poddania się kwarantannie lub izolacji<br /> - obsługa w sprawie zasiłk&oacute;w opiekuńczych na czas opieki nad dzieckiem w związku z zamknięciem żłobka, klubu dziecięcego, przedszkola, szkoły</p><p>2.nr telefonu 22 290 87 02</p><p>- obsługa w sprawie wsparcia dla przedsiębiorc&oacute;w</p><p>3.nr telefonu 22 290 87 03</p><p>- obsługa w sprawie odwołanych badań lekarskich i rehabilitacji leczniczej</p><p>Pod tymi numerami jesteśmy dostępni w dni robocze (pn.- pt.) w godzinach 7 - 15</p><p>Nadal do Państwa dyspozycji jest og&oacute;lnopolska linia telefoniczna pod numerem telefonu 22 560 16 00 dostępna w dni robocze (pn.-pt) w godzinach 7-18.</p><p>Po wybraniu &bdquo;0&rdquo;(połączenie z konsultantem Centrum Obsługi Telefonicznej), należy wybrać odpowiedni temat rozmowy:</p><p>1 - Pomoc techniczna i obsługa e-ZLA,<br />2 - Renty i emerytury,<br />3 &ndash; Zasiłki,<br />4 - Informacje dla ubezpieczonych,<br />5 - Informacje dla płatnik&oacute;w,<br />7 &ndash; Wsparcie dla przedsiębiorc&oacute;w<br />9 - Zasiłek opiekuńczy i świadczenia z powodu poddania się kwarantannie lub izolacji</p>",
+        "id": "9a0bfc41-12ae-5dd6-8dfe-674a8ca20458"
+      },
+      {
+        "name": "Miejski Ośrodek Pomocy SPołecznej",
+        "address": "al. Jana Pawła II nr 7, \n58-506 Jelenia Góra",
+        "phones": ["75 75 23 951", "75 64 67 002"],
+        "type": "OFFICE",
+        "htmlContent": "<p><strong>Obwieszczenie<br /></strong></p><p>W trosce o bezpieczeństwo, zwracamy się z prośbą o ograniczenie osobistych wizyt w Miejskim Ośrodku Pomocy Społecznej w Jeleniej G&oacute;rze, a w miarę możliwości załatwianie spraw drogą elektroniczną lub przez telefon. <br /><br />Wykaz bezpośrednich numer&oacute;w telefonu do poszczeg&oacute;lnych pracownik&oacute;w znajduje się na stronie internetowej Miejskiego Ośrodka Pomocy Społecznej w Jeleniej G&oacute;rze http://www.mops.jelenia-gora.pl w zakładkach każdego działu. <br /><br />Można r&oacute;wnież zadzwonić pod numer: 75 75 23 951, 75 75 24 657, skąd nastąpi przekierowanie do właściwej kom&oacute;rki organizacyjnej. OD DNIA 16.03.2020 r.</p><p><strong>OSOBY OSOBIŚCIE ZAŁATWIAJĄCE SPRAWY DO BUDYNKU MOPS BĘDĄ WPUSZCZANE POJEDYNCZO. KASA CZYNNA 11:00 - 13:00</strong>. Osoby oczekujące na załatwienie sprawy są proszone, by zachowały odpowiednią odległość - co najmniej 1 metr od innych os&oacute;b oczekujących. <br />Za wszelkie utrudnienia serdecznie przepraszamy. Dyrektor MOPS w Jeleniej G&oacute;rze</p><p><strong>Telefony</strong></p><p>Centrala: 75 75 23 951, 75 64 67 002, 75 75 24 657, 75 64 78 578</p><p>Dzienny Dom Pomocy Społecznej: 75 75 255 71</p><p><strong>Godziny pracy</strong></p><p>Ośrodek czynny w dni robocze w godzinach 7:30-15:30</p><p>Pracownicy socjalni przyjmują klient&oacute;w w godzinach 7:30-10:00 i 14:00-15:30</p><p>Dzienny Dom Pomocy Społecznej czynny w dni robocze w godzinach 8:00-16:00</p><p><em>Kasa czynna</em> 11:00-13:00&nbsp;</p>",
+        "id": "a9e12dc6-9b9e-54d2-8505-c10e226a54f1"
+      },
+      {
+        "name": "Urząd Pracy w Jeleniej Górze",
+        "address": "ul.Podchorążych 15, \n58-508 Jelenia Góra",
+        "phones": ["75 64 73 160", "75 64 73 162"],
+        "email": "wrje@praca.gov.pl",
+        "type": "OFFICE",
+        "htmlContent": "<p>Godziny pracy Urzędu:07:30-15:30,<br />Godziny przyjmowania interesant&oacute;w: 08:00 - 14:00, przerwa 9:45-10:00</p><p>Zielona linia urzędu pracy 19524</p><p><strong>Informacje ze strony PUP:</strong></p><p>Ministerstwo Zdrowia informuje że każda, nawet nieubezpieczona osoba, będzie diagnozowana bezpłatnie w przypadku podejrzenia zakażenia koronawirusem.</p><p>Reguluje to ustawa z dnia 2 marca 2020r. o szczeg&oacute;lnych rozwiązaniach związanych z zapobieganiem, przeciwdziałaniem i zwalczaniem COVID-19, innych chor&oacute;b zakaźnych oraz wywołanych nimi sytuacji kryzysowych (Dz. U. poz. 374)</p><p>W związku z tym proszę o rozważenie tej informacji i powstrzymanie się od rejestracji w celu uzyskania uprawnień do korzystania z ubezpieczenia zdrowotnego.</p><p>Ponadto osoby ubiegające się o nadanie statusu bezrobotnego lub poszukującego pracy mogą złożyć wniosek w postacielektronicznej do właściwego powiatowego urzędu pracy korzystając z systemu Praca.gov.pl (https://www.praca.gov.pl)</p><hr /><p>Szanowni Państwo</p><p>Uwzględniając wnioski i prośby naszych klient&oacute;w, uprzejmie informujemy, iż od dnia 12.03.2020 r. osoby, kt&oacute;re mają wyznaczony obowiązkowy termin wizyty w PUP Jelenia G&oacute;ra w miesiącu marcu, mogą przełożyć go telefonicznie lub mailowo na inny termin spotkania po wcześniejszym uzgodnieniu z doradcą klienta.</p><p>Pozostałym klientom Urzędu, kt&oacute;rzy planują w najbliższych dniach przybycie osobiste do urzędu a ich sprawa nie wymaga konieczności ich osobistego stawiennictwa, proponujemy rozważenie wcześniejszego kontaktu telefonicznego z pracownikami&nbsp;urzędu pracy bądź skorzystania z poniższych rozwiązań elektronicznych:</p><p>Email: wrje@praca.gov.pl<br /> Portal: jeleniagora.praca.gov.pl<br /> Portal: epuap.gov.pl</p><p>w celu ustalenia dalszego sposobu procedowania spraw urzędowych.</p><p>Dyrekcja Powiatowego Urzędu Pracy w Jeleniej G&oacute;rze</p>",
+        "id": "d4b83eb6-ccfa-54b3-b2b8-e96390d514d0"
+      }
+    ]
+  },
+  "messages": {
+    "lastUpdate": "2020-03-22T16:11:24.829Z",
+    "items": [{
+        "createDate": "2020-02-22T09:51:29.829Z",
+        "editDate": "2020-02-22T09:51:29.829Z",
+        "title": "Pamiętajmy o seniorach w czasie pandemii",
+        "short": "Wychodzimy naprzeciw obecnie panującej sytuacji i zwracamy szczególną uwagę w czasie pandemii na Seniorów – grupę osób w wieku 60+.",
+        "content": "Wychodzimy naprzeciw obecnie panującej sytuacji i zwracamy szczególną uwagę w czasie pandemii na Seniorów – grupę osób w wieku 60+. Ta część społeczeństwa jest najbardziej narażona na zarażenie chorobą COVID-19 wywołaną przez koronawirusa SARS-Cov-2. Dla Seniorów, których odporność jest często niższa niż osób w młodszym wieku, konsekwencje zachorowania są dużo bardziej dotkliwe. Wspierajmy Seniorów pamiętając o zasadach bezpieczeństwa.\n\nSTOP KORONA-OSZUSTWOM\n\nWyjątkowa sytuacja powoduje, że do „pomocy” włączają się również oszuści, dostrzegając szybki i łatwy zysk w obliczu wybuchu społecznej paniki. Wszechobecny lęk, szczególnie wśród osób w wieku 60+, skrzętnie wykorzystują manipulatorzy na wielu płaszczyznach. Działają w Internecie, ale też w kontakcie bezpośrednim. Informacje na ten temat spływają do policji z całej Polski. Oszuści sprzedają w Internecie różnego typu środki (np. lekarstwa, suplementy, herbaty czy amulety), których działanie ma uchronić osobę przed zachorowaniem na koronawirusa. Coraz częściej dochodzi także do działań bezpośrednich. Delikwenci podszywają się pod lekarzy, pracowników Sanepidu czy służby mundurowe i w trakcie wizyty w domu ofiary, kradną pieniądze i inne przedmioty.",
+        "id": "9aa2777c-bd99-500e-b157-6c1bbba4d4f4"
+      },
+      {
+        "createDate": "2020-02-22T10:51:29.829Z",
+        "editDate": "2020-02-22T10:51:29.829Z",
+        "title": "Godzina dla seniorów",
+        "short": "Sieć Tesco wprowadza specjalne godziny na zakupy dla osób z grupy podwyższonego ryzyka, w szczególności dla osób starszych.",
+        "content": "Zgodnie z zaleceniami, osoby z grupy podwyższonego ryzyka powinny jak najmniej wychodzić z domów – jednak nie zawsze jest to możliwe. Celem akcji jest umożliwienie osobom starszym sprawne zrobienie najpilniejszych zakupów. Dzięki temu będą mogli szybciej wrócić do domu i będą mniej narażeni na zarażenie koronawirusem. Akcja będzie prowadzona codziennie w godzinach 9-10. W tym czasie seniorzy mogą liczyć na wsparcie obsługi sklepów oraz pierwszeństwo w kolejkach do kas. W trakcie specjalnych godzin sklepy Tesco pozostaną otwarte dla wszystkich klientów, ale sieć handlowa prosi swoich pozostałych klientów o zrozumienie i ustępowanie pierwszeństwa osobom starszym w wyznaczonym czasie.",
+        "id": "68118ce0-9be6-5887-a7bf-e603ed0828db"
+      },
+      {
+        "createDate": "2020-02-22T09:55:29.829Z",
+        "editDate": "2020-02-22T11:51:29.829Z",
+        "title": "Kolejne zmiany w komunikacji miejskiej",
+        "short": "W związku z nowymi ograniczeniami, w trosce o zdrowie mieszkańców Jeleniej Góry i pozostałych gmin, od 25 marca (środa) Miejski Zakład Komunikacyjny wprowadza kolejne zmiany w funkcjonowaniu komunikacji miejskiej",
+        "content": "W związku z nowymi ograniczeniami, w trosce o zdrowie mieszkańców Jeleniej Góry i pozostałych gmin, od 25 marca (środa) Miejski Zakład Komunikacyjny wprowadza kolejne zmiany w funkcjonowaniu komunikacji miejskiej:\n\nMZK informuje:\n\n1. Linie najbardziej obciążone obsługiwać będą autobusy, o największej liczbie dostępnych miejsc siedzących, w szczególności autobusy przegubowe.\n\n2. W każdym autobusie jednorazowo będzie mogła podróżować liczba pasażerów nie większa niż połowa znajdujących się w tym autobusie miejsc siedzących. Szacunkowo jest to od 15 osób w nowych autobusach typy Volvo i Man – do 25 osób w autobusach przegubowych.\n\n3. Na bieżąco będziemy monitorować sytuację w autobusach i podejmować adekwatne działania. Tak jak do tej pory prosimy Państwa o uwagi i spostrzeżenia.\n\n4. Sytuacja jest trudna dla nas wszystkich, dlatego prosimy o wyrozumiałość dla wprowadzanych zmian. Mogą wystąpić przejściowe trudności, które mamy nadzieję szybko zażegnać. Pracujemy codziennie, aby każdy z Państwa czuł się w naszych autobusach bezpiecznie.\n\n5. Dołożymy wszelkich starań, aby w ciągu najbliższych dni możliwie najlepiej dopasować komunikację miejską do zmienionych zasad jej funkcjonowania i sprostać Państwa oczekiwaniom.",
+        "id": "03b3a619-e637-5424-8c7c-3383ec3c0a39"
+      }
+    ]
+  },
+  "phones": {
+    "lastUpdate": "2020-03-22T16:11:24.829Z",
+    "items": [{
+        "name": "INFOLINIA NFZ",
+        "phones": ["800 190 590"],
+        "id": "12d3ab0d-e0d2-5da3-a305-a0601e326123"
+      },
+      {
+        "name": "POWIATOWA STACJA SANITARNO-EPIDEMIOLOGICZNA W JELENIEJ GÓRZE",
+        "phones": ["75 64 35 560", "693 367 922"],
+        "id": "c5d4b1e0-4800-53f4-82f4-1f671cd31a08"
+      },
+      {
+        "name": "POGOTOWIE RATUNKOWE",
+        "phones": ["999"],
+        "id": "98b6c9d0-ed06-584c-a4bd-cd4cbff5e0e0"
+      },
+      {
+        "name": "STRAZ MIEJSKA JELENIA GÓRA",
+        "phones": ["986", "75 75 25 162"],
+        "id": "ae9ff80b-8ce7-569f-b4a4-8b828e2d2fd2"
+      },
+      {
+        "name": "STRAŻ POŻARNA",
+        "phones": ["998"],
+        "id": "d0cb2dc6-38bd-5b5a-b294-4dfe22712c01"
+      },
+      {
+        "name": "POLICJA",
+        "phones": ["997"],
+        "id": "67e9ad37-35f6-516e-8eda-f2736e15e76e"
+      },
+      {
+        "name": "POLICJA",
+        "phones": ["997"],
+        "id": "67e9ad37-35f6-516e-8eda-f2736e15e76e"
+      }
+    ]
+  }
 }

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Text, View} from 'react-native';
-import {Card} from 'material-bread';
+import {Card, CardHeader} from 'material-bread';
 import * as Styles from '../utility/UtilityStyles';
 
 import {Message} from '../model/Message';
@@ -17,7 +17,8 @@ export class MessageListItemComponent extends Component<Props> {
     const createDate = new Date(this.props.item.createDate);
     const date = editDate > createDate ? editDate : createDate;
     return (
-      <Card style={[Styles.styles.shadow, Styles.styles.itemList]}>
+      <Card style={[Styles.styles.shadow, {margin: 10, borderRadius: 15}]}>
+        <CardHeader title={this.props.item.title} style={{fontSize: 18}} />
         <View
           style={{
             flex: 1,

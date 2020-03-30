@@ -32,16 +32,11 @@ export class ScreenHospitals extends AbstractScreen {
   }
 
   getItems() {
-    ExternalDataService.getInstance()
-      .getHospitals()
-      .then((ambulatories: ListItem[]) => {
-        this.allItems = ambulatories;
-        this.setState({
-          items: this.allItems,
-          progressBarVisible: false,
-        });
-      })
-      .catch((error: any) => console.error(error));
+    this.allItems = ExternalDataService.getInstance().getHospitals();
+    this.setState({
+      items: this.allItems,
+      progressBarVisible: false,
+    });
   }
 
   protected pageContent = () => {

@@ -7,6 +7,7 @@ import {
 import {Hours} from './Hours';
 
 export interface ListItem {
+  id: string;
   name: string;
   fullName: string;
   district: Districts;

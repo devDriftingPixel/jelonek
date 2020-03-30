@@ -23,27 +23,22 @@ export class ScreenChemists extends AbstractScreen {
   }
 
   getItems() {
-    ExternalDataService.getInstance()
-      .getChemists()
-      .then((chemists: ListItem[]) => {
-        this.allItems = chemists;
-        this.setState({
-          items: this.allItems.sort((a: ListItem, b: ListItem) =>
-            a.isFavorite ? (this.state.items.length > 0 ? 0 : -1) : 0,
-          ),
-          progressBarVisible: false,
-        });
-      })
-      .catch((error: any) => console.error(error));
+    this.allItems = ExternalDataService.getInstance().getChemists();
+    this.setState({
+      items: this.allItems.sort((a: ListItem, b: ListItem) =>
+        a.isFavorite ? (this.state.items.length > 0 ? 0 : -1) : 0,
+      ),
+      progressBarVisible: false,
+    });
   }
 
   protected pageContent = () => {
     return (
       <FlatList
-        data={this.state.items}
+        data={this.state.items as ListItem[]}
         renderItem={({item}) => (
           <ExtendedListItemComponent
-            item={item}
+            item={item as ListItem}
             onFavoriteSelected={(item: ListItem) =>
               this.onFavoriteSelected(item)
             }

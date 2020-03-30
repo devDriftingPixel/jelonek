@@ -17,18 +17,13 @@ export class ScreenRestaurants extends ScreenShops {
   }
 
   getItems() {
-    ExternalDataService.getInstance()
-      .getRestaurants()
-      .then((restaurants: ListItem[]) => {
-        this.allItems = restaurants;
-        this.setState({
-          items: this.allItems.sort((a: ListItem, b: ListItem) =>
-            a.isFavorite ? (this.state.items.length > 0 ? 0 : -1) : 0,
-          ),
-          progressBarVisible: false,
-        });
-      })
-      .catch((error: any) => console.error(error));
+    this.allItems = ExternalDataService.getInstance().getRestaurants();
+    this.setState({
+      items: this.allItems.sort((a: ListItem, b: ListItem) =>
+        a.isFavorite ? (this.state.items.length > 0 ? 0 : -1) : 0,
+      ),
+      progressBarVisible: false,
+    });
   }
 
   render() {

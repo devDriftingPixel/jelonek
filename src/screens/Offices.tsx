@@ -32,15 +32,11 @@ export class ScreenOffices extends AbstractScreen {
   }
 
   getItems() {
-    ExternalDataService.getOffices()
-      .then((offices: ListItem[]) => {
-        this.allItems = offices;
-        this.setState({
-          items: this.allItems,
-          progressBarVisible: false,
-        });
-      })
-      .catch((error: any) => console.error(error));
+    this.allItems = ExternalDataService.getInstance().getOffices();
+    this.setState({
+      items: this.allItems,
+      progressBarVisible: false,
+    });
   }
 
   protected pageContent = () => {

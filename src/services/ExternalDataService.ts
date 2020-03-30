@@ -1,11 +1,11 @@
 import {DataStorage} from '../model/DataStorage';
 import {ListItem} from '../model/ListItem';
-import {DataItemTypes} from '../model/Enums';
 import {Message} from '../model/Message';
 import {Phone} from '../model/Phone';
 import AsyncStorage from '@react-native-community/async-storage';
 import * as Enums from '../model/Enums';
 import Analytics from 'appcenter-analytics';
+import {v5 as uuidv5} from 'uuid';
 
 const jsonStorage: DataStorage = require('../assets/data.json');
 
@@ -28,23 +28,23 @@ export class ExternalDataService {
   }
 
   private async prepareDataStorage() {
-    AsyncStorage.getItem('dataStorageStoreKey')
-      .then(dataStorageString => {
-        if (dataStorageString !== null) {
-          this.dataStorage = JSON.parse(dataStorageString) as DataStorage;
-        } else {
-          this.dataStorage = jsonStorage;
-          this.saveStorage();
-        }
-      })
-      .catch(error =>
-        Analytics.trackEvent(
-          `Get storage from AsyncStorage error: ${JSON.stringify(error)}`,
-          {
-            Category: Enums.AnalyticsCategories.FAIL,
-          },
-        ),
-      );
+    // AsyncStorage.getItem('dataStorageStoreKey')
+    //   .then(dataStorageString => {
+    //     if (dataStorageString !== null) {
+    //       this.dataStorage = JSON.parse(dataStorageString) as DataStorage;
+    //     } else {
+    this.dataStorage = jsonStorage;
+    //     this.saveStorage();
+    //   }
+    // })
+    // .catch(error =>
+    //   Analytics.trackEvent(
+    //     `Get storage from AsyncStorage error: ${JSON.stringify(error)}`,
+    //     {
+    //       Category: Enums.AnalyticsCategories.FAIL,
+    //     },
+    //   ),
+    // );
   }
 
   public getAdditionalHospitalInfoVisible(): boolean {
@@ -57,81 +57,44 @@ export class ExternalDataService {
     this.saveStorage();
   }
 
-  public getMessages(): Promise<Message[]> {
-    return new Promise((resolve: Function, reject: Function) => {
-      try {
-        const result = this.dataStorage.messages;
-        setTimeout(() => {
-          resolve(result);
-        }, 2000);
-      } catch (exception) {
-        reject(exception);
-      }
-    });
+  public getMessages(): Message[] {
+    return this.dataStorage.messages.items;
   }
 
-  public getPhones(): Promise<Phone[]> {
-    return new Promise((resolve: Function, reject: Function) => {
-      try {
-        const result = this.dataStorage.phones;
-        setTimeout(() => {
-          resolve(result);
-        }, 0);
-      } catch (exception) {
-        reject(exception);
-      }
-    });
+  public getPhones(): Phone[] {
+    return this.dataStorage.phones.items;
   }
 
-  public getOffices(): Promise<ListItem[]> {
-    return this.getItems(DataItemTypes.OFFICE);
+  public getOffices(): ListItem[] {
+    return this.dataStorage.offices.items;
   }
 
-  public getShops(): Promise<ListItem[]> {
-    return this.getItems(DataItemTypes.SHOPS);
+  public getShops(): ListItem[] {
+    return this.dataStorage.shops.items;
   }
 
-  public getRestaurants(): Promise<ListItem[]> {
-    return this.getItems(DataItemTypes.RESTAURANTS);
+  public getRestaurants(): ListItem[] {
+    console.log('@!@@ ->', this.dataStorage.restaurants);
+    return this.dataStorage.restaurants.items;
   }
 
-  public getChemists(): Promise<ListItem[]> {
-    return this.getItems(DataItemTypes.CHEMIST);
+  public getChemists(): ListItem[] {
+    return this.dataStorage.chemists.items;
   }
 
-  public getHospitals(): Promise<ListItem[]> {
-    return this.getItems(DataItemTypes.MEDIC);
+  public getHospitals(): ListItem[] {
+    return this.dataStorage.hospitals.items;
   }
 
   public getFavorites(): ListItem[] {
-    if (this.dataStorage.objects)
-      return this.dataStorage.objects.filter(
-        (object: ListItem) => object.isFavorite,
-      );
-    else return [];
-  }
-
-  private getItems(dataItemType: DataItemTypes): Promise<ListItem[]> {
-    return new Promise((resolve: Function, reject: Function) => {
-      try {
-        const result = this.dataStorage.objects.filter(
-          (object: ListItem) => object.type == dataItemType,
-        );
-        setTimeout(() => {
-          resolve(result);
-        }, 0);
-      } catch (exception) {
-        reject(exception);
-      }
-    });
+    if (!this.dataStorage.shops) return []; //if shops are loaded other list are loaded too ;)
+    return this.getObjects().filter((object: ListItem) => object.isFavorite);
   }
 
   public changeFavorite(item: any) {
-    this.dataStorage.objects[
-      this.dataStorage.objects.indexOf(item)
-    ].isFavorite = !this.dataStorage.objects[
-      this.dataStorage.objects.indexOf(item)
-    ].isFavorite;
+    const objects = this.getObjects();
+    objects[objects.indexOf(item)].isFavorite = !objects[objects.indexOf(item)]
+      .isFavorite;
     this.saveStorage();
   }
 
@@ -146,5 +109,13 @@ export class ExternalDataService {
         Category: Enums.AnalyticsCategories.FAIL,
       });
     }
+  }
+
+  private getObjects() {
+    return [
+      ...this.dataStorage.shops.items,
+      ...this.dataStorage.restaurants.items,
+      ...this.dataStorage.chemists.items,
+    ];
   }
 }

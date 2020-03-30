@@ -123,7 +123,7 @@ export class ScreenObjectDetails extends Component<Props> {
                 ) : null}
               </View>
             </View>
-            <AddressComponent item={this.item} />
+            {this.item.address ? <AddressComponent item={this.item} /> : null}
             <View style={{height: 20}}></View>
           </ScrollView>
           {this.item.phones && this.item.phones.length == 1 ? (
