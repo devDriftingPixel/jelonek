@@ -6,4 +6,5 @@ export interface Message {
   createDate: string;
   editDate: string;
   imageUrl: string;
+  read: boolean;
 }

@@ -61,29 +61,188 @@ export class ExternalDataService {
     return this.dataStorage.messages.items;
   }
 
+  public updateMessages(jsonItemsData: Message[]) {
+    let counter = 0;
+    this.getMessages().forEach(item => {
+      const newItemWithId = jsonItemsData.find(
+        newItem => newItem.id == item.id,
+      );
+      if (newItemWithId) {
+        newItemWithId.read = item.read;
+        counter++;
+      }
+    });
+    console.log('find old' + counter);
+    this.dataStorage.messages.items = jsonItemsData;
+    this.dataStorage.messages.lastUpdate = new Date().toISOString();
+    this.saveStorage();
+  }
+
+  public getMessagesLastUpdate(): Date {
+    return new Date(this.dataStorage.messages.lastUpdate);
+  }
+
+  public updateMessagesLastUpdate(): void {
+    this.dataStorage.messages.lastUpdate = new Date().toISOString();
+    this.saveStorage();
+  }
+
   public getPhones(): Phone[] {
     return this.dataStorage.phones.items;
+  }
+
+  public updatePhones(jsonShopsData: Phones[]) {
+    this.dataStorage.phones.items = jsonShopsData;
+    this.dataStorage.phones.lastUpdate = new Date().toISOString();
+    this.saveStorage();
+  }
+
+  public getPhonesLastUpdate(): Date {
+    return new Date(this.dataStorage.phones.lastUpdate);
+  }
+
+  public updatePhonesLastUpdate(): void {
+    this.dataStorage.phones.lastUpdate = new Date().toISOString();
+    this.saveStorage();
   }
 
   public getOffices(): ListItem[] {
     return this.dataStorage.offices.items;
   }
 
+  public updateOffices(jsonShopsData: ListItem[]) {
+    this.dataStorage.offices.items = jsonShopsData;
+    this.dataStorage.offices.lastUpdate = new Date().toISOString();
+    this.saveStorage();
+  }
+
+  public getOfficesLastUpdate(): Date {
+    return new Date(this.dataStorage.offices.lastUpdate);
+  }
+
+  public updateOfficesLastUpdate(): void {
+    this.dataStorage.offices.lastUpdate = new Date().toISOString();
+    this.saveStorage();
+  }
+
   public getShops(): ListItem[] {
     return this.dataStorage.shops.items;
   }
 
+  public updateShops(jsonShopsData: ListItem[]) {
+    let counter = 0;
+    this.getShops().forEach(item => {
+      const newItemWithId = jsonShopsData.find(
+        newItem => newItem.id == item.id,
+      );
+      if (newItemWithId) {
+        newItemWithId.isFavorite = item.isFavorite;
+        counter++;
+      }
+    });
+    console.log('find old' + counter);
+    this.dataStorage.shops.items = jsonShopsData;
+    this.dataStorage.shops.lastUpdate = new Date().toISOString();
+    this.saveStorage();
+  }
+
+  public getShopsLastUpdate(): Date {
+    return new Date(this.dataStorage.shops.lastUpdate);
+  }
+
+  public updateShopsLastUpdate(): void {
+    this.dataStorage.shops.lastUpdate = new Date().toISOString();
+    this.saveStorage();
+  }
+
   public getRestaurants(): ListItem[] {
-    console.log('@!@@ ->', this.dataStorage.restaurants);
     return this.dataStorage.restaurants.items;
+  }
+
+  public updateRestaurants(jsonItemsData: ListItem[]) {
+    let counter = 0;
+    this.getRestaurants().forEach(item => {
+      const newItemWithId = jsonItemsData.find(
+        newItem => newItem.id == item.id,
+      );
+      if (newItemWithId) {
+        newItemWithId.isFavorite = item.isFavorite;
+        counter++;
+      }
+    });
+
+    this.dataStorage.restaurants.items = jsonItemsData;
+    this.dataStorage.restaurants.lastUpdate = new Date().toISOString();
+    this.saveStorage();
+  }
+
+  public getRestaurantsLastUpdate(): Date {
+    return new Date(this.dataStorage.restaurants.lastUpdate);
+  }
+
+  public updateRestaurantsLastUpdate(): void {
+    this.dataStorage.restaurants.lastUpdate = new Date().toISOString();
+    this.saveStorage();
   }
 
   public getChemists(): ListItem[] {
     return this.dataStorage.chemists.items;
   }
 
+  public updateChemist(jsonItemsData: ListItem[]) {
+    let counter = 0;
+    this.getChemists().forEach(item => {
+      const newItemWithId = jsonItemsData.find(
+        newItem => newItem.id == item.id,
+      );
+      if (newItemWithId) {
+        newItemWithId.isFavorite = item.isFavorite;
+        counter++;
+      }
+    });
+
+    this.dataStorage.chemists.items = jsonItemsData;
+    this.dataStorage.chemists.lastUpdate = new Date().toISOString();
+    this.saveStorage();
+  }
+
+  public getChemistLastUpdate(): Date {
+    return new Date(this.dataStorage.chemists.lastUpdate);
+  }
+
+  public updateChemistLastUpdate(): void {
+    this.dataStorage.chemists.lastUpdate = new Date().toISOString();
+    this.saveStorage();
+  }
+
   public getHospitals(): ListItem[] {
     return this.dataStorage.hospitals.items;
+  }
+
+  public updateHospitals(jsonItemsData: ListItem[]) {
+    let counter = 0;
+    this.getHospitals().forEach(item => {
+      const newItemWithId = jsonItemsData.find(
+        newItem => newItem.id == item.id,
+      );
+      if (newItemWithId) {
+        newItemWithId.isFavorite = item.isFavorite;
+        counter++;
+      }
+    });
+
+    this.dataStorage.hospitals.items = jsonItemsData;
+    this.dataStorage.hospitals.lastUpdate = new Date().toISOString();
+    this.saveStorage();
+  }
+
+  public getHospitalsLastUpdate(): Date {
+    return new Date(this.dataStorage.hospitals.lastUpdate);
+  }
+
+  public updateHospitalsLastUpdate(): void {
+    this.dataStorage.hospitals.lastUpdate = new Date().toISOString();
+    this.saveStorage();
   }
 
   public getFavorites(): ListItem[] {

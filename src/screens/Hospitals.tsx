@@ -11,6 +11,7 @@ import {Icon, Ripple} from 'material-bread';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import {t} from 'i18n-js';
 import {Utility} from '../utility/Utility';
+import RestService from '../services/RestService';
 
 type Props = {
   navigation?: NavigationStackProp;
@@ -35,8 +36,57 @@ export class ScreenHospitals extends AbstractScreen {
     this.allItems = ExternalDataService.getInstance().getHospitals();
     this.setState({
       items: this.allItems,
-      progressBarVisible: false,
     });
+
+    if (
+      Date.now() -
+        ExternalDataService.getInstance()
+          .getHospitalsLastUpdate()
+          .getTime() <
+      60 * 60 * 1000
+    ) {
+      this.setState({progressBarVisible: false});
+      return;
+    }
+
+    RestService.getInstance()
+      .updateHospitals()
+      .then((response: Response) => {
+        console.log('Items update response:' + JSON.stringify(response));
+        return response.text();
+      })
+      .then((textUpdateData: string) => {
+        const lastUpdateDbDate = new Date(textUpdateData);
+        const lastUpdateLocalDate = ExternalDataService.getInstance()
+          .getHospitalsLastUpdate()
+          .getTime();
+
+        const difference = lastUpdateDbDate.getTime() - lastUpdateLocalDate;
+        if (difference > 0) {
+          console.log('Last update is earlier than bd');
+          return RestService.getInstance().getHospitals();
+        } else {
+          ExternalDataService.getInstance().updateHospitalsLastUpdate();
+          console.log('Last update is later than bd');
+          this.setState({progressBarVisible: false});
+          return {then: () => {}};
+        }
+      })
+      .then((response: Response) => {
+        console.log('Items items response:' + JSON.stringify(response));
+        return response.text();
+      })
+      .then((jsonItemsData: string) => {
+        console.log('1232131231->', jsonItemsData);
+        const newItemData = JSON.parse(jsonItemsData);
+        console.log('new item list' + newItemData);
+        ExternalDataService.getInstance().updateHospitals(newItemData);
+        this.getItems();
+      })
+      .catch((error: any) => {
+        console.error(error);
+        this.setState({progressBarVisible: false});
+      });
   }
 
   protected pageContent = () => {

@@ -14,6 +14,7 @@ import {Ripple} from 'material-bread';
 import * as Colors from '../utility/Colors';
 import {Utility} from '../utility/Utility';
 import {ExtendedListItemComponent} from '../components/ExtendedListItemComponent';
+import RestService from '../services/RestService';
 
 type Props = {
   navigation?: NavigationStackProp;
@@ -35,8 +36,57 @@ export class ScreenOffices extends AbstractScreen {
     this.allItems = ExternalDataService.getInstance().getOffices();
     this.setState({
       items: this.allItems,
-      progressBarVisible: false,
     });
+
+    if (
+      Date.now() -
+        ExternalDataService.getInstance()
+          .getOfficesLastUpdate()
+          .getTime() <
+      60 * 60 * 1000
+    ) {
+      this.setState({progressBarVisible: false});
+      return;
+    }
+
+    RestService.getInstance()
+      .updateOffices()
+      .then((response: Response) => {
+        console.log('Items update response:' + JSON.stringify(response));
+        return response.text();
+      })
+      .then((textUpdateData: string) => {
+        const lastUpdateDbDate = new Date(textUpdateData);
+        const lastUpdateLocalDate = ExternalDataService.getInstance()
+          .getOfficesLastUpdate()
+          .getTime();
+
+        const difference = lastUpdateDbDate.getTime() - lastUpdateLocalDate;
+        if (difference > 0) {
+          console.log('Last update is earlier than bd');
+          return RestService.getInstance().getOffices();
+        } else {
+          ExternalDataService.getInstance().updateOfficesLastUpdate();
+          console.log('Last update is later than bd');
+          this.setState({progressBarVisible: false});
+          return {then: () => {}};
+        }
+      })
+      .then((response: Response) => {
+        console.log('Items items response:' + JSON.stringify(response));
+        return response.text();
+      })
+      .then((jsonItemsData: string) => {
+        console.log('1232131231->', jsonItemsData);
+        const newItemData = JSON.parse(jsonItemsData);
+        console.log('new item list' + newItemData);
+        ExternalDataService.getInstance().updateOffices(newItemData);
+        this.getItems();
+      })
+      .catch((error: any) => {
+        console.error(error);
+        this.setState({progressBarVisible: false});
+      });
   }
 
   protected pageContent = () => {
