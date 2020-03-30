@@ -7,8 +7,9 @@ import {
   SafeAreaView,
   StyleSheet,
   Text,
+  View,
 } from 'react-native';
-import {withTheme, Icon, Ripple, SheetSide} from 'material-bread';
+import {withTheme, Icon, Ripple, SheetSide, Badge} from 'material-bread';
 import HeaderButton from './HeaderButton';
 import FrontLayer from './FrontLayer';
 import BackLayer from './BackLayer';
@@ -18,6 +19,8 @@ import Analytics from 'appcenter-analytics';
 import * as Enums from '../../model/Enums';
 import * as UtilityStyles from '../../utility/UtilityStyles';
 import {AboutApp} from '../AboutApp';
+import App from '../../../App';
+import {NavigationStackProp} from 'react-navigation-stack';
 
 interface Props {
   backLayerStyle?: any;
@@ -31,6 +34,8 @@ interface Props {
   theme?: any;
   subheader?: any;
   testID?: any;
+  navigation?: NavigationStackProp;
+  unReadMessages?: number;
 }
 
 class Backdrop extends PureComponent<Props> {
@@ -175,6 +180,12 @@ class Backdrop extends PureComponent<Props> {
           <AboutApp />
         </SheetSide>
         <Ripple
+          onPress={() =>
+            this.props.navigation!.navigate('Messages', {
+              name: App.translate('menu_messages'),
+              iconName: 'info-circle',
+            })
+          }
           style={{
             height: 56,
             width: 56,
@@ -188,9 +199,18 @@ class Backdrop extends PureComponent<Props> {
             name={'bullhorn'}
             size={34}
             color="white"
-            style={[UtilityStyles.styles.flipX, {marginTop: -2}]}
+            style={[UtilityStyles.styles.flipX, {marginTop: 0}]}
             iconComponent={MaterialCommunityIcons}
           />
+          {this.props.unReadMessages ? (
+            <Badge
+              style={{position: 'absolute', marginTop: -36, left: 28}}
+              size={25}
+              content={this.props.unReadMessages}
+              color={'#BB0000'}
+              textColor={'white'}
+            />
+          ) : null}
         </Ripple>
         <HeaderButton
           backConcealed={backConcealed}

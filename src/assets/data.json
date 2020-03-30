@@ -1377,7 +1377,8 @@
         "title": "Pamiętajmy o seniorach w czasie pandemii",
         "short": "Wychodzimy naprzeciw obecnie panującej sytuacji i zwracamy szczególną uwagę w czasie pandemii na Seniorów – grupę osób w wieku 60+.",
         "content": "Wychodzimy naprzeciw obecnie panującej sytuacji i zwracamy szczególną uwagę w czasie pandemii na Seniorów – grupę osób w wieku 60+. Ta część społeczeństwa jest najbardziej narażona na zarażenie chorobą COVID-19 wywołaną przez koronawirusa SARS-Cov-2. Dla Seniorów, których odporność jest często niższa niż osób w młodszym wieku, konsekwencje zachorowania są dużo bardziej dotkliwe. Wspierajmy Seniorów pamiętając o zasadach bezpieczeństwa.\n\nSTOP KORONA-OSZUSTWOM\n\nWyjątkowa sytuacja powoduje, że do „pomocy” włączają się również oszuści, dostrzegając szybki i łatwy zysk w obliczu wybuchu społecznej paniki. Wszechobecny lęk, szczególnie wśród osób w wieku 60+, skrzętnie wykorzystują manipulatorzy na wielu płaszczyznach. Działają w Internecie, ale też w kontakcie bezpośrednim. Informacje na ten temat spływają do policji z całej Polski. Oszuści sprzedają w Internecie różnego typu środki (np. lekarstwa, suplementy, herbaty czy amulety), których działanie ma uchronić osobę przed zachorowaniem na koronawirusa. Coraz częściej dochodzi także do działań bezpośrednich. Delikwenci podszywają się pod lekarzy, pracowników Sanepidu czy służby mundurowe i w trakcie wizyty w domu ofiary, kradną pieniądze i inne przedmioty.",
-        "id": "9aa2777c-bd99-500e-b157-6c1bbba4d4f4"
+        "id": "9aa2777c-bd99-500e-b157-6c1bbba4d4f4",
+        "read": true
       },
       {
         "createDate": "2020-02-22T10:51:29.829Z",
@@ -1385,7 +1386,8 @@
         "title": "Godzina dla seniorów",
         "short": "Sieć Tesco wprowadza specjalne godziny na zakupy dla osób z grupy podwyższonego ryzyka, w szczególności dla osób starszych.",
         "content": "Zgodnie z zaleceniami, osoby z grupy podwyższonego ryzyka powinny jak najmniej wychodzić z domów – jednak nie zawsze jest to możliwe. Celem akcji jest umożliwienie osobom starszym sprawne zrobienie najpilniejszych zakupów. Dzięki temu będą mogli szybciej wrócić do domu i będą mniej narażeni na zarażenie koronawirusem. Akcja będzie prowadzona codziennie w godzinach 9-10. W tym czasie seniorzy mogą liczyć na wsparcie obsługi sklepów oraz pierwszeństwo w kolejkach do kas. W trakcie specjalnych godzin sklepy Tesco pozostaną otwarte dla wszystkich klientów, ale sieć handlowa prosi swoich pozostałych klientów o zrozumienie i ustępowanie pierwszeństwa osobom starszym w wyznaczonym czasie.",
-        "id": "68118ce0-9be6-5887-a7bf-e603ed0828db"
+        "id": "68118ce0-9be6-5887-a7bf-e603ed0828db",
+        "read": true
       },
       {
         "createDate": "2020-02-22T09:55:29.829Z",
@@ -1393,7 +1395,8 @@
         "title": "Kolejne zmiany w komunikacji miejskiej",
         "short": "W związku z nowymi ograniczeniami, w trosce o zdrowie mieszkańców Jeleniej Góry i pozostałych gmin, od 25 marca (środa) Miejski Zakład Komunikacyjny wprowadza kolejne zmiany w funkcjonowaniu komunikacji miejskiej",
         "content": "W związku z nowymi ograniczeniami, w trosce o zdrowie mieszkańców Jeleniej Góry i pozostałych gmin, od 25 marca (środa) Miejski Zakład Komunikacyjny wprowadza kolejne zmiany w funkcjonowaniu komunikacji miejskiej:\n\nMZK informuje:\n\n1. Linie najbardziej obciążone obsługiwać będą autobusy, o największej liczbie dostępnych miejsc siedzących, w szczególności autobusy przegubowe.\n\n2. W każdym autobusie jednorazowo będzie mogła podróżować liczba pasażerów nie większa niż połowa znajdujących się w tym autobusie miejsc siedzących. Szacunkowo jest to od 15 osób w nowych autobusach typy Volvo i Man – do 25 osób w autobusach przegubowych.\n\n3. Na bieżąco będziemy monitorować sytuację w autobusach i podejmować adekwatne działania. Tak jak do tej pory prosimy Państwa o uwagi i spostrzeżenia.\n\n4. Sytuacja jest trudna dla nas wszystkich, dlatego prosimy o wyrozumiałość dla wprowadzanych zmian. Mogą wystąpić przejściowe trudności, które mamy nadzieję szybko zażegnać. Pracujemy codziennie, aby każdy z Państwa czuł się w naszych autobusach bezpiecznie.\n\n5. Dołożymy wszelkich starań, aby w ciągu najbliższych dni możliwie najlepiej dopasować komunikację miejską do zmienionych zasad jej funkcjonowania i sprostać Państwa oczekiwaniom.",
-        "id": "03b3a619-e637-5424-8c7c-3383ec3c0a39"
+        "id": "03b3a619-e637-5424-8c7c-3383ec3c0a39",
+        "read": true
       }
     ]
   },

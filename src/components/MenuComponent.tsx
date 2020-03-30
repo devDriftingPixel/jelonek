@@ -75,11 +75,11 @@ export class MenuComponent extends Component<Props> {
         }),
     },
     {
-      name: App.translate('menu_phoness'),
+      name: App.translate('menu_phones'),
       iconName: 'phone',
       onPress: () =>
-        this.props.navigation!.navigate('phoness', {
-          name: App.translate('menu_phoness'),
+        this.props.navigation!.navigate('phones', {
+          name: App.translate('menu_phones'),
           iconName: 'phone',
         }),
     },

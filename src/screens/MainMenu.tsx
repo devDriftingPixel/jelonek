@@ -13,6 +13,8 @@ import {Dimensions} from 'react-native';
 import {MenuComponentHorizontalBars} from '../components/MenuComponentHorizontalBars';
 import {ExternalDataService} from '../services/ExternalDataService';
 import {FavoritesList} from '../components/FavoritesList';
+import {NavigationEventSubscription} from 'react-navigation';
+import RestService from '../services/RestService';
 
 type Props = {
   navigation?: NavigationStackProp;
@@ -20,9 +22,12 @@ type Props = {
 
 export class ScreenMainMenu extends Component<Props> {
   private windowDimesions: ScaledSize;
+  private navigationSubscription: NavigationEventSubscription;
 
   state = {
     favorites: [],
+    unReadMessages: 0,
+    progressBarVisible: false,
   };
 
   constructor(props: Props) {
@@ -34,6 +39,7 @@ export class ScreenMainMenu extends Component<Props> {
     this.setState({
       favorites: ExternalDataService.getInstance().getFavorites(),
     });
+    this.updateMessageIndicator();
   }
 
   private onUnFavoriteItem(item: ListItem) {
@@ -42,7 +48,16 @@ export class ScreenMainMenu extends Component<Props> {
   }
 
   componentDidMount() {
-    this.props.navigation!.addListener('willFocus', this.willFocus.bind(this));
+    this.navigationSubscription = this.props.navigation!.addListener(
+      'willFocus',
+      this.willFocus.bind(this),
+    );
+
+    this.updateMessages();
+  }
+
+  componentWillUnmount() {
+    this.navigationSubscription.remove();
   }
 
   render() {
@@ -102,6 +117,8 @@ export class ScreenMainMenu extends Component<Props> {
         <View
           style={{marginBottom: 80, flex: 1, backgroundColor: Colors.PRIMARY}}>
           <Backdrop
+            unReadMessages={this.state.unReadMessages}
+            navigation={this.props.navigation}
             subheader={''}
             backLayerConcealed={
               <View style={styles.backdropHeader as ViewStyle}>
@@ -114,6 +131,7 @@ export class ScreenMainMenu extends Component<Props> {
               this.state.favorites.length,
             )}>
             <MenuComponentHorizontalBars
+              progressBarVisible={this.state.progressBarVisible}
               dimension={this.windowDimesions}
               navigation={this.props.navigation}
             />
@@ -122,7 +140,8 @@ export class ScreenMainMenu extends Component<Props> {
       </SafeAreaView>
     );
   }
-  getOffsetForFavoriteItemNumber(numberOfFavorites: number): number {
+
+  private getOffsetForFavoriteItemNumber(numberOfFavorites: number): number {
     switch (numberOfFavorites) {
       case 0:
         return this.windowDimesions.height / 2;
@@ -135,5 +154,55 @@ export class ScreenMainMenu extends Component<Props> {
       default:
         return 500;
     }
+  }
+
+  private updateMessages() {
+    RestService.getInstance()
+      .updateMessages()
+      .then((response: Response) => {
+        console.log('messages update response:' + JSON.stringify(response));
+        return response.text();
+      })
+      .then((textUpdateData: string) => {
+        const lastUpdateDbDate = new Date(textUpdateData);
+        const lastUpdateLocalDate = ExternalDataService.getInstance()
+          .getMessagesLastUpdate()
+          .getTime();
+
+        const difference = lastUpdateDbDate.getTime() - lastUpdateLocalDate;
+        if (difference > 0) {
+          console.log('Last update is earlier than bd');
+          return RestService.getInstance().getMessages();
+        } else {
+          ExternalDataService.getInstance().updateMessagesLastUpdate();
+          console.log('Last update is later than bd');
+          this.setState({progressBarVisible: false});
+          return {then: () => {}};
+        }
+      })
+      .then((response: Response) => {
+        //Response of all shops request
+        if (response == null)
+          console.log('Shops items response:' + JSON.stringify(response));
+        return response.text();
+      })
+      .then((jsonShopsData: string) => {
+        console.log('1232131231->', jsonShopsData);
+        const newshopData = JSON.parse(jsonShopsData);
+        console.log('new shop list' + newshopData);
+        ExternalDataService.getInstance().updateMessages(newshopData);
+        this.updateMessageIndicator();
+      })
+      .catch((error: any) => {
+        console.error(error);
+        this.setState({progressBarVisible: false});
+      });
+  }
+
+  private updateMessageIndicator() {
+    this.setState({
+      progressBarVisible: false,
+      unReadMessages: ExternalDataService.getInstance().getUnreadMessagesCount(),
+    });
   }
 }

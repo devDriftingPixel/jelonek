@@ -28,23 +28,23 @@ export class ExternalDataService {
   }
 
   private async prepareDataStorage() {
-    // AsyncStorage.getItem('dataStorageStoreKey')
-    //   .then(dataStorageString => {
-    //     if (dataStorageString !== null) {
-    //       this.dataStorage = JSON.parse(dataStorageString) as DataStorage;
-    //     } else {
-    this.dataStorage = jsonStorage;
-    //     this.saveStorage();
-    //   }
-    // })
-    // .catch(error =>
-    //   Analytics.trackEvent(
-    //     `Get storage from AsyncStorage error: ${JSON.stringify(error)}`,
-    //     {
-    //       Category: Enums.AnalyticsCategories.FAIL,
-    //     },
-    //   ),
-    // );
+    AsyncStorage.getItem('dataStorageStoreKey')
+      .then(dataStorageString => {
+        if (dataStorageString !== null) {
+          this.dataStorage = JSON.parse(dataStorageString) as DataStorage;
+        } else {
+          this.dataStorage = jsonStorage;
+          this.saveStorage();
+        }
+      })
+      .catch(error =>
+        Analytics.trackEvent(
+          `Get storage from AsyncStorage error: ${JSON.stringify(error)}`,
+          {
+            Category: Enums.AnalyticsCategories.FAIL,
+          },
+        ),
+      );
   }
 
   public getAdditionalHospitalInfoVisible(): boolean {
@@ -59,6 +59,16 @@ export class ExternalDataService {
 
   public getMessages(): Message[] {
     return this.dataStorage.messages.items;
+  }
+
+  public getUnreadMessagesCount(): number {
+    return this.dataStorage.messages.items.filter(message => !message.read)
+      .length;
+  }
+
+  markAllMessagesAsRead() {
+    this.dataStorage.messages.items.forEach(message => (message.read = true));
+    this.saveStorage();
   }
 
   public updateMessages(jsonItemsData: Message[]) {

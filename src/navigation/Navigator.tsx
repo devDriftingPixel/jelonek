@@ -12,6 +12,7 @@ import {ScreenPhones} from '../screens/Phones';
 import {ScreenChemists} from '../screens/Chemists';
 import {ScreenOffices} from '../screens/Offices';
 import {ScreenObjectDetails} from '../screens/ObjectDetails';
+import {ScreenMessageDetails} from '../screens/MessageDetails';
 
 const stack = createStackNavigator({
   Login: {
@@ -50,7 +51,7 @@ const stack = createStackNavigator({
       headerShown: false,
     },
   },
-  phoness: {
+  phones: {
     screen: ScreenPhones,
     navigationOptions: {
       headerShown: false,
@@ -70,6 +71,12 @@ const stack = createStackNavigator({
   },
   ObjectDetails: {
     screen: ScreenObjectDetails,
+    navigationOptions: {
+      headerShown: false,
+    },
+  },
+  MessageDetails: {
+    screen: ScreenMessageDetails,
     navigationOptions: {
       headerShown: false,
     },

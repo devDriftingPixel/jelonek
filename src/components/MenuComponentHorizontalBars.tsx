@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import * as Colors from '../utility/Colors';
 import * as Images from '../utility/Images';
-import {Ripple, Icon} from 'material-bread';
+import {Ripple, Icon, ProgressBar} from 'material-bread';
 import App from '../../App';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import {NavigationStackProp} from 'react-navigation-stack';
@@ -17,6 +17,7 @@ import {NavigationStackProp} from 'react-navigation-stack';
 interface Props {
   dimension: ScaledSize;
   navigation?: NavigationStackProp;
+  progressBarVisible?: boolean;
 }
 
 export class MenuComponentHorizontalBars extends Component<Props> {
@@ -82,12 +83,12 @@ export class MenuComponentHorizontalBars extends Component<Props> {
         }),
     },
     {
-      name: App.translate('menu_phoness'),
+      name: App.translate('menu_phones'),
       iconName: 'phone',
       color: Colors.PRIMARY,
       onPress: () =>
-        this.props.navigation!.navigate('phoness', {
-          name: App.translate('menu_phoness'),
+        this.props.navigation!.navigate('phones', {
+          name: App.translate('menu_phones'),
           iconName: 'phone',
         }),
     },
@@ -142,6 +143,15 @@ export class MenuComponentHorizontalBars extends Component<Props> {
           borderRadius: 20,
         }}
         imageStyle={{borderRadius: 18}}>
+        {this.props.progressBarVisible ? (
+          <ProgressBar
+            visible
+            indicatorStartPosition={0}
+            color={Colors.ACCENT}
+            height={15}
+            style={{margin: 20}}
+          />
+        ) : null}
         <FlatList
           style={{
             marginLeft: 8,
