@@ -1,11 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
 import React from 'react';
 import Navigator from './src/navigation/Navigator';
 import {BreadProvider} from 'material-bread';
@@ -16,6 +8,7 @@ import memoize from 'lodash.memoize'; // Use for caching/memoize for better perf
 import {I18nManager} from 'react-native';
 import Analytics from 'appcenter-analytics';
 import {ExternalDataService} from './src/services/ExternalDataService';
+import SplashScreen from 'react-native-splash-screen';
 
 export default class App extends React.Component {
   constructor(props: any) {
@@ -56,6 +49,7 @@ export default class App extends React.Component {
 
   componentDidMount() {
     RNLocalize.addEventListener('change', this.handleLocalizationChange);
+    SplashScreen.hide();
   }
 
   componentWillUnmount() {
