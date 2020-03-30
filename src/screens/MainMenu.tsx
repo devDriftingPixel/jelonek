@@ -160,7 +160,6 @@ export class ScreenMainMenu extends Component<Props> {
     RestService.getInstance()
       .updateMessages()
       .then((response: Response) => {
-        console.log('messages update response:' + JSON.stringify(response));
         return response.text();
       })
       .then((textUpdateData: string) => {
@@ -171,25 +170,19 @@ export class ScreenMainMenu extends Component<Props> {
 
         const difference = lastUpdateDbDate.getTime() - lastUpdateLocalDate;
         if (difference > 0) {
-          console.log('Last update is earlier than bd');
           return RestService.getInstance().getMessages();
         } else {
           ExternalDataService.getInstance().updateMessagesLastUpdate();
-          console.log('Last update is later than bd');
           this.setState({progressBarVisible: false});
           return {then: () => {}};
         }
       })
       .then((response: Response) => {
         //Response of all shops request
-        if (response == null)
-          console.log('Shops items response:' + JSON.stringify(response));
         return response.text();
       })
       .then((jsonShopsData: string) => {
-        console.log('1232131231->', jsonShopsData);
         const newshopData = JSON.parse(jsonShopsData);
-        console.log('new shop list' + newshopData);
         ExternalDataService.getInstance().updateMessages(newshopData);
         this.updateMessageIndicator();
       })

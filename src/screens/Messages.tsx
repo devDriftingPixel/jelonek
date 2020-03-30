@@ -19,6 +19,7 @@ export class ScreenMessages extends AbstractScreen {
   }
 
   componentDidMount() {
+    super.componentDidMount();
     this.getItems();
     ExternalDataService.getInstance().markAllMessagesAsRead();
   }
@@ -47,7 +48,6 @@ export class ScreenMessages extends AbstractScreen {
     RestService.getInstance()
       .updateMessages()
       .then((response: Response) => {
-        console.log('Messages update response:' + JSON.stringify(response));
         return response.text();
       })
       .then((textUpdateData: string) => {
@@ -58,24 +58,19 @@ export class ScreenMessages extends AbstractScreen {
 
         const difference = lastUpdateDbDate.getTime() - lastUpdateLocalDate;
         if (difference > 0) {
-          console.log('Last update is earlier than bd');
           return RestService.getInstance().getMessages();
         } else {
           ExternalDataService.getInstance().updateMessagesLastUpdate();
-          console.log('Last update is later than bd');
+
           this.setState({progressBarVisible: false});
           return {then: () => {}};
         }
       })
       .then((response: Response) => {
-        if (response == null)
-          console.log('Messages items response:' + JSON.stringify(response));
         return response.text();
       })
       .then((jsonItemData: string) => {
-        console.log('1232131231->', jsonItemData);
         const newItemData = JSON.parse(jsonItemData) as Message[];
-        console.log('new messages list' + newItemData);
         ExternalDataService.getInstance().updateMessages(newItemData);
         this.getItems();
       })

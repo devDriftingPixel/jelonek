@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "Jelonek-tvOS.app"
-               BlueprintName = "Jelonek-tvOS"
+               BuildableName = "jelonek-tvOS.app"
+               BlueprintName = "jelonek-tvOS"
                ReferencedContainer = "container:jelonek.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -43,8 +43,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "Jelonek-tvOSTests.xctest"
-               BlueprintName = "Jelonek-tvOSTests"
+               BuildableName = "jelonek-tvOSTests.xctest"
+               BlueprintName = "jelonek-tvOSTests"
                ReferencedContainer = "container:jelonek.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -59,8 +59,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "Jelonek-tvOS.app"
-            BlueprintName = "Jelonek-tvOS"
+            BuildableName = "jelonek-tvOS.app"
+            BlueprintName = "jelonek-tvOS"
             ReferencedContainer = "container:jelonek.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -70,8 +70,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "Jelonek-tvOSTests.xctest"
-               BlueprintName = "Jelonek-tvOSTests"
+               BuildableName = "jelonek-tvOSTests.xctest"
+               BlueprintName = "jelonek-tvOSTests"
                ReferencedContainer = "container:jelonek.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -92,8 +92,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "Jelonek-tvOS.app"
-            BlueprintName = "Jelonek-tvOS"
+            BuildableName = "jelonek-tvOS.app"
+            BlueprintName = "jelonek-tvOS"
             ReferencedContainer = "container:jelonek.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -109,8 +109,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "Jelonek-tvOS.app"
-            BlueprintName = "Jelonek-tvOS"
+            BuildableName = "jelonek-tvOS.app"
+            BlueprintName = "jelonek-tvOS"
             ReferencedContainer = "container:jelonek.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

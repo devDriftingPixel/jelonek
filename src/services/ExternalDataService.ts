@@ -81,7 +81,6 @@ export class ExternalDataService {
         counter++;
       }
     });
-    console.log('find old' + counter);
     this.dataStorage.messages.items = jsonItemsData;
     this.dataStorage.messages.lastUpdate = new Date().toISOString();
     this.saveStorage();
@@ -149,7 +148,6 @@ export class ExternalDataService {
         counter++;
       }
     });
-    console.log('find old' + counter);
     this.dataStorage.shops.items = jsonShopsData;
     this.dataStorage.shops.lastUpdate = new Date().toISOString();
     this.saveStorage();

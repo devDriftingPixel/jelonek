@@ -17,14 +17,14 @@ export class PhoneComponent extends React.Component<Props> {
           flexDirection: 'row',
           backgroundColor: Colors.ACCENT,
           height: 50,
-          width: '100%',
+          flex: 1,
           justifyContent: 'center',
           alignItems: 'center',
         }}
         rippleColor={Colors.PRIMARY}
         onPress={() => {
           Linking.openURL(`tel:${this.props.phone}`).catch(error =>
-            Analytics.trackEvent(`Erro during calling: ${this.props.phone}`, {
+            Analytics.trackEvent(`Error during calling: ${this.props.phone}`, {
               Category: Enums.AnalyticsCategories.FAIL,
             }),
           );
@@ -37,7 +37,6 @@ export class PhoneComponent extends React.Component<Props> {
             width: 30,
             height: 30,
             marginRight: 20,
-            marginLeft: 20,
           }}
           iconComponent={FontAwesome5}
         />

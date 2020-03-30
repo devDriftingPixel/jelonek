@@ -108,7 +108,12 @@ export class ExtendedListItemComponent extends Component<Props> {
           </View>
         ) : null}
         {this.props.item.address ? (
-          <View style={{marginLeft: 10, marginTop: 20}}>
+          <View
+            style={{
+              marginTop: 20,
+              width: '100%',
+              alignItems: 'center',
+            }}>
             <AddressComponent item={this.props.item} />
           </View>
         ) : null}

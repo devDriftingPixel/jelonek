@@ -39,7 +39,6 @@ export class ScreenRestaurants extends ScreenShops {
     RestService.getInstance()
       .updateRestaurants()
       .then((response: Response) => {
-        console.log('Items update response:' + JSON.stringify(response));
         return response.text();
       })
       .then((textUpdateData: string) => {
@@ -50,23 +49,18 @@ export class ScreenRestaurants extends ScreenShops {
 
         const difference = lastUpdateDbDate.getTime() - lastUpdateLocalDate;
         if (difference > 0) {
-          console.log('Last update is earlier than bd');
           return RestService.getInstance().getRestaurants();
         } else {
           ExternalDataService.getInstance().updateRestaurantsLastUpdate();
-          console.log('Last update is later than bd');
           this.setState({progressBarVisible: false});
           return {then: () => {}};
         }
       })
       .then((response: Response) => {
-        console.log('Items items response:' + JSON.stringify(response));
         return response.text();
       })
       .then((jsonItemsData: string) => {
-        console.log('1232131231->', jsonItemsData);
         const newItemData = JSON.parse(jsonItemsData) as ListItem[];
-        console.log('new item list' + newItemData);
         ExternalDataService.getInstance().updateRestaurants(newItemData);
         this.getItems();
       })

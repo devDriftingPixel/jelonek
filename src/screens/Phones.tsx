@@ -45,7 +45,6 @@ export class ScreenPhones extends AbstractScreen {
     RestService.getInstance()
       .updatePhones()
       .then((response: Response) => {
-        console.log('Items update response:' + JSON.stringify(response));
         return response.text();
       })
       .then((textUpdateData: string) => {
@@ -56,23 +55,18 @@ export class ScreenPhones extends AbstractScreen {
 
         const difference = lastUpdateDbDate.getTime() - lastUpdateLocalDate;
         if (difference > 0) {
-          console.log('Last update is earlier than bd');
           return RestService.getInstance().getPhones();
         } else {
           ExternalDataService.getInstance().updatePhonesLastUpdate();
-          console.log('Last update is later than bd');
           this.setState({progressBarVisible: false});
           return {then: () => {}};
         }
       })
       .then((response: Response) => {
-        console.log('Items items response:' + JSON.stringify(response));
         return response.text();
       })
       .then((jsonItemsData: string) => {
-        console.log('1232131231->', jsonItemsData);
         const newItemData = JSON.parse(jsonItemsData);
-        console.log('new item list' + newItemData);
         ExternalDataService.getInstance().updatePhones(newItemData);
         this.getItems();
       })
