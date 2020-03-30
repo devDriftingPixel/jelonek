@@ -1044,7 +1044,7 @@
         "address": "ul.Myśliwska 13, \n58-540 Karpacz",
         "type": "MEDIC",
         "subType": "HOSPITAL",
-        "phones": ["883 358 135,883 358 138"],
+        "phones": ["883 358 13", "883 358 138"],
         "www": "www.cmkarpacz.pl",
         "email": "kontakt@cmkarpacz.pl",
         "id": "63c97e69-bbf4-5a74-94c4-027eb28fa80d"

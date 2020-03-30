@@ -158,7 +158,9 @@ export class ScreenShops extends AbstractScreen {
         selectedAmenities == undefined
           ? this.allItems
           : this.allItems.filter(
-              item => item.amenities.indexOf(selectedAmenities) != -1,
+              item =>
+                item.amenities &&
+                item.amenities.indexOf(selectedAmenities) != -1,
             ),
     });
   }

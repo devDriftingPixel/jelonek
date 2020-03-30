@@ -5,7 +5,6 @@ import {Phone} from '../model/Phone';
 import AsyncStorage from '@react-native-community/async-storage';
 import * as Enums from '../model/Enums';
 import Analytics from 'appcenter-analytics';
-import {v5 as uuidv5} from 'uuid';
 
 const jsonStorage: DataStorage = require('../assets/data.json');
 
@@ -101,7 +100,7 @@ export class ExternalDataService {
     return this.dataStorage.phones.items;
   }
 
-  public updatePhones(jsonShopsData: Phones[]) {
+  public updatePhones(jsonShopsData: Phone[]) {
     this.dataStorage.phones.items = jsonShopsData;
     this.dataStorage.phones.lastUpdate = new Date().toISOString();
     this.saveStorage();

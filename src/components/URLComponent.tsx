@@ -13,18 +13,9 @@ interface Props {
 export class URLComponent extends React.Component<Props> {
   render() {
     return (
-      <Ripple
-        style={{
-          width: '100%',
-          justifyContent: 'center',
-          alignItems: 'center',
-          marginVertical: 4,
-        }}
-        onPress={this.props.onPress}
-        rippleColor={Colors.ACCENT}>
+      <Ripple onPress={this.props.onPress} rippleColor={Colors.ACCENT}>
         <View
           style={{
-            width: '100%',
             flexDirection: 'row',
             alignItems: 'center',
           }}>

@@ -12,6 +12,7 @@ import {ListItem} from '../model/ListItem';
 import * as Costants from '../utility/Constants';
 import {OpenHours} from './OpenHours';
 import {AddressComponent} from './AddressComponent';
+import {PhoneComponent} from './PhoneComponent';
 
 interface Props {
   item: ListItem;
@@ -97,45 +98,19 @@ export class ExtendedListItemComponent extends Component<Props> {
                     width: '100%',
                   }}
                 />
-                <Ripple
-                  style={{
-                    flexDirection: 'row',
-                    backgroundColor: Colors.ACCENT,
-                    height: 50,
-                    width: '100%',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                  }}
-                  rippleColor={Colors.PRIMARY}
-                  onPress={() => {
-                    Linking.openURL(`tel:${phone}`);
-                  }}>
-                  <Icon
-                    name={'phone'}
-                    size={30}
-                    color={Colors.PRIMARY}
-                    style={{
-                      width: 30,
-                      height: 30,
-                      marginRight: 20,
-                      marginLeft: 20,
-                    }}
-                    iconComponent={FontAwesome5}
-                  />
-                  <Text style={{color: Colors.PRIMARY, fontSize: 30}}>
-                    {phone}
-                  </Text>
-                </Ripple>
+                <PhoneComponent phone={phone} />
               </View>
             ))
           : null}
         {this.props.item.hours ? (
-          <View style={{marginLeft: 40}}>
+          <View style={{marginLeft: 0}}>
             <OpenHours hours={this.props.item.hours} />
           </View>
         ) : null}
         {this.props.item.address ? (
-          <AddressComponent item={this.props.item} />
+          <View style={{marginLeft: 10, marginTop: 20}}>
+            <AddressComponent item={this.props.item} />
+          </View>
         ) : null}
         {this.props.item.district && this.props.item.amenities ? (
           <View

@@ -16,9 +16,7 @@ export class AddressComponent extends React.Component<Props> {
         style={{
           flexDirection: 'row',
           alignItems: 'center',
-          width: '100%',
-          marginLeft: 51,
-          marginTop: 20,
+          flex: 1,
         }}>
         <Icon
           name={'location'}

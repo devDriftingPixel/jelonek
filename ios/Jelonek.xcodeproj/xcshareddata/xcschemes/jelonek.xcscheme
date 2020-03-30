@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2D2A28121D9B038B00D4039D"
+               BlueprintIdentifier = "83CBBA2D1A601D0E00E9B192"
                BuildableName = "libReact.a"
-               BlueprintName = "React-tvOS"
+               BlueprintName = "React"
                ReferencedContainer = "container:../node_modules/react-native/React/React.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,9 +28,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "jelonek-tvOS.app"
-               BlueprintName = "jelonek-tvOS"
+               BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
+               BuildableName = "jelonek.app"
+               BlueprintName = "Jelonek"
                ReferencedContainer = "container:jelonek.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,25 +42,25 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "jelonek-tvOSTests.xctest"
-               BlueprintName = "jelonek-tvOSTests"
+               BlueprintIdentifier = "00E356ED1AD99517003FC87E"
+               BuildableName = "JelonekTests.xctest"
+               BlueprintName = "JelonekTests"
                ReferencedContainer = "container:jelonek.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "jelonek-tvOS.app"
-            BlueprintName = "jelonek-tvOS"
+            BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
+            BuildableName = "jelonek.app"
+            BlueprintName = "Jelonek"
             ReferencedContainer = "container:jelonek.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -69,18 +69,18 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "jelonek-tvOSTests.xctest"
-               BlueprintName = "jelonek-tvOSTests"
+               BlueprintIdentifier = "00E356ED1AD99517003FC87E"
+               BuildableName = "JelonekTests.xctest"
+               BlueprintName = "JelonekTests"
                ReferencedContainer = "container:jelonek.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
-      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
-      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      buildConfiguration = "Release"
+      selectedDebuggerIdentifier = ""
+      selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -91,9 +91,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "jelonek-tvOS.app"
-            BlueprintName = "jelonek-tvOS"
+            BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
+            BuildableName = "jelonek.app"
+            BlueprintName = "Jelonek"
             ReferencedContainer = "container:jelonek.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -108,15 +108,15 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "jelonek-tvOS.app"
-            BlueprintName = "jelonek-tvOS"
+            BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
+            BuildableName = "jelonek.app"
+            BlueprintName = "Jelonek"
             ReferencedContainer = "container:jelonek.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Debug">
+      buildConfiguration = "Release">
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"

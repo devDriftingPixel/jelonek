@@ -106,24 +106,32 @@ export class ScreenObjectDetails extends Component<Props> {
               {this.item.hours ? <OpenHours hours={this.item.hours} /> : null}
               <View style={{width: '100%'}}>
                 {this.item.www ? (
-                  <URLComponent
-                    content={this.item.www}
-                    iconName={'web'}
-                    iconComponent={MaterialCommunityIcons}
-                    onPress={() => Utility.openLink(this.item.www)}
-                  />
+                  <View style={{marginTop: 20}}>
+                    <URLComponent
+                      content={this.item.www}
+                      iconName={'web'}
+                      iconComponent={MaterialCommunityIcons}
+                      onPress={() => Utility.openLink(this.item.www)}
+                    />
+                  </View>
                 ) : null}
                 {this.item.facebook ? (
-                  <URLComponent
-                    content={App.translate('SeeObjectFacebook')}
-                    iconName={'facebook-square'}
-                    iconComponent={FontAwesome5}
-                    onPress={() => Utility.openLink(this.item.facebook)}
-                  />
+                  <View style={{marginTop: 20}}>
+                    <URLComponent
+                      content={App.translate('SeeObjectFacebook')}
+                      iconName={'facebook-square'}
+                      iconComponent={FontAwesome5}
+                      onPress={() => Utility.openLink(this.item.facebook)}
+                    />
+                  </View>
                 ) : null}
               </View>
             </View>
-            {this.item.address ? <AddressComponent item={this.item} /> : null}
+            {this.item.address ? (
+              <View style={{marginHorizontal: 11}}>
+                <AddressComponent item={this.item} />
+              </View>
+            ) : null}
             <View style={{height: 20}}></View>
           </ScrollView>
           {this.item.phones && this.item.phones.length == 1 ? (
