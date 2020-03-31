@@ -17,7 +17,7 @@ export default class App extends React.Component {
     super(props);
     NetworkService.getInstance();
     this.setI18nConfig(); // set initial config
-    Analytics.setEnabled(false);
+    Analytics.setEnabled(true);
     ExternalDataService.getInstance();
   }
 
