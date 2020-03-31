@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Text, View} from 'react-native';
+import {Text, View, Dimensions} from 'react-native';
 import * as Colors from '../utility/Colors';
 import * as Images from '../utility/Images';
 import {Ripple, Icon, Card} from 'material-bread';
@@ -16,12 +16,18 @@ import * as Costants from '../utility/Constants';
 interface Props {
   item: ListItem;
   onFavoriteSelected?: Function;
+  style?: any;
 }
 
 export class ListItemComponent extends Component<Props> {
   public render() {
     return (
-      <Card style={[Styles.styles.shadow, Styles.styles.itemList]}>
+      <Card
+        style={[
+          Styles.styles.shadow,
+          Styles.styles.itemList,
+          this.props.style,
+        ]}>
         <View
           style={{
             height: 35,
@@ -69,14 +75,14 @@ export class ListItemComponent extends Component<Props> {
               paddingLeft: 10,
               paddingRight: 10,
               color: Colors.PRIMARY,
-              fontSize: 20,
-              flex: 1,
+              fontSize: Dimensions.get('window').width / 24,
+              width: Dimensions.get('window').width / 1.6,
               fontWeight: '700',
               textAlign: 'center',
             }}
             numberOfLines={1}
             ellipsizeMode="tail">
-            {this.props.item.name.toUpperCase()}
+            {this.props.item.name}
           </Text>
           {/**Place holder for Icon balancing */}
           <View style={{width: 62, height: 40}} />

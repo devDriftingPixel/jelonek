@@ -14,6 +14,7 @@ import {Image} from 'react-native';
 import App from '../../App';
 import HTML from 'react-native-render-html';
 import {Message} from '../model/Message';
+import {Utility} from '../utility/Utility';
 
 type Props = {
   navigation?: NavigationStackProp;
@@ -45,7 +46,12 @@ export class ScreenMessageDetails extends Component<Props> {
 
         <Card style={{flex: 1, margin: 15, zIndex: 1}}>
           <ScrollView>
-            <CardHeader title={this.item.title} style={{fontSize: 18}} />
+            <View style={{marginVertical: 20, marginHorizontal: 15}}>
+              <Text style={{fontSize: 18, fontWeight: '700'}}>
+                {this.item.title}
+              </Text>
+            </View>
+            <View style={{height: 1, backgroundColor: Colors.DARK_TEXT}} />
             {this.item.imageUrl ? (
               <CardMedia
                 image={
@@ -62,6 +68,9 @@ export class ScreenMessageDetails extends Component<Props> {
                 <HTML
                   html={this.item.content}
                   imagesMaxWidth={Dimensions.get('window').width}
+                  onLinkPress={(eventDispacher: any, url: string) =>
+                    Utility.openLink(url)
+                  }
                 />
               </View>
             ) : null}

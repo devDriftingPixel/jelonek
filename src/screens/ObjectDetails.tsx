@@ -101,9 +101,11 @@ export class ScreenObjectDetails extends Component<Props> {
                 <HTML
                   html={this.item.htmlContent}
                   imagesMaxWidth={Dimensions.get('window').width}
+                  onLinkPress={(eventDispacher: any, url: string) =>
+                    Utility.openLink(url)
+                  }
                 />
               ) : null}
-              {this.item.hours ? <OpenHours hours={this.item.hours} /> : null}
               <View style={{width: '100%'}}>
                 {this.item.www ? (
                   <View style={{marginTop: 20}}>
@@ -127,8 +129,13 @@ export class ScreenObjectDetails extends Component<Props> {
                 ) : null}
               </View>
             </View>
+            {this.item.hours ? (
+              <View style={{marginHorizontal: 20}}>
+                <OpenHours hours={this.item.hours} />
+              </View>
+            ) : null}
             {this.item.address ? (
-              <View style={{marginHorizontal: 11}}>
+              <View style={{marginHorizontal: 11, marginTop: 15}}>
                 <AddressComponent item={this.item} />
               </View>
             ) : null}

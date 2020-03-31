@@ -67,13 +67,13 @@ export class ScreenMainMenu extends Component<Props> {
       container: {
         flex: 1,
         paddingTop: 30,
-        color: 'red',
+        color: Colors.PRIMARY,
       },
       backdropHeader: {
         height: 56,
         flexDirection: 'row',
         alignItems: 'center',
-        backgroundColor: Colors.PRIMARY,
+        backgroundColor: Colors.PRIMARY, //App bar i main menu color
       },
       backdropHeaderTitle: {
         fontSize: 18,
@@ -84,13 +84,14 @@ export class ScreenMainMenu extends Component<Props> {
     };
 
     const backLayerRevealed = (
-      <View style={{width: '100%', flex: 1, backgroundColor: Colors.PRIMARY}}>
+      <View style={{width: '100%', backgroundColor: Colors.PRIMARY}}>
+        {' '}
+        //Favorite
         <View style={styles.backdropHeader as ViewStyle}>
           <Text style={styles.backdropHeaderTitle as ViewStyle}>
             {App.translate('favorite')}
           </Text>
         </View>
-
         {this.state.favorites.length == 0 ? (
           <ZeroFavorites />
         ) : (
@@ -117,7 +118,10 @@ export class ScreenMainMenu extends Component<Props> {
     return (
       <SafeAreaView style={{flex: 1}}>
         <View
-          style={{marginBottom: 80, flex: 1, backgroundColor: Colors.PRIMARY}}>
+          style={{
+            flex: 1,
+            backgroundColor: Colors.DARK_TEXT,
+          }}>
           <Backdrop
             unReadMessages={this.state.unReadMessages}
             navigation={this.props.navigation}
@@ -127,7 +131,7 @@ export class ScreenMainMenu extends Component<Props> {
                 <Text style={styles.backdropHeaderTitle as ViewStyle}>App</Text>
               </View>
             }
-            backLayerStyle={{backgroundColor: Colors.PRIMARY}}
+            backLayerStyle={{backgroundColor: Colors.PRIMARY}} // Favorite background
             backLayerRevealed={backLayerRevealed}
             offset={this.getOffsetForFavoriteItemNumber(
               this.state.favorites.length,

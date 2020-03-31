@@ -28,7 +28,12 @@ export class MessageListItemComponent extends Component<Props> {
               item: this.props.item,
             })
           }>
-          <CardHeader title={this.props.item.title} style={{fontSize: 18}} />
+          <View style={{marginVertical: 20, marginHorizontal: 15}}>
+            <Text style={{fontSize: 18, fontWeight: '700'}}>
+              {this.props.item.title}
+            </Text>
+          </View>
+          <View style={{height: 1, backgroundColor: Colors.DARK_TEXT}} />
           {this.props.item.imageUrl ? (
             <CardMedia
               image={

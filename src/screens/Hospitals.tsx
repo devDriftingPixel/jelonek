@@ -9,7 +9,7 @@ import {
   ScrollView,
 } from 'react-native-gesture-handler';
 import {ExtendedListItemComponent} from '../components/ExtendedListItemComponent';
-import {View, Text} from 'react-native';
+import {View, Text, Platform} from 'react-native';
 import * as Colors from '../utility/Colors';
 import {Icon, Ripple} from 'material-bread';
 import {Utility} from '../utility/Utility';
@@ -126,7 +126,7 @@ export class ScreenHospitals extends AbstractScreen {
               height: '100%',
               backgroundColor: Colors.PRIMARY,
               position: 'absolute',
-              top: 0,
+              top: Platform.OS == 'ios' ? 80 : 55,
               left: 0,
             }}>
             <View>
@@ -221,7 +221,7 @@ export class ScreenHospitals extends AbstractScreen {
           <Ripple
             style={{
               width: '100%',
-              height: 80,
+              height: 60,
               backgroundColor: Colors.PRIMARY,
               position: 'absolute',
               bottom: 0,

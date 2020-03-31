@@ -29,6 +29,7 @@ export enum DataItemSubtypes {
   DRUGSTORE = 'DRUGSTORE',
   ELECTRONICS = 'ELECTRONICS',
   AMBULATORIES = 'AMBULATORIES',
+  HOSPITAL = 'HOSPITAL',
 }
 
 export enum AnalyticsCategories {

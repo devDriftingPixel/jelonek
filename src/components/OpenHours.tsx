@@ -50,8 +50,6 @@ export class OpenHours extends React.Component<Props> {
         style={{
           width: '100%',
           flexDirection: 'row',
-          marginHorizontal: 20,
-          marginTop: 20,
           alignItems: 'center',
         }}>
         <Icon

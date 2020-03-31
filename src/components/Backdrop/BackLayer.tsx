@@ -72,7 +72,7 @@ class BackLayer extends React.Component<Props> {
     });
 
     return (
-      <Animated.View style={{flex: 1, opacity}}>
+      <Animated.View style={{height: 500, opacity}}>
         {backLayerRevealed}
       </Animated.View>
     );

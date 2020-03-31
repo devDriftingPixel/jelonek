@@ -33,6 +33,12 @@ export class Utility {
         }
       case DataItemTypes.MEDIC:
         switch (subType) {
+          case DataItemSubtypes.HOSPITAL: {
+            return 'hospital';
+          }
+          case DataItemSubtypes.AMBULATORIES: {
+            return 'clinic-medical';
+          }
           default:
             return 'clinic-medical';
         }
@@ -109,10 +115,13 @@ export class Utility {
     Linking.canOpenURL(containsHttpPrefix ? url : `http://${url}`).then(
       (supported: boolean) => {
         if (supported) {
+          Analytics.trackEvent(`Open external link: ${url}`, {
+            Category: Enums.AnalyticsCategories.NAVIGATION,
+          });
           Linking.openURL(containsHttpPrefix ? url : `http://${url}`);
         } else {
-          Analytics.trackEvent('Close Favorite panel on MainMenu', {
-            Category: Enums.AnalyticsCategories.NAVIGATION,
+          Analytics.trackEvent(`Problem during opening link: ${url}`, {
+            Category: Enums.AnalyticsCategories.FAIL,
           });
         }
       },

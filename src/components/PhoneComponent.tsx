@@ -16,7 +16,7 @@ export class PhoneComponent extends React.Component<Props> {
         style={{
           flexDirection: 'row',
           backgroundColor: Colors.ACCENT,
-          height: 50,
+          height: 45,
           flex: 1,
           justifyContent: 'center',
           alignItems: 'center',
@@ -40,7 +40,7 @@ export class PhoneComponent extends React.Component<Props> {
           }}
           iconComponent={FontAwesome5}
         />
-        <Text style={{color: Colors.PRIMARY, fontSize: 30}}>
+        <Text style={{color: Colors.PRIMARY, fontSize: 28}}>
           {this.props.phone}
         </Text>
       </Ripple>

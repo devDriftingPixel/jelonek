@@ -143,18 +143,16 @@ export class MenuComponent extends Component<Props> {
     const textSize = elementSize / 9;
 
     return (
-      <ImageBackground
-        source={Images.MAIN_MENU_BACKGROUND}
+      <View
         style={{
           width: this.props.dimension.width,
           height: this.props.dimension.height,
+          backgroundColor: '#FFF',
           borderRadius: 20,
-        }}
-        imageStyle={{borderRadius: 18}}>
+        }}>
         <FlatList
           style={{
             marginHorizontal: listHorizontalMargin,
-            marginTop: 15,
           }}
           data={this.menuItems}
           numColumns={2}
@@ -205,7 +203,7 @@ export class MenuComponent extends Component<Props> {
             )
           }
         />
-      </ImageBackground>
+      </View>
     );
   }
 }

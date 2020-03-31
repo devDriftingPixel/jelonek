@@ -68,15 +68,15 @@ class FrontLayer extends PureComponent<Props> {
   getOffset = (ignoreElement = false) => {
     const {backLayerRevealed, offset, window} = this.props;
 
-    if (!ignoreElement && backLayerRevealed && offset) {
-      return offset;
-    }
+    // if (!ignoreElement && backLayerRevealed && offset) {
+    //   return offset;
+    // }
 
-    if (offset) return offset;
+    // if (offset) return offset;
 
     const y = this.getY();
 
-    return window.height - y;
+    return window.height;
   };
 
   getY = () => {

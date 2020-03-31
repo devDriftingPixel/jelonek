@@ -72,6 +72,7 @@ export abstract class AbstractScreen extends Component<Props> {
         <SafeAreaView style={{flex: 1}}>
           <Appbar
             barType={'normal'}
+            style={{borderRadius: 0}}
             color={Colors.PRIMARY}
             title={this.pageName}
             navigation={'arrow-back'}

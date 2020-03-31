@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text} from 'react-native';
+import {Text, Dimensions} from 'react-native';
 import {ListItem} from '../model/ListItem';
 import {ScrollView, FlatList} from 'react-native-gesture-handler';
 import {ListItemComponent} from './ListItemComponent';
@@ -17,7 +17,7 @@ interface Props {
 export class FavoritesList extends React.Component<Props> {
   render() {
     return (
-      <ScrollView style={{marginBottom: 80}}>
+      <ScrollView style={{height: Dimensions.get('window').height}}>
         {this.props.data.map((item, index) => (
           <Ripple
             key={index}
@@ -29,7 +29,11 @@ export class FavoritesList extends React.Component<Props> {
               })
             }>
             <ListItemComponent
+              style={{
+                marginBottom: index == this.props.data.length - 1 ? 80 : 0,
+              }}
               item={item}
+              numberOfLines={3}
               onFavoriteSelected={(item: ListItem) =>
                 this.props.onUnFavoriteItem(item)
               }

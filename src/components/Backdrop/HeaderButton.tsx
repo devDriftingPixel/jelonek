@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {Animated, Easing, StyleSheet} from 'react-native';
 import {Icon, Ripple, withTheme} from 'material-bread';
+import * as Colors from '../../utility/Colors';
 
 interface Props {
   backConcealed: any;
@@ -78,6 +79,7 @@ class HeaderButton extends Component<Props> {
       <Animated.View style={style}>
         <Ripple
           rippleContainerBorderRadius={100}
+          rippleColor={'transparent'}
           onPress={() => this._handleSpin()}
           style={this.styles.ripple}>
           <Icon

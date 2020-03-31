@@ -282,6 +282,7 @@ export class ExternalDataService {
       ...this.dataStorage.shops.items,
       ...this.dataStorage.restaurants.items,
       ...this.dataStorage.chemists.items,
+      ...this.dataStorage.hospitals.items,
     ];
   }
 }

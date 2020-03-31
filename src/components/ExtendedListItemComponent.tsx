@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Text, View, Linking} from 'react-native';
+import {Text, View, Linking, Dimensions} from 'react-native';
 import * as Colors from '../utility/Colors';
 import {Ripple, Icon, Card} from 'material-bread';
 import * as Enums from '../model/Enums';
@@ -73,12 +73,12 @@ export class ExtendedListItemComponent extends Component<Props> {
               paddingLeft: 10,
               paddingRight: 10,
               color: Colors.PRIMARY,
-              fontSize: this.props.fontSize ? this.props.fontSize : 20,
-              flex: 1,
+              fontSize: Dimensions.get('window').width / 24,
+              width: Dimensions.get('window').width / 1.6,
               fontWeight: '700',
               textAlign: 'center',
             }}
-            numberOfLines={this.props.maxLines ? this.props.maxLines : 1}
+            numberOfLines={1}
             ellipsizeMode="tail">
             {this.props.item.name.toUpperCase()}
           </Text>
@@ -103,7 +103,7 @@ export class ExtendedListItemComponent extends Component<Props> {
             ))
           : null}
         {this.props.item.hours ? (
-          <View style={{marginLeft: 0}}>
+          <View style={{marginHorizontal: 20, marginTop: 20}}>
             <OpenHours hours={this.props.item.hours} />
           </View>
         ) : null}
@@ -111,8 +111,8 @@ export class ExtendedListItemComponent extends Component<Props> {
           <View
             style={{
               marginTop: 20,
+              marginHorizontal: 12,
               width: '100%',
-              alignItems: 'center',
             }}>
             <AddressComponent item={this.props.item} />
           </View>
