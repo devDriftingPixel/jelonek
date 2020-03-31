@@ -6,6 +6,7 @@ import {ListItem} from '../model/ListItem';
 import {FlatList} from 'react-native-gesture-handler';
 import {ExtendedListItemComponent} from '../components/ExtendedListItemComponent';
 import RestService from '../services/RestService';
+import NetworkService from '../services/NetworkService';
 
 type Props = {
   navigation?: NavigationStackProp;
@@ -30,6 +31,11 @@ export class ScreenChemists extends AbstractScreen {
         a.isFavorite ? (this.state.items.length > 0 ? 0 : -1) : 0,
       ),
     });
+
+    if (!NetworkService.getInstance().isConnected()) {
+      this.setState({progressBarVisible: false});
+      return;
+    }
 
     if (
       Date.now() -

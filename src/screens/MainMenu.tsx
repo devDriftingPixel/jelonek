@@ -10,11 +10,12 @@ import Backdrop from '../components/Backdrop/Backdrop';
 import App from '../../App';
 import {ZeroFavorites} from '../components/ZeroFavorites';
 import {Dimensions} from 'react-native';
-import {MenuComponentHorizontalBars} from '../components/MenuComponentHorizontalBars';
+import {MenuComponent} from '../components/MenuComponent';
 import {ExternalDataService} from '../services/ExternalDataService';
 import {FavoritesList} from '../components/FavoritesList';
 import {NavigationEventSubscription} from 'react-navigation';
 import RestService from '../services/RestService';
+import NetworkService from '../services/NetworkService';
 
 type Props = {
   navigation?: NavigationStackProp;
@@ -33,6 +34,7 @@ export class ScreenMainMenu extends Component<Props> {
   constructor(props: Props) {
     super(props);
     this.windowDimesions = Dimensions.get('window');
+    this.navigationSubscription = {} as NavigationEventSubscription;
   }
 
   private willFocus() {
@@ -130,7 +132,7 @@ export class ScreenMainMenu extends Component<Props> {
             offset={this.getOffsetForFavoriteItemNumber(
               this.state.favorites.length,
             )}>
-            <MenuComponentHorizontalBars
+            <MenuComponent
               progressBarVisible={this.state.progressBarVisible}
               dimension={this.windowDimesions}
               navigation={this.props.navigation}
@@ -157,6 +159,11 @@ export class ScreenMainMenu extends Component<Props> {
   }
 
   private updateMessages() {
+    if (!NetworkService.getInstance().isConnected()) {
+      this.setState({progressBarVisible: false});
+      return;
+    }
+
     RestService.getInstance()
       .updateMessages()
       .then((response: Response) => {

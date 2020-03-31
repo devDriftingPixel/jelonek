@@ -110,6 +110,7 @@ export class ScreenInformations extends Component<Props> {
               <Card style={{maxWidth: 400, flex: 1, margin: 10}}>
                 <Ripple
                   rippleColor={Colors.PRIMARY}
+                  rippleContainerBorderRadius={5}
                   onPress={() => this.showImage(item)}>
                   <CardHeader title={item.title} subtitle={item.infoSource} />
                   <CardMedia

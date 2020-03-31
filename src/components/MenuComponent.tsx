@@ -5,6 +5,8 @@ import {
   FlatList,
   Text,
   StyleSheet,
+  Dimensions,
+  View,
 } from 'react-native';
 import * as Colors from '../utility/Colors';
 import * as Images from '../utility/Images';
@@ -92,7 +94,13 @@ export class MenuComponent extends Component<Props> {
           iconName: 'exclamation',
         }),
     },
+    {name: '', iconName: '', onPress: () => {}, deactivated: true},
+    {name: '', iconName: '', onPress: () => {}, deactivated: true},
   ];
+
+  constructor(props: Props) {
+    super(props);
+  }
 
   styles = StyleSheet.create({
     container: {},
@@ -116,7 +124,6 @@ export class MenuComponent extends Component<Props> {
       justifyContent: 'center',
       alignItems: 'center',
       flex: 1,
-      margin: 15,
     },
     flipx: {
       transform: [{scaleX: -1}],
@@ -124,6 +131,17 @@ export class MenuComponent extends Component<Props> {
   });
 
   public render() {
+    const listHorizontalMargin = 8;
+    const elementHorizontalMargin = 10;
+    const elementVerticalMargin = 10;
+    const elementSize =
+      (this.props.dimension.width -
+        2 * listHorizontalMargin -
+        2 * elementHorizontalMargin) /
+      2;
+    const iconSize = elementSize / 3;
+    const textSize = elementSize / 9;
+
     return (
       <ImageBackground
         source={Images.MAIN_MENU_BACKGROUND}
@@ -135,36 +153,57 @@ export class MenuComponent extends Component<Props> {
         imageStyle={{borderRadius: 18}}>
         <FlatList
           style={{
-            marginLeft: 8,
-            marginRight: 8,
-            height: '90%',
-            marginBottom: 80,
+            marginHorizontal: listHorizontalMargin,
+            marginTop: 15,
           }}
           data={this.menuItems}
           numColumns={2}
           keyExtractor={item => item.name}
-          renderItem={({item}) => (
-            <Ripple
-              rippleColor={Colors.ACCENT}
-              rippleOpacity={0.8}
-              rippleDuration={300}
-              rippleContainerBorderRadius={20}
-              style={[
-                this.styles.projectListItem,
-                this.styles.projectListItemVisible,
-              ]}
-              onPress={item.onPress.bind(this)}>
-              <Icon
-                name={item.iconName}
-                color={'#FFF'}
-                style={[{margin: 10, fontSize: 65}]}
-                iconComponent={FontAwesome5}
-              />
-              <Text style={{color: 'white', fontSize: 20, textAlign: 'center'}}>
-                {item.name.toUpperCase()}
-              </Text>
-            </Ripple>
-          )}
+          renderItem={({item}) =>
+            item.deactivated ? (
+              <View
+                style={{
+                  width: elementSize,
+                  height: elementSize / 2,
+                  marginHorizontal: elementHorizontalMargin,
+                  marginVertical: elementVerticalMargin,
+                }}></View>
+            ) : (
+              <Ripple
+                rippleColor={Colors.ACCENT}
+                rippleOpacity={0.8}
+                rippleDuration={300}
+                rippleContainerBorderRadius={20}
+                style={[
+                  this.styles.projectListItem,
+                  this.styles.projectListItemVisible,
+                  ,
+                  {
+                    width: elementSize,
+                    height: elementSize,
+                    marginHorizontal: elementHorizontalMargin,
+                    marginVertical: elementVerticalMargin,
+                  },
+                ]}
+                onPress={item.onPress.bind(this)}>
+                <Icon
+                  name={item.iconName}
+                  color={'#FFF'}
+                  size={iconSize}
+                  style={[{margin: 10}]}
+                  iconComponent={FontAwesome5}
+                />
+                <Text
+                  style={{
+                    color: 'white',
+                    fontSize: textSize,
+                    textAlign: 'center',
+                  }}>
+                  {item.name.toUpperCase()}
+                </Text>
+              </Ripple>
+            )
+          }
         />
       </ImageBackground>
     );

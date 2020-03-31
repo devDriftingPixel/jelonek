@@ -15,6 +15,7 @@ import {Icon, Ripple} from 'material-bread';
 import {Utility} from '../utility/Utility';
 import RestService from '../services/RestService';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
+import NetworkService from '../services/NetworkService';
 
 type Props = {
   navigation?: NavigationStackProp;
@@ -40,6 +41,11 @@ export class ScreenHospitals extends AbstractScreen {
     this.setState({
       items: this.allItems,
     });
+
+    if (!NetworkService.getInstance().isConnected()) {
+      this.setState({progressBarVisible: false});
+      return;
+    }
 
     if (
       Date.now() -

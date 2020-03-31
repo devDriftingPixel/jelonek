@@ -36,4 +36,5 @@ export enum AnalyticsCategories {
   NAVIGATION = 'Navigation',
   FUN = 'Fun',
   FAIL = 'Fail',
+  ANALYTICS = 'Analytics',
 }

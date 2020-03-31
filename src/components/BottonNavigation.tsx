@@ -11,6 +11,7 @@ interface Props {
     onPress: Function;
     returnData: any;
   }[];
+  style: any;
   onSelectionChange: Function;
 }
 
@@ -19,12 +20,15 @@ export class BottomNavigation extends React.Component<Props> {
   render() {
     return (
       <View
-        style={{
-          width: '100%',
-          height: 55,
-          backgroundColor: Colors.PRIMARY,
-          flexDirection: 'row',
-        }}>
+        style={[
+          {
+            width: '100%',
+            height: 55,
+            backgroundColor: Colors.PRIMARY,
+            flexDirection: 'row',
+          },
+          this.props.style,
+        ]}>
         {this.props.actions.map((actionItem, index) => (
           <BottomNavigationItem
             key={index}

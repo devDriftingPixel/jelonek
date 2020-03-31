@@ -165,9 +165,9 @@ export class MenuComponentHorizontalBars extends Component<Props> {
           renderItem={({item}) => (
             <Ripple
               rippleColor={Colors.PRIMARY}
-              rippleOpacity={0.8}
+              rippleOpacity={0.2}
               rippleDuration={300}
-              rippleContainerBorderRadius={0}
+              rippleContainerBorderRadius={10}
               style={[
                 this.styles.projectListItem,
                 this.styles.projectListItemVisible,

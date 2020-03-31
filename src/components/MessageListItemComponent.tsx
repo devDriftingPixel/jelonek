@@ -22,6 +22,7 @@ export class MessageListItemComponent extends Component<Props> {
       <Card style={[Styles.styles.shadow, {margin: 10, borderRadius: 15}]}>
         <Ripple
           rippleColor={Colors.PRIMARY}
+          rippleContainerBorderRadius={15}
           onPress={() =>
             this.props.navigation!.navigate('MessageDetails', {
               item: this.props.item,
@@ -77,7 +78,7 @@ export class MessageListItemComponent extends Component<Props> {
             style={{
               width: '100%',
               flexDirection: 'row-reverse',
-              marginTop: 10,
+              marginVertical: 10,
             }}>
             <Text
               style={{

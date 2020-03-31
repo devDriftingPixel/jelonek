@@ -14,6 +14,8 @@ import {Ripple} from 'material-bread';
 import * as Colors from '../utility/Colors';
 import {Utility} from '../utility/Utility';
 import RestService from '../services/RestService';
+import {View, Text} from 'react-native';
+import NetworkService from '../services/NetworkService';
 
 type Props = {
   navigation?: NavigationStackProp;
@@ -38,6 +40,11 @@ export class ScreenShops extends AbstractScreen {
         a.isFavorite ? (this.state.items.length > 0 ? 0 : -1) : 0,
       ),
     });
+
+    if (!NetworkService.getInstance().isConnected()) {
+      this.setState({progressBarVisible: false});
+      return;
+    }
 
     if (
       Date.now() -
@@ -87,33 +94,36 @@ export class ScreenShops extends AbstractScreen {
 
   protected pageContent = () => {
     return (
-      <FlatList
-        data={this.state.items}
-        renderItem={({item}) => (
-          <Ripple
-            rippleColor={Colors.ACCENT_DARK}
-            onPress={() =>
-              this.props.navigation!.navigate('ObjectDetails', {
-                item: item,
-                iconName: Utility.iconFromItemType(item.type, item.subType),
-              })
-            }>
-            <ListItemComponent
-              item={item}
-              onFavoriteSelected={(item: ListItem) =>
-                this.onFavoriteSelected(item)
-              }
-            />
-          </Ripple>
-        )}
-        keyExtractor={(item, index) => index.toString()}
-      />
+      <>
+        <FlatList
+          data={this.state.items}
+          renderItem={({item}) => (
+            <Ripple
+              rippleColor={Colors.ACCENT}
+              onPress={() =>
+                this.props.navigation!.navigate('ObjectDetails', {
+                  item: item,
+                  iconName: Utility.iconFromItemType(item.type, item.subType),
+                })
+              }>
+              <ListItemComponent
+                item={item}
+                onFavoriteSelected={(item: ListItem) =>
+                  this.onFavoriteSelected(item)
+                }
+              />
+            </Ripple>
+          )}
+          keyExtractor={(item, index) => index.toString()}
+        />
+      </>
     );
   };
 
   protected footerContent = () => {
     return (
       <BottomNavigation
+        style={{height: 60}}
         actions={[
           {
             iconName: Constants.icons.amenitiesTransport,

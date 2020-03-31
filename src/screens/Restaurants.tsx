@@ -5,6 +5,7 @@ import {ExternalDataService} from '../services/ExternalDataService';
 import App from '../../App';
 import {ListItem} from '../model/ListItem';
 import RestService from '../services/RestService';
+import NetworkService from '../services/NetworkService';
 type Props = {
   navigation?: NavigationStackProp;
 };
@@ -24,6 +25,11 @@ export class ScreenRestaurants extends ScreenShops {
         a.isFavorite ? (this.state.items.length > 0 ? 0 : -1) : 0,
       ),
     });
+
+    if (!NetworkService.getInstance().isConnected()) {
+      this.setState({progressBarVisible: false});
+      return;
+    }
 
     if (
       Date.now() -

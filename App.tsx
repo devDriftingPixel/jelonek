@@ -5,16 +5,19 @@ import {SafeAreaProvider} from 'react-native-safe-area-context';
 import * as RNLocalize from 'react-native-localize';
 import i18n from 'i18n-js';
 import memoize from 'lodash.memoize'; // Use for caching/memoize for better performance
-import {I18nManager} from 'react-native';
+import {I18nManager, StatusBar, Platform} from 'react-native';
 import Analytics from 'appcenter-analytics';
 import {ExternalDataService} from './src/services/ExternalDataService';
 import SplashScreen from 'react-native-splash-screen';
+import * as Colors from './src/utility/Colors';
+import NetworkService from './src/services/NetworkService';
 
 export default class App extends React.Component {
   constructor(props: any) {
     super(props);
+    NetworkService.getInstance();
     this.setI18nConfig(); // set initial config
-    Analytics.setEnabled(true);
+    Analytics.setEnabled(false);
     ExternalDataService.getInstance();
   }
 
@@ -48,6 +51,12 @@ export default class App extends React.Component {
   }
 
   componentDidMount() {
+    if (Platform.OS == 'android') {
+      StatusBar.setBackgroundColor(Colors.PRIMARY);
+      StatusBar.setBarStyle('light-content', true);
+    } else {
+      StatusBar.setBarStyle('dark-content', true);
+    }
     RNLocalize.addEventListener('change', this.handleLocalizationChange);
     SplashScreen.hide();
   }

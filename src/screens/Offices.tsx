@@ -15,6 +15,7 @@ import * as Colors from '../utility/Colors';
 import {Utility} from '../utility/Utility';
 import {ExtendedListItemComponent} from '../components/ExtendedListItemComponent';
 import RestService from '../services/RestService';
+import NetworkService from '../services/NetworkService';
 
 type Props = {
   navigation?: NavigationStackProp;
@@ -37,6 +38,11 @@ export class ScreenOffices extends AbstractScreen {
     this.setState({
       items: this.allItems,
     });
+
+    if (!NetworkService.getInstance().isConnected()) {
+      this.setState({progressBarVisible: false});
+      return;
+    }
 
     if (
       Date.now() -

@@ -36,7 +36,7 @@ export class URLComponent extends React.Component<Props> {
             />
           </View>
           <View style={{marginLeft: 5}}>
-            <Text style={{fontSize: 15, color: Colors.DARK_TEXT}}>
+            <Text style={{fontSize: 15, color: Colors.PRIMARY}}>
               {this.props.content}
             </Text>
           </View>

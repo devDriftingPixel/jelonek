@@ -8,6 +8,7 @@ import {ExtendedListItemComponent} from '../components/ExtendedListItemComponent
 import * as Colors from '../utility/Colors';
 import {Phone} from '../model/Phone';
 import RestService from '../services/RestService';
+import NetworkService from '../services/NetworkService';
 
 type Props = {
   navigation?: NavigationStackProp;
@@ -30,6 +31,11 @@ export class ScreenPhones extends AbstractScreen {
     this.setState({
       items: this.allItems,
     });
+
+    if (!NetworkService.getInstance().isConnected()) {
+      this.setState({progressBarVisible: false});
+      return;
+    }
 
     if (
       Date.now() -

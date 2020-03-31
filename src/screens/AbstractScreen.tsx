@@ -68,58 +68,58 @@ export abstract class AbstractScreen extends Component<Props> {
 
   render() {
     return (
-      <SafeAreaView style={{flex: 1}}>
-        <Appbar
-          barType={'normal'}
-          color={Colors.PRIMARY}
-          title={this.pageName}
-          navigation={'arrow-back'}
-          onNavigation={() => this.props.navigation?.goBack()}
-          actionItems={
-            this.state.infoVisible
-              ? [
-                  <Ripple
-                    key={'0'}
-                    rippleColor={Colors.ACCENT}
-                    onPress={() => this.handleChangeInfoVisibility()}>
-                    <Icon
+      <>
+        <SafeAreaView style={{flex: 1}}>
+          <Appbar
+            barType={'normal'}
+            color={Colors.PRIMARY}
+            title={this.pageName}
+            navigation={'arrow-back'}
+            onNavigation={() => this.props.navigation?.goBack()}
+            actionItems={
+              this.state.infoVisible
+                ? [
+                    <Ripple
                       key={'0'}
-                      name={'close'}
-                      size={29}
-                      color={Colors.ACCENT}
-                      iconComponent={FontAwesome}
-                    />
-                  </Ripple>,
-                ]
-              : []
-          }
-        />
-        {this.state.errorMessage.length > 0 ? (
-          <ScrollView style={{minHeight: 60}}>
-            <Text
-              style={{
-                flex: 1,
-                margin: 20,
-                fontSize: 16,
-              }}>
-              {this.state.errorMessage}
-            </Text>
-          </ScrollView>
-        ) : null}
-        {this.state.progressBarVisible ? (
-          <ProgressBar
-            visible
-            indicatorStartPosition={0}
-            color={Colors.ACCENT}
-            height={15}
-            style={{margin: 20}}
+                      rippleColor={Colors.ACCENT}
+                      onPress={() => this.handleChangeInfoVisibility()}>
+                      <Icon
+                        key={'0'}
+                        name={'close'}
+                        size={29}
+                        color={Colors.ACCENT}
+                        iconComponent={FontAwesome}
+                      />
+                    </Ripple>,
+                  ]
+                : []
+            }
           />
-        ) : null}
-        <View>
+          {this.state.errorMessage.length > 0 ? (
+            <ScrollView style={{minHeight: 60}}>
+              <Text
+                style={{
+                  flex: 1,
+                  margin: 20,
+                  fontSize: 16,
+                }}>
+                {this.state.errorMessage}
+              </Text>
+            </ScrollView>
+          ) : null}
+          {this.state.progressBarVisible ? (
+            <ProgressBar
+              visible
+              indicatorStartPosition={0}
+              color={Colors.ACCENT}
+              height={15}
+              style={{margin: 20}}
+            />
+          ) : null}
           <this.pageContent />
           <this.footerContent />
-        </View>
-      </SafeAreaView>
+        </SafeAreaView>
+      </>
     );
   }
 }

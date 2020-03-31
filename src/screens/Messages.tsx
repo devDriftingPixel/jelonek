@@ -8,6 +8,7 @@ import {View} from 'react-native';
 import {MessageListItemComponent} from '../components/MessageListItemComponent';
 import {t} from 'i18n-js';
 import RestService from '../services/RestService';
+import NetworkService from '../services/NetworkService';
 
 type Props = {
   navigation?: NavigationStackProp;
@@ -25,14 +26,21 @@ export class ScreenMessages extends AbstractScreen {
   }
 
   getItems() {
+    const newItems = ExternalDataService.getInstance()
+      .getMessages()
+      .sort(
+        (a: Message, b: Message) =>
+          new Date(b.createDate).getTime() - new Date(a.createDate).getTime(),
+      );
+    newItems.push({} as Message);
     this.setState({
-      items: ExternalDataService.getInstance()
-        .getMessages()
-        .sort(
-          (a: Message, b: Message) =>
-            new Date(b.createDate).getTime() - new Date(a.createDate).getTime(),
-        ),
+      items: newItems,
     });
+
+    if (!NetworkService.getInstance().isConnected()) {
+      this.setState({progressBarVisible: false});
+      return;
+    }
 
     if (
       Date.now() -
@@ -84,12 +92,16 @@ export class ScreenMessages extends AbstractScreen {
     return (
       <FlatList
         data={this.state.items as Message[]}
-        renderItem={({item}) => (
-          <MessageListItemComponent
-            item={item as Message}
-            navigation={this.props.navigation}
-          />
-        )}
+        renderItem={({item}) =>
+          !item.title ? (
+            <View style={{height: 50}} /> //last element
+          ) : (
+            <MessageListItemComponent
+              item={item as Message}
+              navigation={this.props.navigation}
+            />
+          )
+        }
         keyExtractor={(item, index) => index.toString()}
       />
     );

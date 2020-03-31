@@ -70,7 +70,7 @@ export class ScreenMessageDetails extends Component<Props> {
             style={{
               width: '100%',
               flexDirection: 'row-reverse',
-              marginTop: 10,
+              marginVertical: 10,
             }}>
             <Text
               style={{
