@@ -91,6 +91,9 @@ export class ScreenPhones extends AbstractScreen {
             item={(item as unknown) as ListItem}
             maxLines={4}
             fontSize={18}
+            onFavoriteSelected={(item: ListItem) =>
+              this.onFavoriteSelected(item)
+            }
           />
         )}
         keyExtractor={(item, index) => index.toString()}

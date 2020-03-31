@@ -202,33 +202,6 @@
         "id": "f11123a8-e621-526d-bd10-439ec619411d"
       },
       {
-        "name": "Twoja Ulubiona Restauracja",
-        "hours": [{
-            "startDay": 0,
-            "endDay": 2,
-            "hours": ["10", "17"]
-          },
-          {
-            "startDay": 3,
-            "endDay": 4,
-            "hours": ["11", "22"]
-          },
-          {
-            "startDay": 5,
-            "hours": ["10", "15"]
-          }
-        ],
-        "additionalInfo": "Sprzedajemy Twoje ulubione dania w najlepszych cenach w mieście. Tylko u nas mozesz zakupić dania na wynos lub na dowóz. Wprowadziliśmy dla Ciebie takze dostawe bez kontaktową. Gwarantujemy super smak w super cenie!.",
-        "phones": ["555 555 555", "75 44 44 444"],
-        "facebook": "https://www.facebook.com/TwojaKnajpaJgoraPL/",
-        "www": "www.twojaUlubionaRestauracja.jgora.pl",
-        "type": "RESTAURANTS",
-        "isFavorite": false,
-        "amenities": ["TRANSPORT", "PICKUP", "NO_CONTACT_DELIVER"],
-        "district": "Centrum",
-        "id": "f88123a8-e621-526d-bd10-669ec619411d"
-      },
-      {
         "name": " Gawełczyk Bary Restauracyjne",
         "hours": [{
           "startDay": 0,
@@ -1418,7 +1391,7 @@
         "id": "98b6c9d0-ed06-584c-a4bd-cd4cbff5e0e0"
       },
       {
-        "name": "STRAZ MIEJSKA JELENIA GÓRA",
+        "name": "STRAŻ MIEJSKA JELENIA GÓRA",
         "phones": ["986", "75 75 25 162"],
         "id": "ae9ff80b-8ce7-569f-b4a4-8b828e2d2fd2"
       },

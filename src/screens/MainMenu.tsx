@@ -85,8 +85,6 @@ export class ScreenMainMenu extends Component<Props> {
 
     const backLayerRevealed = (
       <View style={{width: '100%', backgroundColor: Colors.PRIMARY}}>
-        {' '}
-        //Favorite
         <View style={styles.backdropHeader as ViewStyle}>
           <Text style={styles.backdropHeaderTitle as ViewStyle}>
             {App.translate('favorite')}

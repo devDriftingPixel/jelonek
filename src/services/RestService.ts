@@ -4,7 +4,7 @@ export default class RestService {
   private static instance: RestService;
 
   private readonly restURL =
-    'https://us-central1-jelonek-stage.cloudfunctions.net/data';
+    'https://us-central1-jelonek-prod.cloudfunctions.net/data';
 
   private readonly shopsPostfix = 'shops';
   private readonly shopsUpdatePostfix = 'shopsUpdate';

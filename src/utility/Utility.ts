@@ -2,8 +2,8 @@ import {DataItemTypes, DataItemSubtypes} from '../model/Enums';
 import App from '../../App';
 import {Linking} from 'react-native';
 import * as Enums from '../model/Enums';
-import * as Constants from '../utility/Constants';
 import Analytics from 'appcenter-analytics';
+import Toast from 'react-native-root-toast';
 
 export class Utility {
   public static iconFromItemType(
@@ -126,5 +126,33 @@ export class Utility {
         }
       },
     );
+  }
+
+  static callNumber(phone: string): void {
+    Linking.canOpenURL(`tel:${phone}`)
+      .then((supported: boolean) => {
+        if (supported) {
+          Analytics.trackEvent(`Call phone number: ${phone}`, {
+            Category: Enums.AnalyticsCategories.NAVIGATION,
+          });
+          Linking.openURL(`tel:${phone}`);
+        } else {
+          Linking.openURL(`tel:${phone}`).catch(error => {
+            Toast.show(App.translate('callProblem') + phone, {
+              duration: Toast.durations.LONG,
+              position: Toast.positions.BOTTOM,
+              shadow: true,
+              animation: true,
+              hideOnPress: true,
+              delay: 0,
+            });
+
+            Analytics.trackEvent(`Problem during phone calling: ${phone}`, {
+              Category: Enums.AnalyticsCategories.FAIL,
+            });
+          });
+        }
+      })
+      .catch(error => console.log(error));
   }
 }

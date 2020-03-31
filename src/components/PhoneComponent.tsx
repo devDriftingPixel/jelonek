@@ -1,10 +1,11 @@
 import React from 'react';
 import * as Colors from '../utility/Colors';
-import {Ripple, Icon, withTheme} from 'material-bread';
-import {Linking, Text} from 'react-native';
+import {Ripple, Icon} from 'material-bread';
+import {Text} from 'react-native';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
-import Analytics from 'appcenter-analytics';
-import * as Enums from '../model/Enums';
+
+import {Utility} from '../utility/Utility';
+
 interface Props {
   phone: string;
 }
@@ -22,13 +23,7 @@ export class PhoneComponent extends React.Component<Props> {
           alignItems: 'center',
         }}
         rippleColor={Colors.PRIMARY}
-        onPress={() => {
-          Linking.openURL(`tel:${this.props.phone}`).catch(error =>
-            Analytics.trackEvent(`Error during calling: ${this.props.phone}`, {
-              Category: Enums.AnalyticsCategories.FAIL,
-            }),
-          );
-        }}>
+        onPress={() => Utility.callNumber(this.props.phone)}>
         <Icon
           name={'phone'}
           size={30}

@@ -146,9 +146,7 @@ export class ScreenObjectDetails extends Component<Props> {
               iconName="phone"
               color={Colors.ACCENT}
               iconColor={Colors.PRIMARY}
-              onPress={() => {
-                Linking.openURL(`tel:${this.item.phones[0]}`);
-              }}
+              onPress={() => Utility.callNumber(this.item.phones[0])}
             />
           ) : this.item.phones && this.item.phones.length > 1 ? (
             <FabWithMultiIcons
@@ -159,8 +157,7 @@ export class ScreenObjectDetails extends Component<Props> {
                 return {
                   iconName: 'phone',
                   content: phone,
-                  onPress: () =>
-                    Linking.openURL(`tel:${this.item.phones[index]}`),
+                  onPress: () => Utility.callNumber(this.item.phones[index]),
                 };
               })}
             />

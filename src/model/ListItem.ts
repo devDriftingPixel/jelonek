@@ -5,15 +5,15 @@ import {
   Amenities,
 } from '../model/Enums';
 import {Hours} from './Hours';
+import {Favoritable} from './Favoritable';
 
-export interface ListItem {
+export interface ListItem extends Favoritable {
   id: string;
   name: string;
   fullName: string;
   district: Districts;
   type: DataItemTypes;
   subType?: DataItemSubtypes;
-  isFavorite: boolean;
   amenities: Amenities[];
   email: [string];
   phones: string[];

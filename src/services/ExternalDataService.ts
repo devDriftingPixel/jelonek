@@ -5,6 +5,7 @@ import {Phone} from '../model/Phone';
 import AsyncStorage from '@react-native-community/async-storage';
 import * as Enums from '../model/Enums';
 import Analytics from 'appcenter-analytics';
+import {Favoritable} from '../model/Favoritable';
 
 const jsonStorage: DataStorage = require('../assets/data.json');
 
@@ -252,9 +253,11 @@ export class ExternalDataService {
     this.saveStorage();
   }
 
-  public getFavorites(): ListItem[] {
+  public getFavorites(): Favoritable[] {
     if (!this.dataStorage.shops) return []; //if shops are loaded other list are loaded too ;)
-    return this.getObjects().filter((object: ListItem) => object.isFavorite);
+    return this.getObjects().filter(
+      (object: any) => (object as ListItem).isFavorite,
+    );
   }
 
   public changeFavorite(item: any) {
@@ -283,6 +286,7 @@ export class ExternalDataService {
       ...this.dataStorage.restaurants.items,
       ...this.dataStorage.chemists.items,
       ...this.dataStorage.hospitals.items,
+      ...this.dataStorage.phones.items,
     ];
   }
 }
